@@ -1,0 +1,1221 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4 语法和基本数据类型 · CSS GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="chouchouovo">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-mygitalk/mygitalk.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5 选择器.html" />
+    
+    
+    <link rel="prev" href="3 一致性：要求和建议.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"chouchou","repo":"gitbook-CSS2.2","type":"star","size":"small"},{"user":"chouchou","type":"follow","width":"150","size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/chouchouovo" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../COPYRIGHT.html">
+            
+                <a href="../../../COPYRIGHT.html">
+            
+                    
+                    版权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1 关于 CSS 2.2 规范.html">
+            
+                <a href="1 关于 CSS 2.2 规范.html">
+            
+                    
+                    CSS 2.2 中文版
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1 关于 CSS 2.2 规范.html">
+            
+                <a href="1 关于 CSS 2.2 规范.html">
+            
+                    
+                    1 关于 CSS 2.2 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2 CSS 2.2 简介.html">
+            
+                <a href="2 CSS 2.2 简介.html">
+            
+                    
+                    2 CSS 2.2 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3 一致性：要求和建议.html">
+            
+                <a href="3 一致性：要求和建议.html">
+            
+                    
+                    3 一致性：要求和建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="4 语法和基本数据类型.html">
+            
+                <a href="4 语法和基本数据类型.html">
+            
+                    
+                    4 语法和基本数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="5 选择器.html">
+            
+                <a href="5 选择器.html">
+            
+                    
+                    5 选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="6 分配属性值、层叠、继承.html">
+            
+                <a href="6 分配属性值、层叠、继承.html">
+            
+                    
+                    6 分配属性值、层叠、继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="7 媒体类型.html">
+            
+                <a href="7 媒体类型.html">
+            
+                    
+                    7 媒体类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="8 盒子模型.html">
+            
+                <a href="8 盒子模型.html">
+            
+                    
+                    8 盒子模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="9 视觉格式化模型.html">
+            
+                <a href="9 视觉格式化模型.html">
+            
+                    
+                    9 视觉格式化模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >4 语法和基本数据类型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#4-&#x8BED;&#x6CD5;&#x548C;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"><b></b>4 &#x8BED;&#x6CD5;&#x548C;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;</a></li><ul><li><span class="title-icon "></span><a href="#41-&#x8BED;&#x6CD5;"><b></b>4.1 &#x8BED;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#411-&#x7B26;&#x53F7;&#x5316;"><b></b>4.1.1 &#x7B26;&#x53F7;&#x5316;</a></li><li><span class="title-icon "></span><a href="#412-&#x5173;&#x952E;&#x5B57;"><b></b>4.1.2 &#x5173;&#x952E;&#x5B57;</a></li><li><span class="title-icon "></span><a href="#413-&#x5B57;&#x7B26;&#x548C;&#x5927;&#x5C0F;&#x5199;"><b></b>4.1.3 &#x5B57;&#x7B26;&#x548C;&#x5927;&#x5C0F;&#x5199;</a></li><li><span class="title-icon "></span><a href="#414-&#x8BED;&#x53E5;"><b></b>4.1.4 &#x8BED;&#x53E5;</a></li><li><span class="title-icon "></span><a href="#415-&#x89C4;&#x5219;"><b></b>4.1.5 @&#x89C4;&#x5219;</a></li><li><span class="title-icon "></span><a href="#416-&#x5757;"><b></b>4.1.6 &#x5757;</a></li><li><span class="title-icon "></span><a href="#417-&#x89C4;&#x5219;&#x96C6;&#xFF0C;&#x58F0;&#x660E;&#x5757;&#xFF0C;&#x9009;&#x62E9;&#x5668;"><b></b>4.1.7 &#x89C4;&#x5219;&#x96C6;&#xFF0C;&#x58F0;&#x660E;&#x5757;&#xFF0C;&#x9009;&#x62E9;&#x5668;</a></li><li><span class="title-icon "></span><a href="#418-&#x58F0;&#x660E;&#x548C;&#x5C5E;&#x6027;"><b></b>4.1.8 &#x58F0;&#x660E;&#x548C;&#x5C5E;&#x6027;</a></li><li><span class="title-icon "></span><a href="#419-&#x6CE8;&#x91CA;"><b></b>4.1.9 &#x6CE8;&#x91CA;</a></li></ul><li><span class="title-icon "></span><a href="#42-&#x5904;&#x7406;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x7684;&#x89C4;&#x5219;"><b></b>4.2 &#x5904;&#x7406;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x7684;&#x89C4;&#x5219;</a></li><li><span class="title-icon "></span><a href="#43-&#x503C;"><b></b>4.3 &#x503C;</a></li><ul><li><span class="title-icon "></span><a href="#431-&#x6574;&#x6570;&#x548C;&#x5B9E;&#x6570;"><b></b>4.3.1 &#x6574;&#x6570;&#x548C;&#x5B9E;&#x6570;</a></li><li><span class="title-icon "></span><a href="#432-&#x957F;&#x5EA6;"><b></b>4.3.2 &#x957F;&#x5EA6;</a></li><li><span class="title-icon "></span><a href="#433-&#x767E;&#x5206;&#x6BD4;"><b></b>4.3.3 &#x767E;&#x5206;&#x6BD4;</a></li><li><span class="title-icon "></span><a href="#434-url-&#x548C;-uri"><b></b>4.3.4 URL &#x548C; URI</a></li><li><span class="title-icon "></span><a href="#435-&#x8BA1;&#x6570;&#x5668;"><b></b>4.3.5 &#x8BA1;&#x6570;&#x5668;</a></li><li><span class="title-icon "></span><a href="#436-&#x989C;&#x8272;"><b></b>4.3.6 &#x989C;&#x8272;</a></li><li><span class="title-icon "></span><a href="#437-&#x5B57;&#x7B26;&#x4E32;"><b></b>4.3.7 &#x5B57;&#x7B26;&#x4E32;</a></li><li><span class="title-icon "></span><a href="#438-&#x4E0D;&#x652F;&#x6301;&#x7684;&#x503C;"><b></b>4.3.8 &#x4E0D;&#x652F;&#x6301;&#x7684;&#x503C;</a></li></ul><li><span class="title-icon "></span><a href="#44-css-&#x6837;&#x5F0F;&#x8868;&#x7684;&#x5C55;&#x793A;"><b></b>4.4 CSS &#x6837;&#x5F0F;&#x8868;&#x7684;&#x5C55;&#x793A;</a></li><ul><li><span class="title-icon "></span><a href="#441-&#x6D89;&#x53CA;&#x5F53;&#x524D;&#x5B57;&#x7B26;&#x96C6;&#x4E4B;&#x5916;&#x7684;&#x5B57;&#x7B26;"><b></b>4.4.1 &#x6D89;&#x53CA;&#x5F53;&#x524D;&#x5B57;&#x7B26;&#x96C6;&#x4E4B;&#x5916;&#x7684;&#x5B57;&#x7B26;</a></li></ul></ul></ul></div><a href="#4-&#x8BED;&#x6CD5;&#x548C;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="4-&#x8BED;&#x6CD5;&#x548C;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"><a name="4-&#x8BED;&#x6CD5;&#x548C;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#4-&#x8BED;&#x6CD5;&#x548C;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="4-&#x8BED;&#x6CD5;&#x548C;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;" class="plugin-anchor" href="#4-&#x8BED;&#x6CD5;&#x548C;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>4 &#x8BED;&#x6CD5;&#x548C;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;</h1>
+<h2 id="41-&#x8BED;&#x6CD5;"><a name="41-&#x8BED;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#41-&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="41-&#x8BED;&#x6CD5;" class="plugin-anchor" href="#41-&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1 &#x8BED;&#x6CD5;</h2>
+<p>&#x672C;&#x8282;&#x63CF;&#x8FF0;&#x7684;&#x8BED;&#x6CD5;&#xFF08;&#x4EE5;&#x53CA;&#x5411;&#x524D;&#x517C;&#x5BB9;&#x7684;&#x89E3;&#x6790;&#x89C4;&#x5219;&#xFF09;&#x9002;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x7EA7;&#x522B;&#x7684; CSS&#xFF08;&#x5305;&#x62EC;CSS 2.2&#xFF09;&#x3002;CSS &#x5C06;&#x6765;&#x7684;&#x66F4;&#x65B0;&#x4E5F;&#x5C06;&#x9075;&#x5B88;&#x6B64;&#x5904;&#x7684;&#x6838;&#x5FC3;&#x8BED;&#x6CD5;&#xFF0C;&#x5C3D;&#x7BA1;&#x5B83;&#x4EEC;&#x53EF;&#x80FD;&#x6DFB;&#x52A0;&#x4E86;&#x989D;&#x5916;&#x7684;&#x8BED;&#x6CD5;&#x7EA6;&#x675F;&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x63CF;&#x8FF0;&#x90FD;&#x662F;&#x89C4;&#x8303;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5B83;&#x4EEC;&#x4E5F;&#x4F1A;&#x88AB; <a href="https://www.w3.org/TR/CSS22/grammar.html" target="_blank">&#x9644;&#x5F55; G</a> &#x4E2D;&#x63D0;&#x51FA;&#x7684;&#x89C4;&#x8303;&#x8BED;&#x6CD5;&#x89C4;&#x5219;&#x6240;&#x8865;&#x5145;&#x3002;</p>
+<p>&#x672C;&#x89C4;&#x8303;&#x4E2D;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E; &#x201C;&#x524D;&#x9762;&#x7D27;&#x8DDF;&#x201D; &#x6216;&#x8005; &#x201C;&#x540E;&#x9762;&#x7D27;&#x8DDF;&#x201D; &#x7684;&#x8868;&#x8FF0;&#x610F;&#x5473;&#x7740;&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x7A7A;&#x683C;&#x6216;&#x8005;&#x6CE8;&#x91CA;&#x3002;</p>
+<h3 id="411-&#x7B26;&#x53F7;&#x5316;"><a name="411-&#x7B26;&#x53F7;&#x5316;" class="anchor-navigation-ex-anchor" href="#411-&#x7B26;&#x53F7;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="411-&#x7B26;&#x53F7;&#x5316;" class="plugin-anchor" href="#411-&#x7B26;&#x53F7;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.1 &#x7B26;&#x53F7;&#x5316;</h3>
+<p>&#x6240;&#x6709;&#x7EA7;&#x522B;&#x7684; CSS &#x2014; CSS 1&#x3001;CSS 2&#x548C;&#x5C06;&#x6765;&#x7684;&#x4EFB;&#x4F55;&#x7EA7;&#x522B; &#x2014; &#x7528;&#x7684;&#x90FD;&#x662F;&#x76F8;&#x540C;&#x7684;&#x6838;&#x5FC3;&#x8BED;&#x6CD5;&#x3002;&#x8FD9;&#x6837; UA &#x5C31;&#x53EF;&#x4EE5;&#x89E3;&#x6790;&#xFF08;&#x867D;&#x7136;&#x4E0D;&#x5B8C;&#x5168;&#x80FD;&#x7406;&#x89E3;&#xFF09;&#x4EE5; UA &#x53D1;&#x5E03;&#x65F6; &#x5C1A;&#x4E0D;&#x5B58;&#x5728;&#x7684; CSS &#x7248;&#x672C;&#x7F16;&#x5199;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x3002;&#x8BBE;&#x8BA1;&#x8005;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x8BE5;&#x7279;&#x5F81;&#x6765;&#x521B;&#x5EFA;&#x517C;&#x5BB9;&#x65E7;&#x7248;&#x672C;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x7684;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x80FD;&#x8FD0;&#x7528;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;CSS</p>
+<p>&#x5728;&#x8BCD;&#x6CD5;&#x5C42;&#x9762;&#xFF0C;CSS &#x6837;&#x5F0F;&#x8868;&#x7531;&#x4E00;&#x7CFB;&#x5217; &#x6807;&#x8BB0;&#xFF08;&#x7B26;&#x53F7;&#xFF09;&#x7EC4;&#x6210;&#x3002;CSS &#x6807;&#x8BB0;&#xFF08;&#x7B26;&#x53F7;&#xFF09;&#x5217;&#x8868;&#x5982;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B9A;&#x4E49;&#x4E86;&#x4F7F;&#x7528;&#x4E86; Lex &#x98CE;&#x683C;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x516B;&#x8FDB;&#x5236;&#x7801;&#x53C2;&#x8003;&#x4E86; ISO 10646&#xFF08;<a href="https://www.w3.org/TR/CSS22/refs.html#ref-ISO10646" target="_blank">[ISO10646]</a>&#xFF09;&#xFF0C;&#x548C;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x4E00;&#x6837;&#xFF0C;&#x5B58;&#x5728;&#x591A;&#x4E2A;&#x5339;&#x914D;&#x65F6;&#xFF0C;&#x628A;&#x6700;&#x957F;&#x7684;&#x5339;&#x914D;&#x4F5C;&#x4E3A; &#x6807;&#x8BB0;&#xFF08;&#x7B26;&#x53F7;&#xFF09;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IDENT</td>
+<td><code>{ident}</code></td>
+</tr>
+<tr>
+<td>ATKEYWORD</td>
+<td><code>@{ident}</code></td>
+</tr>
+<tr>
+<td>STRING</td>
+<td><code>{string}</code></td>
+</tr>
+<tr>
+<td>BAD_STRING</td>
+<td><code>{badstring}</code></td>
+</tr>
+<tr>
+<td>BAD_URI</td>
+<td><code>{baduri}</code></td>
+</tr>
+<tr>
+<td>BAD_COMMENT</td>
+<td><code>{badcomment}</code></td>
+</tr>
+<tr>
+<td>HASH</td>
+<td><code>#{name}</code></td>
+</tr>
+<tr>
+<td>NUMBER</td>
+<td><code>{num}</code></td>
+</tr>
+<tr>
+<td>PERCENTAGE</td>
+<td><code>{num}%</code></td>
+</tr>
+<tr>
+<td>DIMENSION</td>
+<td><code>{num}{ident}</code></td>
+</tr>
+<tr>
+<td>URI</td>
+<td>`url({w}{string}{w})</td>
+<td>url({w}([!#$%&amp;*-[]-~]</td>
+<td>{nonascii}</td>
+<td>{escape})*{w})`</td>
+</tr>
+<tr>
+<td>UNICODE-RANGE</td>
+<td><code>u\+[0-9a-f?]{1,6}(-[0-9a-f]{1,6})?</code></td>
+</tr>
+<tr>
+<td>CDO</td>
+<td><code>&lt;!--</code></td>
+</tr>
+<tr>
+<td>CDC</td>
+<td><code>--&gt;</code></td>
+</tr>
+<tr>
+<td>:</td>
+<td><code>:</code></td>
+</tr>
+<tr>
+<td>;</td>
+<td><code>;</code></td>
+</tr>
+<tr>
+<td>{</td>
+<td><code>\{</code></td>
+</tr>
+<tr>
+<td>}</td>
+<td><code>\}</code></td>
+</tr>
+<tr>
+<td>(</td>
+<td><code>\(</code></td>
+</tr>
+<tr>
+<td>)</td>
+<td><code>\)</code></td>
+</tr>
+<tr>
+<td>[</td>
+<td><code>\[</code></td>
+</tr>
+<tr>
+<td>]</td>
+<td><code>\]</code></td>
+</tr>
+<tr>
+<td>S</td>
+<td><code>[ \t\r\n\f]+</code></td>
+</tr>
+<tr>
+<td>COMMENT</td>
+<td><code>\/\*[^*]*\*+([^/*][^*]*\*+)*\/</code></td>
+</tr>
+<tr>
+<td>FUNCTION</td>
+<td><code>{ident}\(</code></td>
+</tr>
+<tr>
+<td>INCLUDES</td>
+<td><code>~=</code></td>
+</tr>
+<tr>
+<td>DASHMATCH</td>
+<td><code>{ident}\(</code></td>
+</tr>
+<tr>
+<td>DELIM</td>
+<td><code>{ident}\(</code></td>
+</tr>
+</tbody>
+</table>
+<p>&#x4EE5;&#x4E0A;&#x5B9A;&#x4E49;&#x4E2D;&#x82B1;&#x62EC;&#x53F7;({})&#x4E2D;&#x7684;&#x5B8F;&#x5B9A;&#x4E49;&#xFF08;macros&#xFF09;&#x5982;&#x4E0B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>Macro</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ident</td>
+<td><code>[-]?{nmstart}{nmchar}*</code></td>
+</tr>
+<tr>
+<td>name</td>
+<td><code>{nmchar}+</code></td>
+</tr>
+<tr>
+<td>nmstart</td>
+<td>`[_a-z]</td>
+<td>{nonascii}</td>
+<td>{escape}`</td>
+</tr>
+<tr>
+<td>nonascii</td>
+<td><code>[^\0-\177]</code></td>
+</tr>
+<tr>
+<td>unicode</td>
+<td>`\[0-9a-f]{1,6}(\r\n</td>
+<td>[ \n\r\t\f])?`</td>
+</tr>
+<tr>
+<td>escape</td>
+<td>`{unicode}</td>
+<td>\<sup><a href="#fn_%5Cn%5Cr%5Cf0-9a-f" id="reffn_\n\r\f0-9a-f">\n\r\f0-9a-f</a></sup>`</td>
+</tr>
+<tr>
+<td>nmchar</td>
+<td>`[_a-z0-9-]</td>
+<td>{nonascii}</td>
+<td>{escape}`</td>
+</tr>
+<tr>
+<td>num</td>
+<td>`[+-]?([0-9]+</td>
+<td>[0-9]*.[0-9]+)(e[+-]?[0-9]+)?`</td>
+</tr>
+<tr>
+<td>string</td>
+<td>`{string1}</td>
+<td>{string2}`</td>
+</tr>
+<tr>
+<td>string1</td>
+<td>`\&quot;(<sup><a href="#fn_%5Cn%5Cr%5Cf%5C%5C" "="" id="reffn_\n\r\f\\">\n\r\f\\&quot;</a></sup></td>
+<td>\{nl}</td>
+<td>{escape})*\&quot;`</td>
+</tr>
+<tr>
+<td>string2</td>
+<td>`\&apos;(<sup><a href="#fn_%5Cn%5Cr%5Cf%5C%5C%27" id="reffn_\n\r\f\\&apos;">\n\r\f\\&apos;</a></sup></td>
+<td>\{nl}</td>
+<td>{escape})*\&apos;`</td>
+</tr>
+<tr>
+<td>badstring</td>
+<td>`{badstring1}</td>
+<td>{badstring2}`</td>
+</tr>
+<tr>
+<td>badstring1</td>
+<td>`\&quot;(<sup><a href="#fn_%5Cn%5Cr%5Cf%5C%5C" "="" id="reffn_\n\r\f\\">\n\r\f\\&quot;</a></sup></td>
+<td>\{nl}</td>
+<td>{escape})*\?`</td>
+</tr>
+<tr>
+<td>badstring2</td>
+<td>`\&apos;(<sup><a href="#fn_%5Cn%5Cr%5Cf%5C%5C%27" id="reffn_\n\r\f\\&apos;">\n\r\f\\&apos;</a></sup></td>
+<td>\{nl}</td>
+<td>{escape})*\?`</td>
+</tr>
+<tr>
+<td>badcomment</td>
+<td>`{badcomment1}</td>
+<td>{badcomment2}`</td>
+</tr>
+<tr>
+<td>badcomment1</td>
+<td><code>\/\*[^*]*\*+([^/*][^*]*\*+)*</code></td>
+</tr>
+<tr>
+<td>badcomment2</td>
+<td><code>\/\*[^*]*(\*+[^/*][^*]*)*</code></td>
+</tr>
+<tr>
+<td>baduri</td>
+<td>`{baduri1}</td>
+<td>{baduri2}</td>
+<td>{baduri3}`</td>
+</tr>
+<tr>
+<td>baduri1</td>
+<td>`{U}{R}{L}({w}([!#$%&amp;*-~]</td>
+<td>{nonascii}</td>
+<td>{escape})*{w}`</td>
+</tr>
+<tr>
+<td>baduri2</td>
+<td><code>{U}{R}{L}\({w}{string}{w}</code></td>
+</tr>
+<tr>
+<td>baduri3</td>
+<td><code>{U}{R}{L}\({w}{badstring}</code></td>
+</tr>
+<tr>
+<td>nl</td>
+<td>`\n</td>
+<td>\r\n</td>
+<td>\r</td>
+<td>\f`</td>
+</tr>
+<tr>
+<td>w</td>
+<td><code>[ \t\r\n\f]*</code></td>
+</tr>
+<tr>
+<td>L</td>
+<td>`l</td>
+<td>\0{0,4}(4c</td>
+<td>6c)(\r\n</td>
+<td>[ \t\r\n\f])?</td>
+<td>\l`</td>
+</tr>
+<tr>
+<td>R</td>
+<td>`r</td>
+<td>\0{0,4}(52</td>
+<td>72)(\r\n</td>
+<td>[ \t\r\n\f])?</td>
+<td>\r`</td>
+</tr>
+<tr>
+<td>U</td>
+<td>`u</td>
+<td>\0{0,4}(55</td>
+<td>75)(\r\n</td>
+<td>[ \t\r\n\f])?</td>
+<td>\u`</td>
+</tr>
+</tbody>
+</table>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x6700;&#x957F;&#x5339;&#x914D;&#x89C4;&#x5219;&#x610F;&#x5473;&#x7740; &#x201C;red--&gt;&#x201D; &#x4F1A;&#x88AB;&#x7B26;&#x53F7;&#x5316;&#x4E3A;&#x4E00;&#x4E2A; IDENT &#x201C;red--&#x201D; &#x540E;&#x9762;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;DELIM &#x201C;&gt;&#x201D;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A; IDENT &#x540E;&#x9762;&#x8DDF;&#x7740;&#x4E00;&#x4E2A; CDC&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F; CSS &#x7684;&#x6838;&#x5FC3;&#x8BED;&#x6CD5;&#xFF0C;&#x672C;&#x8282;&#x63A5;&#x7740;&#x63CF;&#x8FF0;&#x600E;&#x6837;&#x4F7F;&#x7528;&#x5B83;&#x3002;<a href="https://www.w3.org/TR/CSS22/grammar.html" target="_blank">&#x9644;&#x5F55; G</a> &#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x4E2A;&#x7EA6;&#x675F;&#x66F4;&#x591A;&#x7684;&#x66F4;&#x63A5;&#x8FD1; CSS 2 &#x7684;&#x8BED;&#x6CD5;&#x3002;&#x80FD;&#x6839;&#x636E;&#x672C;&#x8BED;&#x6CD5;&#x89E3;&#x6790;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x7528;<a href="https://www.w3.org/TR/CSS22/grammar.html" target="_blank">&#x9644;&#x5F55; G</a>&#x4E2D;&#x7684;&#x8BED;&#x6CD5;&#x89E3;&#x6790; &#x7684;&#x90E8;&#x5206;&#x6837;&#x5F0F;&#x8868;&#x90FD;&#x662F;&#x6309;&#x7167;&#x5904;&#x7406;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x7684;&#x89C4;&#x5219;&#x5E94;&#x8BE5;&#x5FFD;&#x7565;&#x7684;&#x90E8;&#x5206;</p>
+<pre><code class="lang-text">stylesheet  : [ CDO | CDC | S | statement ]*;
+statement   : ruleset | at-rule;
+at-rule     : ATKEYWORD S* any* [ block | &apos;;&apos; S* ];
+block       : &apos;{&apos; S* [ any | block | ATKEYWORD S* | &apos;;&apos; S* ]* &apos;}&apos; S*;
+ruleset     : selector? &apos;{&apos; S* declaration? [ &apos;;&apos; S* declaration? ]* &apos;}&apos; S*;
+selector    : any+;
+declaration : property S* &apos;:&apos; S* value;
+property    : IDENT;
+value       : [ any | block | ATKEYWORD S* ]+;
+any         : [ IDENT | NUMBER | PERCENTAGE | DIMENSION | STRING
+              | DELIM | URI | HASH | UNICODE-RANGE | INCLUDES
+              | DASHMATCH | &apos;:&apos; | FUNCTION S* [any|unused]* &apos;)&apos;
+              | &apos;(&apos; S* [any|unused]* &apos;)&apos; | &apos;[&apos; S* [any|unused]* &apos;]&apos;
+              ] S*;
+unused      : block | ATKEYWORD S* | &apos;;&apos; S* | CDO S* | CDC S*;
+</code></pre>
+<p>&quot;unused&quot; &#x4EA7;&#x751F;&#x5F0F;&#x4E0D;&#x7528;&#x5728; CSS &#x4E2D;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x88AB;&#x4EFB;&#x4F55;&#x5C06;&#x6765;&#x7684;&#x6269;&#x5C55;&#x4F7F;&#x7528;&#x3002;&#x8FD9;&#x91CC;&#x63D0;&#x5230;&#x5B83;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x5E2E;&#x52A9;&#x5B8C;&#x6210;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x3002;&#xFF08;&#x89C1; 4.2 &#x201C;&#x5904;&#x7406;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x7684;&#x89C4;&#x5219;&#x201D;&#xFF09;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x6807;&#x8BB0;&#xFF08;&#x7B26;&#x53F7;&#xFF09;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x5728;&#x8BED;&#x6CD5;&#x4E2D;&#xFF08;&#x4E3A;&#x4E86;&#x4FDD;&#x6301;&#x5176;&#x53EF;&#x8BFB;&#x6027;&#xFF09;&#xFF0C;&#x4F46;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x6807;&#x8BB0;&#xFF08;&#x7B26;&#x53F7;&#xFF09;&#x90FD;&#x53EF;&#x4EE5;&#x51FA;&#x73B0;&#x5728;&#x5176;&#x5B83;&#x6807;&#x8BB0;&#xFF08;&#x7B26;&#x53F7;&#xFF09;&#x5916;&#x7684;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#xFF08;&#x6CE8;&#x610F;&#xFF0C;&#x7136;&#x800C;&#xFF0C;&#x51FA;&#x73B0;&#x5728; @charset &#x524D;&#x6216;&#x8005;&#x91CC;&#x9762;&#x7684;&#x6CE8;&#x91CA;&#x90FD;&#x4F1A;&#x5BFC;&#x81F4; @charset &#x65E0;&#x6548;&#xFF09;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x8BED;&#x6CD5;&#x4E2D;&#x7684;&#x6807;&#x8BB0; S &#x4EE3;&#x8868;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#xFF0C;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x4E2D;&#x53EA;&#x80FD;&#x51FA;&#x73B0; &quot;space&quot; (U+0020)&#x3001;&quot;tab&quot; (U+0009)&#x3001;&quot;line feed&quot; (U+000A)&#x3001;&quot;carriage return&quot; (U+000D)&#x548C; &quot;form feed&quot; (U+000C)&#x3002;&#x5176;&#x5B83;&#x7684;&#x7C7B;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#xFF0C;&#x4F8B;&#x5982;&quot;em-space&quot; (U+2003)&#x548C;&quot;ideographic space&quot; (U+3000)&#x4E0D;&#x4F1A;&#x88AB;&#x5F53;&#x4F5C;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x4E0D;&#x80FD;&#x88AB;&#x7B26;&#x53F7;&#x5316;&#x6216;&#x89E3;&#x6790;&#x7684;&#x8F93;&#x5165;&#x7684;&#x542B;&#x4E49;&#x5728; CSS 2.2 &#x4E2D;&#x672A;&#x5B9A;&#x4E49;&#x3002;</p>
+<h3 id="412-&#x5173;&#x952E;&#x5B57;"><a name="412-&#x5173;&#x952E;&#x5B57;" class="anchor-navigation-ex-anchor" href="#412-&#x5173;&#x952E;&#x5B57;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="412-&#x5173;&#x952E;&#x5B57;" class="plugin-anchor" href="#412-&#x5173;&#x952E;&#x5B57;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.2 &#x5173;&#x952E;&#x5B57;</h3>
+<p>&#x5173;&#x952E;&#x5B57;&#x662F;&#x6807;&#x8BC6;&#x7B26;&#xFF08;&#x539F;&#xFF1A;identifiers&#xFF09;&#x5F62;&#x5F0F;&#x7684;&#xFF0C;&#x4E0D;&#x80FD;&#x653E;&#x5728;&#x5F15;&#x53F7;(&quot;...&quot;&#x6216;&#x8005;&apos;...&apos;)&#x4E2D;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x800C; &quot;red&quot; &#x4E0D;&#x662F;&#xFF0C;&#xFF08;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF09;&#x3002;</p>
+<p>&#x5176;&#x5B83;&#x975E;&#x6CD5;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">width</span>: &quot;<span class="hljs-selector-tag">auto</span>&quot;;
+<span class="hljs-selector-tag">border</span>: &quot;<span class="hljs-selector-tag">none</span>&quot;;
+<span class="hljs-selector-tag">background</span>: &quot;<span class="hljs-selector-tag">red</span>&quot;;
+</code></pre>
+<h4 id="4121-&#x7279;&#x5B9A;&#x4F9B;&#x5E94;&#x5546;&#x7684;&#x6269;&#x5C55;"><a name="4121-&#x7279;&#x5B9A;&#x4F9B;&#x5E94;&#x5546;&#x7684;&#x6269;&#x5C55;" class="anchor-navigation-ex-anchor" href="#4121-&#x7279;&#x5B9A;&#x4F9B;&#x5E94;&#x5546;&#x7684;&#x6269;&#x5C55;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="4121-&#x7279;&#x5B9A;&#x4F9B;&#x5E94;&#x5546;&#x7684;&#x6269;&#x5C55;" class="plugin-anchor" href="#4121-&#x7279;&#x5B9A;&#x4F9B;&#x5E94;&#x5546;&#x7684;&#x6269;&#x5C55;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.2.1 &#x7279;&#x5B9A;&#x4F9B;&#x5E94;&#x5546;&#x7684;&#x6269;&#x5C55;</h4>
+<p>CSS &#x4E2D;&#xFF0C;&#x6807;&#x8BC6;&#x7B26;&#x53EF;&#x80FD;&#x4EE5; &apos;-&apos;&#xFF08;&#x77ED;&#x7EBF;&#xFF09;&#x6216;&#x8005; &apos;<em>&apos;&#xFF08;&#x4E0B;&#x5212;&#x7EBF;&#xFF09;&#x5F00;&#x5934;&#xFF0C;&#x4EE5; &apos;-&apos;&#x6216;&#x8005; &apos;</em>&apos;&#x5F00;&#x5934;&#x7684;&#x5173;&#x952E;&#x5B57;&#x548C;&#x5C5E;&#x6027;&#x540D;&#x662F;&#x4E3A;&#x7279;&#x5B9A;&#x4F9B;&#x5E94;&#x5546;&#x6269;&#x5C55;&#x4FDD;&#x7559;&#x7684;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x7279;&#x5B9A;&#x4F9B;&#x5E94;&#x5546;&#x6269;&#x5C55;&#x5E94;&#x8BE5;&#x6EE1;&#x8DB3;&#x4E0B;&#x5217;&#x4EFB;&#x4E00;&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code>&apos;-&apos; + vendor identifier + &apos;-&apos; + meaningful name
+&apos;_&apos; + vendor identifier + &apos;-&apos; + meaningful name
+</code></pre><p>&#x6BD4;&#x5982;&#xFF0C;&#x5982;&#x679C; XYZ &#x7EC4;&#x7EC7;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x4E1C;&#x8FB9;&#x8FB9;&#x6846;&#x989C;&#x8272;&#x5C5E;&#x6027;&#xFF0C;&#x4ED6;&#x4EEC;&#x53EF;&#x80FD;&#x53EB;&#x5B83; <code>-xyz-border-east-color</code></p>
+<p>&#x5176;&#x5B83;&#x4F17;&#x6240;&#x5468;&#x77E5;&#x7684;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">-moz-box-sizing</span>
+<span class="hljs-selector-tag">-moz-border-radius</span>
+<span class="hljs-selector-tag">-wap-accesskey</span>
+</code></pre>
+<p>&#x5F00;&#x5934;&#x7684;&#x77ED;&#x7EBF;&#x6216;&#x4E0B;&#x5212;&#x7EBF;&#x7528;&#x6765;&#x4FDD;&#x8BC1;&#x4E0D;&#x4F1A;&#x88AB;&#x73B0;&#x5728;&#x53CA;&#x5C06;&#x6765;&#x7684;&#x4EFB;&#x610F;&#x7248;&#x672C; CSS &#x7528;&#x4F5C;&#x5C5E;&#x6027;&#x6216;&#x5173;&#x952E;&#x5B57;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x901A;&#x5E38;CSS &#x5B9E;&#x73B0;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x8BC6;&#x522B;&#x8FD9;&#x79CD;&#x5C5E;&#x6027;&#xFF0C;&#x800C;&#x4F1A;&#x6839;&#x636E;&#x5904;&#x7406;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x7684;&#x89C4;&#x5219;&#x5FFD;&#x7565;&#x6389;&#x5B83;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x56E0;&#x4E3A;&#x5F00;&#x5934;&#x77ED;&#x7EBF;&#x6216;&#x4E0B;&#x5212;&#x7EBF;&#x4E5F;&#x662F;&#x8BED;&#x6CD5;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;CSS 2.2 &#x7684;&#x5B9E;&#x73B0;&#x8005;&#x4EEC;&#x90FD;&#x5E94;&#x8BE5;&#x91C7;&#x7528;&#x9075;&#x4ECE; CSS &#x7684;&#x89E3;&#x6790;&#x5668;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x5426;&#x652F;&#x6301;&#x4EFB;&#x4F55;&#x7279;&#x5B9A;&#x4F9B;&#x5E94;&#x5546;&#x6269;&#x5C55;&#x3002;</p>
+<p>&#x4F5C;&#x8005;&#x5E94;&#x8BE5;&#x907F;&#x514D;&#x7279;&#x5B9A;&#x4F9B;&#x5E94;&#x5546;&#x6269;&#x5C55;&#x3002;</p>
+<h4 id="4122-&#x4FE1;&#x606F;&#x6027;&#x5386;&#x53F2;&#x8BB0;&#x5F55;"><a name="4122-&#x4FE1;&#x606F;&#x6027;&#x5386;&#x53F2;&#x8BB0;&#x5F55;" class="anchor-navigation-ex-anchor" href="#4122-&#x4FE1;&#x606F;&#x6027;&#x5386;&#x53F2;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="4122-&#x4FE1;&#x606F;&#x6027;&#x5386;&#x53F2;&#x8BB0;&#x5F55;" class="plugin-anchor" href="#4122-&#x4FE1;&#x606F;&#x6027;&#x5386;&#x53F2;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.2.2 &#x4FE1;&#x606F;&#x6027;&#x5386;&#x53F2;&#x8BB0;&#x5F55;</h4>
+<p>&#x672C;&#x8282;&#x5185;&#x5BB9;&#x662F;&#x4FE1;&#x606F;&#x6027;&#x7684;</p>
+<p>&#x7F16;&#x5199;&#x672C;&#x6587;&#x6863;&#x65F6;&#xFF0C;&#x4E0B;&#x5217;&#x4F17;&#x6240;&#x5468;&#x77E5;&#x7684;&#x524D;&#x7F00;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E86;&#xFF1A;
+<img src="media/15591944916636/15643897317997.jpg" alt="-w429"></p>
+<h3 id="413-&#x5B57;&#x7B26;&#x548C;&#x5927;&#x5C0F;&#x5199;"><a name="413-&#x5B57;&#x7B26;&#x548C;&#x5927;&#x5C0F;&#x5199;" class="anchor-navigation-ex-anchor" href="#413-&#x5B57;&#x7B26;&#x548C;&#x5927;&#x5C0F;&#x5199;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="413-&#x5B57;&#x7B26;&#x548C;&#x5927;&#x5C0F;&#x5199;" class="plugin-anchor" href="#413-&#x5B57;&#x7B26;&#x548C;&#x5927;&#x5C0F;&#x5199;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.3 &#x5B57;&#x7B26;&#x548C;&#x5927;&#x5C0F;&#x5199;</h3>
+<p>&#x4E0B;&#x5217;&#x89C4;&#x5219;&#x4E00;&#x76F4;&#x662F;&#x6709;&#x6548;&#x7684;&#xFF1A;</p>
+<ol>
+<li><p>ASCII &#x8303;&#x56F4;&#x5185;&#x7684;&#x6240;&#x6709; CSS &#x8BED;&#x6CD5;&#x90FD;&#x662F;&#x5927;&#x5C0F;&#x5199;&#x4E0D;&#x654F;&#x611F;&#x7684;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;[a-z]&#x548C;[A-Z]&#x662F;&#x7B49;&#x6548;&#x7684;&#xFF09;&#xFF0C;&#x90A3;&#x4E9B;&#x4E0D;&#x7531; CSS &#x63A7;&#x5236;&#x7684;&#x90E8;&#x5206;&#x9664;&#x5916;&#x3002;&#x6BD4;&#x5982;&#xFF0C;HTML &#x4E2D;&#x5C5E;&#x6027; <code>id</code> &#x548C; <code>class</code> &#x7684;&#x503C;&#xFF0C;&#x5B57;&#x4F53;&#x540D;&#x7684;&#x503C;&#x548C;&#x672C;&#x89C4;&#x8303;&#x5916;&#x7684; URI &#x90FD;&#x662F;&#x5927;&#x5C0F;&#x5199;&#x654F;&#x611F;&#x7684;&#x3002;&#x7279;&#x522B;&#x6CE8;&#x610F;&#xFF0C;HTML &#x4E2D;&#x5143;&#x7D20;&#x540D;&#x662F;&#x5927;&#x5C0F;&#x5199;&#x4E0D;&#x654F;&#x611F;&#x7684;&#xFF0C;&#x4F46;&#x5728; XML &#x4E2D;&#x662F;&#x5927;&#x5C0F;&#x5199;&#x654F;&#x611F;&#x7684;&#x3002;</p>
+</li>
+<li><p>CSS &#x4E2D;&#xFF0C;&#x6807;&#x8BC6;&#x7B26;&#xFF08;&#x5305;&#x62EC;&#x9009;&#x62E9;&#x5668;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x540D;&#xFF0C;&#x7C7B;&#x548C; ID&#xFF09;&#x90FD;&#x53EA;&#x542B;&#x6709;&#x5B57;&#x7B26; [a-zA-Z0-9] &#x548C; ISO 10646&#x5B57;&#x7B26;&#x4E2D; U+00A0 &#x53CA;&#x4E4B;&#x540E;&#x7684;&#xFF0C;&#x4EE5;&#x53CA;&#x8FDE;&#x5B57;&#x7B26;(-)&#x548C;&#x4E0B;&#x5212;&#x7EBF;(_)&#xFF0C;&#x5B83;&#x4EEC;&#x4E0D;&#x80FD;&#x4EE5;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;2&#x4E2A;&#x8FDE;&#x5B57;&#x7B26;&#xFF0C;&#x6216;&#x8005;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x6570;&#x5B57;&#x7684;&#x8FDE;&#x5B57;&#x7B26;&#x5F00;&#x5934;&#x3002;&#x6807;&#x8BC6;&#x7B26;&#x53EF;&#x4EE5;&#x542B;&#x6709;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;&#x548C;&#x4EFB;&#x610F;&#x4F5C;&#x4E3A;&#x6570;&#x5B57;&#x4EE3;&#x7801;&#x7684;ISO 10646&#x5B57;&#x7B26;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x6807;&#x8BC6;&#x7B26; &quot;B&amp;W?&quot; &#x53EF;&#x4EE5;&#x5199;&#x6210; &quot;B\&amp;W\?&quot; &#x6216;&#x8005; &quot;B\26 W\3F&quot;
+ &#x6CE8;&#x610F;&#xFF0C;Unicode&#x548C;ISO 10646&#xFF08;&#x89C1;<a href="https://www.w3.org/TR/CSS22/refs.html#ref-UNICODE" target="_blank">[UNICODE]</a>&#x548C;<a href="https://www.w3.org/TR/CSS22/refs.html#ref-ISO10646" target="_blank">[ISO10646]</a>&#xFF09;&#x662F;&#x7B49;&#x6548;&#x7684;&#x4EE3;&#x7801;</p>
+</li>
+<li><p>&#x5728; CSS 2.2 &#x4E2D;&#xFF0C;&#x53CD;&#x659C;&#x6760;&#xFF08;\&#xFF09;&#x5B57;&#x7B26;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x4E09;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x8F6C;&#x4E49;&#x4E4B;&#x4E00;&#x3002;&#x5728; CSS &#x6CE8;&#x91CA;&#x5185;&#x90E8;&#xFF0C;&#x53CD;&#x659C;&#x6760;&#x4EE3;&#x8868;&#x81EA;&#x5DF1;&#xFF0C;&#x5982;&#x679C;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x672B;&#x5C3E;&#x540E;&#x9762;&#x7D27;&#x8DDF;&#x53CD;&#x659C;&#x6760;&#xFF0C;&#x5B83;&#x4E5F;&#x4EE3;&#x8868;&#x81EA;&#x5DF1;&#xFF08;&#x5373;&#xFF0C;DELIM token&#xFF09;&#x3002;</p>
+<p> &#x9996;&#x5148;&#xFF0C;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x5185;&#x90E8;&#xFF0C;&#x5C06;&#x5FFD;&#x7565;&#x6362;&#x884C;&#x7B26;&#x540E;&#x8DDF;&#x7684;&#x53CD;&#x659C;&#x6760;&#xFF08;&#x5373;&#xFF0C;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x88AB;&#x89C6;&#x4E3A;&#x4E0D;&#x5305;&#x542B;&#x53CD;&#x659C;&#x6760;&#x6216;&#x6362;&#x884C;&#x7B26;&#xFF09;&#x3002;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x4E4B;&#x5916;&#xFF0C;&#x53CD;&#x659C;&#x6760;&#x540E;&#x8DDF;&#x6362;&#x884C;&#x7B26;&#x4EE3;&#x8868;&#x81EA;&#x5DF1;&#xFF08;&#x5373;&#xFF0C;DELIM &#x540E;&#x8DDF;&#x6362;&#x884C;&#x7B26;&#xFF09;&#x3002;</p>
+<p> &#x5176;&#x6B21;&#xFF0C;&#x5B83;&#x53D6;&#x6D88;&#x4E86; CSS &#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x7684;&#x542B;&#x4E49;&#x3002;&#x4EFB;&#x4F55;&#x5B57;&#x7B26;&#xFF08;&#x9664;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x5B57;&#xFF0C;&#x6362;&#x884C;&#x7B26;&#xFF0C;&#x56DE;&#x8F66;&#x7B26;&#x6216;&#x5206;&#x9875;&#x7B26;&#x4EE5;&#x5916;&#xFF09;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x53CD;&#x659C;&#x6760;&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#xFF0C;&#x4EE5;&#x6D88;&#x9664;&#x5176;&#x7279;&#x6B8A;&#x542B;&#x4E49;&#x3002;&#x6BD4;&#x5982;&#xFF0C;<code>&quot;\&quot;&quot;</code> &#x662F;&#x4E00;&#x4E2A;&#x7531;&#x53CC;&#x5F15;&#x53F7;&#x7EC4;&#x6210;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6837;&#x5F0F;&#x8868;&#x9884;&#x5904;&#x7406;&#x5668;&#x4E0D;&#x80FD;&#x4ECE;&#x6837;&#x5F0F;&#x8868;&#x4E2D;&#x5220;&#x9664;&#x8FD9;&#x4E9B;&#x53CD;&#x659C;&#x6760;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4F1A;&#x6539;&#x53D8;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x542B;&#x4E49;&#x3002;</p>
+<p> &#x7136;&#x540E;&#xFF0C;&#x53CD;&#x659C;&#x6760;&#x8F6C;&#x4E49;&#x80FD;&#x4F7F;&#x4F5C;&#x8005;&#x5F15;&#x7528;&#x6587;&#x6863;&#x7684;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53CD;&#x659C;&#x6760;&#x540E;&#x8DDF;&#x6700;&#x591A;&#x516D;&#x4E2A;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x5B57;&#xFF08;0..9A..F&#xFF09;&#xFF0C;&#x5B83;&#x4EE3;&#x8868; ISO 10646&#xFF08;<a href="https://www.w3.org/TR/CSS22/refs.html#ref-ISO10646" target="_blank">[ISO 10646]</a>&#xFF09;&#x4E2D;&#x5BF9;&#x5E94;&#x6570;&#x5B57;&#x7684; &#x5B57;&#x7B26;&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#x4E00;&#x5B9A;&#x662F;&#x975E;&#x96F6;&#x7684;&#xFF08;&#x5982;&#x679C;&#x6837;&#x5F0F;&#x8868;&#x786E;&#x5B9E;&#x5305;&#x542B; Unicode &#x7801;&#x4F4D;&#x503C;&#x4E3A;&#x96F6;&#x7684;&#x5B57;&#x7B26;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#xFF0C;CSS 2.2 &#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#xFF09;&#x3002;&#x5982;&#x679C;&#x5728; [0-9a-fA-F] &#x8303;&#x56F4;&#x5185;&#x7684;&#x5B57;&#x7B26;&#x8DDF;&#x968F;&#x5341;&#x516D;&#x8FDB;&#x5236;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x660E;&#x786E;&#x6570;&#x5B57;&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#xFF0C;&#x8FD9;&#x91CC;&#x6709;&#x4E24;&#x79CD;&#x529E;&#x6CD5;&#xFF1A;</p>
+<ol>
+<li>&#x7528;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#xFF08;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#xFF09;&#xFF1A;&quot;\26 B&quot; (&quot;&amp;B&quot;)&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5E94;&#x5C06; &quot;CR/LF&quot; (U+000D/U+000A) &#x89C6;&#x4E3A;&#x5355;&#x4E2A;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x3002;</li>
+<li>&#x63D0;&#x4F9B;&#x521A;&#x597D;&#x662F; 6 &#x4F4D;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#xFF1A;&quot;\000026B&quot; (&quot;&amp;B&quot;)&#x3002;</li>
+</ol>
+<p>&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x8FD9;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#x3002;&#x5728;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x8F6C;&#x4E49;&#x540E;&#xFF0C;&#x53EA;&#x4F1A;&#x5FFD;&#x7565;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x8F6C;&#x4E49;&#x5E8F;&#x5217;&#x540E;&#x9762;&#x7684;&#x4E00;&#x4E2A; &#x201C;&#x771F;&#x6B63;&#x7684;&#x201D; &#x7A7A;&#x683C;&#x5FC5;&#x987B;&#x53CC;&#x5199;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8BE5;&#x6570;&#x5B57;&#x8D85;&#x51FA; Unicode &#x5141;&#x8BB8;&#x7684;&#x8303;&#x56F4;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;&quot;\110000&quot; &#x8D85;&#x51FA;&#x5F53;&#x524D; Unicode &#x5141;&#x8BB8;&#x7684;&#x6700;&#x5927; 10FFFF&#xFF09;&#xFF0C;&#x5219; UA &#x53EF;&#x4EE5;&#x7528; &#x201C;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x201D;(U+FFFD) &#x6362;&#x6389;&#x8FD9;&#x4E2A;&#x8F6C;&#x4E49;&#x3002;&#x5982;&#x679C;&#x8981;&#x663E;&#x793A;&#x8BE5;&#x5B57;&#x7B26;&#xFF0C;&#x5219; UA &#x9700;&#x8981;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x53EF;&#x89C1;&#x7684;&#x7B26;&#x53F7;&#xFF0C;&#x6BD4;&#x5982; &#x201C;&#x7F3A;&#x5931;&#x5B57;&#x7B26;&#x201D; &#x7684;&#x5B57;&#x5F62;&#xFF08;&#x89C1; 15.2 &#x5C0F;&#x8282;&#x7B2C; 5 &#x70B9;&#xFF09;&#x3002;</p>
+</li>
+</ol>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x53CD;&#x659C;&#x6760;&#x8F6C;&#x4E49;&#x7B26;&#x59CB;&#x7EC8;&#x4F1A;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x6807;&#x8BC6;&#x7B26;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF08;&#x5373;&#xFF0C;&quot;\7B&quot; &#x4E0D;&#x662F;&#x6807;&#x70B9;&#x7B26;&#x53F7;&#xFF0C;&#x5373;&#x4F7F; &quot;{&quot; &#x662F;&#x8FD9;&#x4E2A;&#xFF1B;&quot;\32&quot; &#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x5728;&#x7C7B;&#x540D;&#x5F00;&#x5934;&#xFF0C;&#x4F46; &quot;2&quot; &#x5C31;&#x4E0D;&#x80FD;&#xFF09;&#x3002;&quot;te\st&quot; &#x6807;&#x8BC6;&#x7B26;&#x548C; &quot;test&quot; &#x4E00;&#x6837;&#x3002;</p>
+<h3 id="414-&#x8BED;&#x53E5;"><a name="414-&#x8BED;&#x53E5;" class="anchor-navigation-ex-anchor" href="#414-&#x8BED;&#x53E5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="414-&#x8BED;&#x53E5;" class="plugin-anchor" href="#414-&#x8BED;&#x53E5;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.4 &#x8BED;&#x53E5;</h3>
+<p>CSS &#x6837;&#x5F0F;&#x8868;&#x9002;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x7EA7;&#x522B;&#x7684; CSS&#xFF0C;&#x5E76;&#x4E14;&#x7531;&#x4E00;&#x7CFB;&#x5217;&#x8BED;&#x53E5;&#x7EC4;&#x6210;&#xFF08;&#x53C2;&#x89C1;&#x4E0A;&#x9762;&#x7684;<a href="https://www.w3.org/TR/CSS22/syndata.html#tokenization" target="_blank">&#x8BED;&#x6CD5;</a>&#xFF09;&#x3002;&#x8FD9;&#x91CC;&#x6709;&#x4E24;&#x79CD;&#x58F0;&#x660E;&#x8BED;&#x53E5;&#xFF1A;<strong>@&#x89C4;&#x5219;</strong> &#x548C; <strong>&#x89C4;&#x5219;&#x96C6;</strong>&#x3002;&#x58F0;&#x660E;&#xFF08;&#x8BED;&#x53E5;&#xFF09;&#x524D;&#x540E;&#x53EF;&#x80FD;&#x6709;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x3002;</p>
+<h3 id="415-&#x89C4;&#x5219;"><a name="415-&#x89C4;&#x5219;" class="anchor-navigation-ex-anchor" href="#415-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="415-&#x89C4;&#x5219;" class="plugin-anchor" href="#415-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.5 @&#x89C4;&#x5219;</h3>
+<p><strong>@&#x89C4;&#x5219;</strong> &#x4EE5;&#x4E00;&#x4E2A; <code>@</code> &#x5173;&#x952E;&#x5B57;&#x5F00;&#x5934;&#xFF0C;<code>@</code> &#x5B57;&#x7B26;&#x540E;&#x9762;&#x7D27;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;<a href="https://www.w3.org/TR/CSS22/syndata.html#value-def-identifier" target="_blank">&#x6807;&#x8BC6;&#x7B26;</a>&#xFF08;&#x6BD4;&#x5982;&#xFF0C;<code>@import</code>&#xFF0C;<code>@page</code>&#xFF09;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x89C4;&#x5219;&#x5305;&#x542B;&#x4E0B;&#x4E00;&#x4E2A;&#x5206;&#x53F7;&#xFF08;&#xFF1B;&#xFF09;&#x6216;&#x4E0B;&#x4E00;&#x4E2A;&#x5206;&#x5757;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#xFF0C;&#x4EE5;&#x8C01;&#x5148;&#x51FA;&#x73B0;&#x4E3A;&#x51C6;&#x3002;</p>
+<p>CSS 2.2 &#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x5FFD;&#x7565;&#x6240;&#x6709;&#x51FA;&#x73B0;&#x5728;&#x5757;&#x5185;&#x90E8;&#xFF0C;&#x6216;&#x8005;&#x5728; <code>@charset</code> &#x6216; <code>@import</code> &#x89C4;&#x5219;&#x4E4B;&#x5916;&#x7684;&#x4EFB;&#x4F55;&#x65E0;&#x6CD5;&#x5FFD;&#x7565;&#x7684;&#x8BED;&#x53E5;&#x4E4B;&#x540E;&#x51FA;&#x73B0;&#x7684; <code>@import</code> &#x89C4;&#x5219;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;CSS 2.2 &#x89E3;&#x6790;&#x5668;&#x9047;&#x5230;&#x6B64;&#x6837;&#x5F0F;&#x8868;&#xFF1A;</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;subs.css&quot;</span>;
+<span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">color</span>: blue }
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;list.css&quot;</span>;
+</code></pre>
+<p>&#x6839;&#x636E; CSS 2.2&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A; <code>@import</code> &#x4E0D;&#x5408;&#x6CD5;&#x3002; CSS 2.2 &#x89E3;&#x6790;&#x5668;&#x5C31;&#x5FFD;&#x7565;&#x4E86;&#x6574;&#x4E2A;&#x89C4;&#x5219;&#xFF0C;&#x6837;&#x5F0F;&#x8868;&#x5B9E;&#x9645;&#x6210;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;subs.css&quot;</span>;
+<span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">color</span>: blue }
+</code></pre>
+<p>&#x793A;&#x4F8B;&#xFF1A;&#x7B2C;&#x4E8C;&#x4E2A; <code>@import</code> &#x662F;&#x4E0D;&#x5408;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x51FA;&#x73B0;&#x5728; <code>@media</code> &#x5757;&#x7684;&#x5185;&#x90E8;&#x3002;</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;subs.css&quot;</span>;
+@<span class="hljs-keyword">media</span> print {
+  @<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;print-main.css&quot;</span>;
+  <span class="hljs-selector-tag">body</span> { <span class="hljs-attribute">font-size</span>: <span class="hljs-number">10pt</span> }
+}
+<span class="hljs-selector-tag">h1</span> {<span class="hljs-attribute">color</span>: blue }
+</code></pre>
+<p>&#x76F8;&#x53CD;&#x7684;&#xFF0C;&#x8981;&#x5B9E;&#x73B0;&#x53EA;&#x5728;&#x5A92;&#x4F53;&#x7C7B;&#x578B;&#x4E3A; <code>print</code> &#x65F6;&#x5F15;&#x5165;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5E26;&#x5A92;&#x4F53;&#x7C7B;&#x578B;&#x7684;<code>@import</code> &#x89C4;&#x5219;&#x8BED;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;subs.css&quot;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;print-main.css&quot;</span> print;
+@<span class="hljs-keyword">media</span> print {
+  <span class="hljs-selector-tag">body</span> { <span class="hljs-attribute">font-size</span>: <span class="hljs-number">10pt</span> }
+}
+<span class="hljs-selector-tag">h1</span> {<span class="hljs-attribute">color</span>: blue }
+</code></pre>
+<h3 id="416-&#x5757;"><a name="416-&#x5757;" class="anchor-navigation-ex-anchor" href="#416-&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="416-&#x5757;" class="plugin-anchor" href="#416-&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.6 &#x5757;</h3>
+<p>&#x5757;&#x4EE5;&#x5DE6;&#x5927;&#x62EC;&#x53F7;&#xFF08;<code>{</code>&#xFF09;&#x5F00;&#x5934;&#xFF0C;&#x4EE5;&#x53F3;&#x5927;&#x62EC;&#x53F7;&#xFF08;<code>}</code>&#xFF09;&#x4E3A;&#x7ED3;&#x675F;&#x3002;&#x5728;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x53EF;&#x80FD;&#x6709;&#x4EFB;&#x4F55;&#x7684; token&#xFF0C;&#x4F46;&#x62EC;&#x53F7;&#xFF08;<code>()</code>&#xFF09;&#xFF0C;&#x65B9;&#x62EC;&#x53F7;&#xFF08;<code>[]</code>&#xFF09;&#xFF0C;&#x5927;&#x62EC;&#x53F7;&#xFF08;<code>{}</code>&#xFF09;&#x603B;&#x662F;&#x6210;&#x5BF9;&#x51FA;&#x73B0;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#x3002;&#x5355;&#x5F15;&#x53F7;&#xFF08;<code>&apos;</code>&#xFF09;&#x548C;&#x53CC;&#x5F15;&#x53F7;&#xFF08;<code>&quot;</code>&#xFF09;&#x4E5F;&#x603B;&#x662F;&#x6210;&#x5BF9;&#x51FA;&#x73B0;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x7684;&#x5B57;&#x7B26;&#x88AB;&#x89E3;&#x6790;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x53C2;&#x8003;&#x4E0A;&#x9762;&#x7684; <code>Tokenization</code> &#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x5757;&#x7684;&#x793A;&#x4F8B;&#xFF1A;&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x53CC;&#x5F15;&#x53F7;&#x4E4B;&#x95F4;&#x7684;&#x53F3;&#x62EC;&#x53F7;&#x4E0E;&#x5757;&#x7684;&#x5DE6;&#x62EC;&#x53F7;&#x4E0D;&#x5339;&#x914D;&#xFF0C;&#x5E76;&#x4E14;&#x7B2C;&#x4E8C;&#x4E2A;&#x5355;&#x5F15;&#x53F7;&#x662F;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;&#xFF0C;&#x56E0;&#x6B64;&#x4E0E;&#x7B2C;&#x4E00;&#x4E2A;&#x5355;&#x5F15;&#x53F7;&#x4E0D;&#x5339;&#x914D;</p>
+<pre><code class="lang-css">{ causta: &quot;}&quot; + ({7} * &apos;\&apos;&apos;) }
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF1A;CSS 2.2 &#x4E2D;&#xFF0C;&#x4E0A;&#x9762;&#x89C4;&#x5219;&#x4E0D;&#x5408;&#x6CD5;&#xFF0C;&#x4F46;&#x7B26;&#x5408;&#x5176;&#x5B9A;&#x4E49;&#x3002;</p>
+<h3 id="417-&#x89C4;&#x5219;&#x96C6;&#xFF0C;&#x58F0;&#x660E;&#x5757;&#xFF0C;&#x9009;&#x62E9;&#x5668;"><a name="417-&#x89C4;&#x5219;&#x96C6;&#xFF0C;&#x58F0;&#x660E;&#x5757;&#xFF0C;&#x9009;&#x62E9;&#x5668;" class="anchor-navigation-ex-anchor" href="#417-&#x89C4;&#x5219;&#x96C6;&#xFF0C;&#x58F0;&#x660E;&#x5757;&#xFF0C;&#x9009;&#x62E9;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="417-&#x89C4;&#x5219;&#x96C6;&#xFF0C;&#x58F0;&#x660E;&#x5757;&#xFF0C;&#x9009;&#x62E9;&#x5668;" class="plugin-anchor" href="#417-&#x89C4;&#x5219;&#x96C6;&#xFF0C;&#x58F0;&#x660E;&#x5757;&#xFF0C;&#x9009;&#x62E9;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.7 &#x89C4;&#x5219;&#x96C6;&#xFF0C;&#x58F0;&#x660E;&#x5757;&#xFF0C;&#x9009;&#x62E9;&#x5668;</h3>
+<p>&#x89C4;&#x5219;&#x96C6;&#xFF08;&#x4E5F;&#x79F0;&#x4E3A;&#x201C;&#x89C4;&#x5219;&#x201D;&#xFF09;&#xFF0C;&#x7531; &#x9009;&#x62E9;&#x5668; &#x540E;&#x8DDF; &#x58F0;&#x660E;&#x5757; &#x7EC4;&#x6210;&#x3002;</p>
+<p><strong>&#x58F0;&#x660E;&#x5757;</strong> &#x4EE5;&#x5DE6;&#x5927;&#x62EC;&#x53F7;&#xFF08;<code>{</code>&#xFF09;&#x5F00;&#x5934;&#xFF0C;&#x4EE5;&#x5339;&#x914D;&#x7684;&#x53F3;&#x5927;&#x62EC;&#x53F7;&#xFF08;<code>}</code>&#xFF09;&#x7ED3;&#x675F;&#x3002;&#x5728;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x5FC5;&#x987B;&#x6709;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x58F0;&#x660E;&#x548C;&#x89C4;&#x5219;&#x7684;&#x5217;&#x8868;&#x3002;&#x58F0;&#x660E;&#x5FC5;&#x987B;&#x4EE5;&#x5206;&#x53F7;&#xFF08;<code>;</code>&#xFF09;&#x7ED3;&#x5C3E;&#xFF0C;&#x9664;&#x975E;&#x5B83;&#x4EEC;&#x662F;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;CSS &#x7EA7;&#x522B; 2 &#x53EF;&#x80FD;&#x6CA1;&#x6709;&#x51FA;&#x73B0;&#x5728;&#x89C4;&#x5219;&#x96C6;&#x5185;&#x7684;&#x89C4;&#x5219;&#xFF0C;&#x4F46;&#x5728;&#x672A;&#x6765;&#x7684;&#x7EA7;&#x522B;&#x4E2D;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x3002;</p>
+<p>&#x9009;&#x62E9;&#x5668;&#xFF08;&#x89C1; &#x9009;&#x62E9;&#x5668; &#x90E8;&#x5206;&#xFF09;&#x5305;&#x542B;&#x7B2C;&#x4E00;&#x4E2A;&#x5DE6;&#x5927;&#x62EC;&#x53F7;&#xFF08;<code>{</code>&#xFF09;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#xFF08;&#x4F46;&#x4E0D;&#x5305;&#x542B; &#x5DE6;&#x5927;&#x62EC;&#x53F7;&#xFF09;&#x3002;&#x9009;&#x62E9;&#x5668;&#x603B;&#x662F;&#x4E0E;&#x58F0;&#x660E;&#x5757;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x3002;&#x5F53;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x65E0;&#x6CD5;&#x89E3;&#x6790;&#x9009;&#x62E9;&#x5668;&#x65F6;&#xFF08;&#x5373;&#xFF0C;&#x4E0D;&#x662F;&#x5408;&#x6CD5;&#x7684; CSS 2.2 &#x9009;&#x62E9;&#x5668;&#xFF09;&#xFF0C;&#x5B83;&#x4E5F;&#x5FC5;&#x987B;&#x5FFD;&#x7565;&#x9009;&#x62E9;&#x5668;&#x548C;&#x7D27;&#x8DDF;&#x968F;&#x7684;&#x58F0;&#x660E;&#x5757;&#xFF08;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#xFF09;&#x3002;</p>
+<p>&#x5728;&#x9009;&#x62E9;&#x5668;&#x4E2D;&#xFF0C;CSS 2.2 &#x8D4B;&#x4E88;&#x4E86;&#x9017;&#x53F7;&#xFF08;<code>,</code>&#xFF09;&#x7279;&#x6B8A;&#x7684;&#x542B;&#x4E49;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x7531;&#x4E8E;&#x4E0D;&#x77E5;&#x9053; &#x9017;&#x53F7; &#x4F1A;&#x5728;&#x5C06;&#x6765;&#x7684; CSS &#x4E2D;&#x662F;&#x5426;&#x6709;&#x5176;&#x5B83;&#x542B;&#x4E49;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x9009;&#x62E9;&#x5668;&#x4E2D;&#x6709;&#x4EFB;&#x4F55;&#x4F4D;&#x7F6E;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#xFF0C;&#x5219;&#x5FFD;&#x7565;&#x6574;&#x4E2A;&#x8BED;&#x53E5;&#xFF0C;&#x5373;&#x4F7F;&#x9009;&#x62E9;&#x5668;&#x7684;&#x5176;&#x4F59;&#x90E8;&#x5206;&#x770B;&#x8D77;&#x6765;&#x5408;&#x7406;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;&#x7531;&#x4E8E; &#x201C;&#xFF06;&#x201D; &#x4E0D;&#x662F; CSS 2.2 &#x9009;&#x62E9;&#x5668;&#x4E2D;&#x7684;&#x6709;&#x6548;&#x6807;&#x8BB0;&#xFF0C;&#x56E0;&#x6B64; CSS 2.2 &#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x5FFD;&#x7565;&#x6574;&#x4E2A;&#x7B2C;&#x4E8C;&#x884C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5C06; H3 &#x7684;&#x989C;&#x8272;&#x8BBE;&#x7F6E;&#x4E3A;&#x7EA2;&#x8272;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">h2</span> {<span class="hljs-attribute">color</span>: green }
+<span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span> &amp; <span class="hljs-selector-tag">h5</span> {<span class="hljs-attribute">color</span>: red }
+<span class="hljs-selector-tag">h6</span> {<span class="hljs-attribute">color</span>: black }
+</code></pre>
+<p>&#x66F4;&#x590D;&#x6742;&#x7684;&#x793A;&#x4F8B;&#xFF1A;&#x524D;&#x4E24;&#x5BF9;&#x82B1;&#x62EC;&#x53F7;&#x4F4D;&#x4E8E;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5185;&#xFF0C;&#x4F46;&#x6CA1;&#x6807;&#x8BB0;&#x9009;&#x62E9;&#x5668;&#x7684;&#x7ED3;&#x675F;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684; CSS 2.2 &#x89C4;&#x5219;&#xFF1A;</p>
+<pre><code class="lang-css">p[example=&quot;public class foo\
+{\
+    private int x;\
+\
+    foo(int x) {\
+        this.x = x;\
+    }\
+\
+}&quot;] { color: red }
+</code></pre>
+<h3 id="418-&#x58F0;&#x660E;&#x548C;&#x5C5E;&#x6027;"><a name="418-&#x58F0;&#x660E;&#x548C;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#418-&#x58F0;&#x660E;&#x548C;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="418-&#x58F0;&#x660E;&#x548C;&#x5C5E;&#x6027;" class="plugin-anchor" href="#418-&#x58F0;&#x660E;&#x548C;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.8 &#x58F0;&#x660E;&#x548C;&#x5C5E;&#x6027;</h3>
+<p><strong>&#x58F0;&#x660E;</strong>&#x8981;&#x4E48;&#x4E3A; &#x7A7A;&#xFF0C;&#x8981;&#x4E48;&#x7531;&#x4E00;&#x4E2A;&#x540E;&#x9762;&#x8DDF;&#x5192;&#x53F7;&#xFF08;<code>:</code>&#xFF09;&#x548C;&#x9009;&#x62E9;&#x5668; &#x7684;&#x5C5E;&#x6027;&#x540D;&#x7EC4;&#x6210;&#x3002;&#xFF08;&#x5B83;&#x4EEC;&#xFF09;&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x6709;<a href="https://www.w3.org/TR/CSS22/syndata.html#whitespace" target="_blank">&#x7A7A;&#x767D;&#x5B57;&#x7B26;</a>&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x9009;&#x62E9;&#x5668;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#xFF0C;&#x540C;&#x4E00;&#x9009;&#x62E9;&#x5668;&#x7684;&#x591A;&#x4E2A;&#x58F0;&#x660E;&#x53EF;&#x4EE5;&#x7EC4;&#x7EC7;&#x6210;&#x4F7F;&#x7528;&#x5206;&#x53F7;&#xFF08;<code>;</code>&#xFF09;&#x5206;&#x9694;&#x7684;&#x7EC4;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x4EE5;&#x4E0B;&#x89C4;&#x5219;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">font-weight</span>: bold }
+<span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span> }
+<span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">line-height</span>: <span class="hljs-number">14px</span> }
+<span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">font-family</span>: Helvetica }
+<span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">font-variant</span>: normal }
+<span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">font-style</span>: normal }
+</code></pre>
+<p>&#x7B49;&#x4EF7;&#x4E8E;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">font-weight</span>: bold;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">14px</span>;
+  <span class="hljs-attribute">font-family</span>: Helvetica;
+  <span class="hljs-attribute">font-variant</span>: normal;
+  <span class="hljs-attribute">font-style</span>: normal
+}
+</code></pre>
+<p>&#x5C5E;&#x6027;&#x540D;&#x662F;&#x4E00;&#x4E2A;<a href="https://www.w3.org/TR/CSS22/syndata.html#value-def-identifier" target="_blank">&#x6807;&#x8BC6;&#x7B26;</a>&#x3002;&#x5C5E;&#x6027;&#x503C;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x4EFB;&#x4F55;&#x7684; token&#x3002;&#x5706;&#x62EC;&#x53F7;(<code>( )</code>)&#xFF0C;&#x65B9;&#x62EC;&#x53F7;(<code>[ ]</code>)&#xFF0C;&#x5927;&#x62EC;&#x53F7;(<code>{ }</code>)&#xFF0C;&#x5355;&#x5F15;&#x53F7;(<code>&apos;</code>)&#x548C;&#x53CC;&#x5F15;&#x53F7;(<code>&quot;</code>)&#x5FC5;&#x987B;&#x6210;&#x5BF9;&#x51FA;&#x73B0;&#xFF0C;&#x5E76;&#x4E14;&#x975E;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#x7684;&#x5206;&#x53F7;&#x5FC5;&#x987B;&#x8F6C;&#x4E49;&#x3002;&#x5706;&#x62EC;&#x53F7;&#xFF0C;&#x65B9;&#x62EC;&#x53F7;&#x548C;&#x5927;&#x62EC;&#x53F7;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#x3002;&#x5728;&#x5F15;&#x53F7;&#x91CC;&#xFF0C;&#x5B57;&#x7B26;&#x89E3;&#x6790;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>&#xFF08;&#x5C5E;&#x6027;&#xFF09;&#x503C;&#x7684;&#x8BED;&#x6CD5;&#x4E3A;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x5355;&#x72EC;&#x6307;&#x5B9A;&#x7684;&#xFF0C;&#x4EFB;&#x4F55;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x503C;&#x90FD;&#x662F;&#x7531; &#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6570;&#x5B57;&#xFF0C;&#x957F;&#x5EA6;&#xFF0C;&#x767E;&#x5206;&#x6BD4;&#xFF0C;URI&#xFF0C;&#x989C;&#x8272;&#x7B49;&#x6784;&#x5EFA;&#x7684;&#x3002;</p>
+<p>&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x5FFD;&#x7565;&#x542B;&#x6709;&#x65E0;&#x6548;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x6216;&#x65E0;&#x6548;&#x503C;&#x7684;&#x58F0;&#x660E;&#x3002;&#x6BCF;&#x4E2A; CSS &#x5C5E;&#x6027;&#x5BF9;&#x5176;&#x63A5;&#x53D7;&#x7684;&#x503C;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x8BED;&#x6CD5;&#x6216;&#x8BED;&#x4E49;&#x9650;&#x5236;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;CSS 2.2 &#x89E3;&#x6790;&#x5982;&#x4E0B;&#x89C4;&#x5219;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">color</span>: red; <span class="hljs-attribute">font-style</span>: <span class="hljs-number">12pt</span> }  <span class="hljs-comment">/* Invalid value: 12pt */</span>
+<span class="hljs-selector-tag">p</span> { <span class="hljs-attribute">color</span>: blue;  <span class="hljs-attribute">font-vendor</span>: any;  <span class="hljs-comment">/* Invalid prop.: font-vendor */</span>
+    <span class="hljs-attribute">font-variant</span>: small-caps }
+<span class="hljs-selector-tag">em</span> <span class="hljs-selector-tag">em</span> { <span class="hljs-attribute">font-style</span>: normal }
+</code></pre>
+<p>&#x7B2C;&#x4E00;&#x884C;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x58F0;&#x660E;&#x6709;&#x65E0;&#x6548;&#x503C; &apos;12pt&apos;&#x3002;&#x7B2C;&#x4E8C;&#x884C;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x58F0;&#x660E;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x5C5E;&#x6027; <code>font-vendor</code>&#x3002;CSS 2.2 &#x89E3;&#x6790;&#x5668;&#x5C06;&#x5FFD;&#x7565;&#x8FD9;&#x4E9B;&#x58F0;&#x660E;&#xFF0C;&#x6837;&#x5F0F;&#x8868;&#x89E3;&#x6790;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">color</span>: red; }
+<span class="hljs-selector-tag">p</span> { <span class="hljs-attribute">color</span>: blue;  <span class="hljs-attribute">font-variant</span>: small-caps }
+<span class="hljs-selector-tag">em</span> <span class="hljs-selector-tag">em</span> { <span class="hljs-attribute">font-style</span>: normal }
+</code></pre>
+<h3 id="419-&#x6CE8;&#x91CA;"><a name="419-&#x6CE8;&#x91CA;" class="anchor-navigation-ex-anchor" href="#419-&#x6CE8;&#x91CA;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="419-&#x6CE8;&#x91CA;" class="plugin-anchor" href="#419-&#x6CE8;&#x91CA;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.9 &#x6CE8;&#x91CA;</h3>
+<p>&#x6CE8;&#x91CA;&#x4EE5;&#x5B57;&#x7B26; <code>/*</code> &#x5F00;&#x5934;&#xFF0C;&#x4EE5;&#x5B57;&#x7B26; <code>*/</code> &#x7ED3;&#x5C3E;&#x3002;&#x5B83;&#x4EEC;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x5728;&#x5176;&#x4ED6; token &#x4E4B;&#x5916;&#x7684;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#xFF0C;&#x5176;&#x5185;&#x5BB9;&#x5BF9;&#x6E32;&#x67D3;&#x6CA1;&#x6709;&#x5F71;&#x54CD;&#x3002;&#x6CE8;&#x91CA;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x5D4C;&#x5957;&#x3002;</p>
+<p>CSS &#x4E5F;&#x5141;&#x8BB8;&#x5728;&#x8BED;&#x6CD5;&#x5B9A;&#x4E49;&#x7684;&#x67D0;&#x4E9B;&#x4F4D;&#x7F6E;&#x4F7F;&#x7528; SGML &#x6CE8;&#x91CA;&#x5206;&#x9694;&#x7B26;&#xFF08;<code>&lt;!--</code> &#x548C; <code>--&gt;</code>&#xFF09;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x5206;&#x9694; CSS &#x6CE8;&#x91CA;&#x3002;&#x5B83;&#x4EEC;&#x8BA9;&#x51FA;&#x73B0;&#x5728; HTML &#x6E90;&#x6587;&#x6863;&#xFF08;STYLE &#x5143;&#x7D20;&#xFF09;&#x4E2D;&#x7684;&#x6837;&#x5F0F;&#x89C4;&#x5219;&#x53EF;&#x4EE5;&#x5728;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x4E2D;&#x9690;&#x85CF;&#x8D77;&#x6765;&#x3002;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x8BF7;&#x67E5;&#x770B; HTML 4 &#x89C4;&#x8303;&#xFF08;<a href="https://www.w3.org/TR/CSS22/refs.html#ref-HTML4" target="_blank">[HTML4]</a>&#xFF09;&#x3002;</p>
+<h2 id="42-&#x5904;&#x7406;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x7684;&#x89C4;&#x5219;"><a name="42-&#x5904;&#x7406;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x7684;&#x89C4;&#x5219;" class="anchor-navigation-ex-anchor" href="#42-&#x5904;&#x7406;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x7684;&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="42-&#x5904;&#x7406;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x7684;&#x89C4;&#x5219;" class="plugin-anchor" href="#42-&#x5904;&#x7406;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x7684;&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>4.2 &#x5904;&#x7406;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x7684;&#x89C4;&#x5219;</h2>
+<p>&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x5FFD;&#x7565;&#x4E0D;&#x5408;&#x6CD5;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x67D0;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x672C;&#x89C4;&#x8303;&#x5B9A;&#x4E49;&#x5FFD;&#x7565;&#x662F;&#x610F;&#x5473;&#x7740;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x8981;&#x89E3;&#x6790;&#x975E;&#x6CD5;&#x90E8;&#x5206;&#xFF08;&#x4E3A;&#x4E86;&#x627E;&#x5230;&#x8D77;&#x6B62;&#x4F4D;&#x7F6E;&#xFF09;&#xFF0C;&#x4F46;&#x8FD8;&#x8981;&#x8868;&#x73B0;&#x5F97;&#x50CF;&#x8FD9;&#x90E8;&#x5206;&#x4E0D;&#x5B58;&#x5728;&#x4E00;&#x6837;&#x3002;CSS 2.2 &#x4FDD;&#x7559;&#x4E86; CSS &#x6240;&#x6709;&#x7684;&#x5C5E;&#x6027;&#x672A;&#x6765;&#x7684;&#x66F4;&#x65B0;&#xFF1A;&#x503C;&#x7EC4;&#x5408;&#x548C;&#x4E0D;&#x542B;&#x4EE5;&#x659C;&#x7EBF;&#x548C;&#x4E0B;&#x5212;&#x7EBF;&#x5F00;&#x5934;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x7684;@&#x5173;&#x952E;&#x5B57;&#x3002;&#x5B9E;&#x73B0;&#x5FC5;&#x987B;&#x5FFD;&#x7565;&#x8FD9;&#x6837;&#x7684;&#x7EC4;&#x5408;&#xFF08;&#x9664;&#x4E86;&#x90A3;&#x4E9B;&#x5728;&#x5C06;&#x6765; CSS &#x66F4;&#x65B0;&#x4E2D;&#x4ECB;&#x7ECD;&#x7684;&#xFF09;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x5C06;&#x6765;&#x53EF;&#x4EE5;&#x6DFB;&#x5728;&#x73B0;&#x6709;&#x7684;&#x5C5E;&#x6027;&#x4E0A;&#x6DFB;&#x52A0;&#x65B0;&#x5C5E;&#x6027;&#x548C;&#x65B0;&#x503C;&#xFF0C;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x9047;&#x5230;&#x4E0B;&#x5217;&#x573A;&#x666F;&#x65F6;&#x9700;&#x8981;&#x9075;&#x5FAA;&#x4E0B;&#x5217;&#x89C4;&#x5219;&#xFF1A;</p>
+<ul>
+<li><p><strong>&#x672A;&#x77E5;&#x5C5E;&#x6027;</strong>&#xFF1A;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x5FFD;&#x7565;&#x672A;&#x77E5;&#x5C5E;&#x6027;&#x7684;&#x58F0;&#x660E;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x6837;&#x5F0F;&#x8868;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-css">  h1 { color: red; rotation: 70minutes }
+
+  // &#x89E3;&#x6790;&#x4E3A;
+  h1 { color: red }
+</code></pre>
+</li>
+<li><p><strong>&#x4E0D;&#x5408;&#x6CD5;&#x503C;</strong>&#xFF1A;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x5FFD;&#x7565;&#x4E0D;&#x5408;&#x6CD5;&#x503C;&#x7684;&#x58F0;&#x660E;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x6837;&#x5F0F;&#x8868;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-css">  img { float: left }       /* correct CSS 2.2 */
+  img { float: left here }  /* &quot;here&quot; is not a value of &apos;float&apos; */
+  img { background: &quot;red&quot; } /* keywords cannot be quoted */
+  img { border-width: 3 }   /* a unit must be specified for length values */
+
+  // &#x89E3;&#x6790;&#x4E3A;
+  img { float: left }
+  img { }
+  img { }
+  img { }
+</code></pre>
+</li>
+<li><p><strong>&#x683C;&#x5F0F;&#x9519;&#x8BEF;&#x7684;&#x58F0;&#x660E;</strong>&#xFF1A;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x5904;&#x7406;&#x89E3;&#x6790;&#x58F0;&#x660E;&#x671F;&#x95F4;&#x9047;&#x5230;&#x7684;&#x5F02;&#x5E38; token&#xFF0C;&#x4E00;&#x76F4;&#x8BFB;&#x5230;&#x58F0;&#x660E;&#x7ED3;&#x675F;&#xFF0C;&#x4ECE;<code>()</code>&#xFF0C;<code>[]</code>&#xFF0C;<code>{}</code>&#xFF0C;<code>&quot;&quot;</code>&#x548C;<code>&apos;&apos;</code> &#x5BF9;&#x4E2D;&#x5BFB;&#x627E;&#x5BF9;&#x5E94;&#x7684;&#x89C4;&#x5219;&#xFF0C;&#x5E76;&#x6B63;&#x786E;&#x5904;&#x7406;&#x8F6C;&#x4E49;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x683C;&#x5F0F;&#x9519;&#x8BEF;&#x7684;&#x58F0;&#x660E;&#x53EF;&#x80FD;&#x4F1A;&#x7F3A;&#x5C11;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#xFF0C;&#x5192;&#x53F7;(<code>:</code>)&#x6216;&#x8005;&#x5C5E;&#x6027;&#x503C;&#x3002;
+  &#x5F53; UA &#x4ECE; &#x58F0;&#x660E;&#x6216; @&#x89C4;&#x5219; &#x7684;&#x5F00;&#x59CB;&#x9047;&#x5230;&#x5F02;&#x5E38; token&#xFF0C;&#x5219;&#x8BE5; token &#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x683C;&#x5F0F;&#x9519;&#x8BEF;&#x58F0;&#x660E;&#x7684;&#x7B2C;&#x4E00;&#x4E2A; token&#x3002;&#x5373;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5E94;&#x4F7F;&#x7528;&#x683C;&#x5F0F;&#x9519;&#x8BEF;&#x7684;&#x58F0;&#x660E;&#x800C;&#x4E0D;&#x662F;&#x4F7F;&#x7528;&#x683C;&#x5F0F;&#x9519;&#x8BEF;&#x7684;&#x8BED;&#x53E5;&#x6765;&#x5FFD;&#x7565;&#x90A3;&#x4E9B; token&#x3002;</p>
+<pre><code class="lang-css">  p { color:green }
+  p { @foo { bar: baz } color:green }  /* unknown at-rule */
+  p { color:green; color }  /* malformed declaration missing &apos;:&apos;, value */
+  p { color:red;   color; color:green }  /* same with expected recovery */
+  p { color:green; color: } /* malformed declaration missing value */
+  p { color:red;   color:; color:green } /* same with expected recovery */
+  p { color:green; color{;color:maroon} } /* unexpected tokens { } */
+  p { color:red;   color{;color:maroon}; color:green } /* same with recovery */
+</code></pre>
+</li>
+<li><p><strong>&#x683C;&#x5F0F;&#x9519;&#x8BEF;&#x7684;&#x8BED;&#x53E5;</strong>&#xFF1A;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x5904;&#x7406;&#x89E3;&#x6790;&#x8BED;&#x53E5;&#x671F;&#x95F4;&#x9047;&#x5230;&#x7684;&#x5F02;&#x5E38; token&#xFF0C;&#x4E00;&#x76F4;&#x8BFB;&#x5230;&#x8BED;&#x53E5;&#x7ED3;&#x675F;&#xFF0C;&#x4ECE;<code>()</code>&#xFF0C;<code>[]</code>&#xFF0C;<code>{}</code>&#xFF0C;<code>&quot;&quot;</code>&#x548C;<code>&apos;&apos;</code> &#x5BF9;&#x4E2D;&#x5BFB;&#x627E;&#x5BF9;&#x5E94;&#x7684;&#x89C4;&#x5219;&#xFF0C;&#x5E76;&#x6B63;&#x786E;&#x5904;&#x7406;&#x8F6C;&#x4E49;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x683C;&#x5F0F;&#x9519;&#x8BEF;&#x7684;&#x8BED;&#x53E5;&#x53EF;&#x80FD;&#x4F1A;&#x5F02;&#x5E38;&#x7684;&#x5927;&#x62EC;&#x53F7;&#x6216; @&#x5173;&#x952E;&#x5B57;&#x3002;&#x4EE5;&#x4E0B;&#x89C4;&#x5219;&#x88AB;&#x5FFD;&#x7565;&#xFF1A;</p>
+<pre><code class="lang-css">  p @here {color: red}     /* ruleset with unexpected at-keyword &quot;@here&quot; */
+  @foo @bar;               /* at-rule with unexpected at-keyword &quot;@bar&quot; */
+  \}\} \{\{ - \}\}               /* ruleset with unexpected right brace */
+  ) ( {} ) p {color: red } /* ruleset with unexpected right parenthesis */
+</code></pre>
+</li>
+<li><p><strong>@&#x89C4;&#x5219;&#x6709;&#x672A;&#x77E5;&#x5173;&#x952E;&#x5B57;</strong>&#xFF1A;@&#x89C4;&#x5219;&#x6709;&#x672A;&#x77E5;&#x5173;&#x952E;&#x5B57;&#x3002;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x5FFD;&#x7565;&#x4E0D;&#x5408;&#x6CD5;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53CA;&#x5176;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x7684;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;&#xFF0C;&#x76F4;&#x5230;&#x9047;&#x5230; &#x4E0D;&#x5408;&#x6CD5;@&#x5173;&#x952E;&#x5B57;&#x7684;&#x5757;&#x7ED3;&#x675F;&#xFF0C;&#x6216;&#x5206;&#x53F7;&#xFF0C;&#x6216;&#x4E0B;&#x4E00;&#x4E2A;&#x5757;&#x3002;</p>
+<pre><code class="lang-css">  @<span class="hljs-keyword">three-dee</span> {
+    @<span class="hljs-keyword">background-lighting</span> {
+      <span class="hljs-selector-tag">azimuth</span>: 30<span class="hljs-selector-tag">deg</span>;
+      <span class="hljs-selector-tag">elevation</span>: 190<span class="hljs-selector-tag">deg</span>;
+    }
+    <span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">color</span>: red }
+  }
+  <span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">color</span>: blue }
+</code></pre>
+<p>  <code>@three-dee</code> &#x4E0D;&#x662F; CSS 2.2 &#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x56E0;&#x6B64;&#x5FFD;&#x7565;&#x6574;&#x4E2A;&#x89C4;&#x5219;&#xFF0C;&#x89E3;&#x6790;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-css">  <span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">color</span>: blue }
+</code></pre>
+</li>
+<li><p><strong>&#x6837;&#x5F0F;&#x8868;&#x5F02;&#x5E38;&#x7ED3;&#x675F;</strong>&#xFF1A;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x8BA9;&#x6837;&#x5F0F;&#x8868;&#x6210;&#x5BF9;&#x95ED;&#x5408;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;&#x5757;&#xFF0C;&#x5C0F;&#x62EC;&#x53F7;&#xFF0C;&#x65B9;&#x62EC;&#x53F7;&#xFF0C;&#x89C4;&#x5219;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6CE8;&#x91CA;&#xFF09;&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-css">  @media screen {
+      p:before { content: &apos;Hello
+</code></pre>
+<p>  &#x89E3;&#x6790;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-css">  @<span class="hljs-keyword">media</span> screen {
+      <span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:before</span> { <span class="hljs-attribute">content</span>: <span class="hljs-string">&apos;Hello&apos;</span>; }
+  }
+</code></pre>
+</li>
+<li><p><strong>&#x5B57;&#x7B26;&#x4E32;&#x5F02;&#x5E38;&#x7ED3;&#x675F;</strong>&#xFF1A;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x95ED;&#x5408;&#x884C;&#x5C3E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x5373;&#xFF0C;&#x5728;&#x672A;&#x8F6C;&#x4E49;&#x7684;&#x6362;&#x884C;&#xFF0C;&#x56DE;&#x8F66;&#xFF0C;&#x6362;&#x9875;&#x7B26;&#x4E4B;&#x524D;&#xFF09;&#xFF0C;&#x4F46;&#x8981;&#x5220;&#x9664;&#x5305;&#x542B;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x58F0;&#x660E;&#x6216;&#x89C4;&#x5219;&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-css">  p {
+      color: green;
+      font-family: &apos;Courier New Times
+      color: red;
+      color: green;
+  }
+</code></pre>
+<p>  &#x56E0;&#x4E3A;&#x7B2C;&#x4E8C;&#x6761;&#x58F0;&#x660E; &#xFF08;&#x4ECE; <code>font-family</code> &#x5230; <code>color: red;</code>&#xFF09;&#x662F;&#x4E0D;&#x5408;&#x6CD5;&#x7684;&#xFF0C;&#x5219;&#x89E3;&#x6790;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-css">  <span class="hljs-selector-tag">p</span> { <span class="hljs-attribute">color</span>: green; <span class="hljs-attribute">color</span>: green; }
+</code></pre>
+</li>
+<li><strong>&#x58F0;&#x660E;&#x5757;&#x7684;&#x89C4;&#x5219;</strong>&#xFF1A;&#x89C1; 4.1.7-&#x89C4;&#x5219;&#x96C6;&#xFF0C;&#x58F0;&#x660E;&#x5757;&#xFF0C;&#x9009;&#x62E9;&#x5668; &#x5C0F;&#x8282;&#x3002;</li>
+</ul>
+<h2 id="43-&#x503C;"><a name="43-&#x503C;" class="anchor-navigation-ex-anchor" href="#43-&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="43-&#x503C;" class="plugin-anchor" href="#43-&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>4.3 &#x503C;</h2>
+<h3 id="431-&#x6574;&#x6570;&#x548C;&#x5B9E;&#x6570;"><a name="431-&#x6574;&#x6570;&#x548C;&#x5B9E;&#x6570;" class="anchor-navigation-ex-anchor" href="#431-&#x6574;&#x6570;&#x548C;&#x5B9E;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="431-&#x6574;&#x6570;&#x548C;&#x5B9E;&#x6570;" class="plugin-anchor" href="#431-&#x6574;&#x6570;&#x548C;&#x5B9E;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>4.3.1 &#x6574;&#x6570;&#x548C;&#x5B9E;&#x6570;</h3>
+<p>&#x67D0;&#x4E9B;&#x503C;&#x7C7B;&#x578B;&#x53EF;&#x80FD;&#x662F;&#x6574;&#x6570;&#x503C;&#xFF08;&#x7528; <code>&lt;integer&gt;</code> &#x8868;&#x793A;&#xFF09;&#x6216;&#x5B9E;&#x6570;&#x503C;&#xFF08;&#x7528; <code>&lt;number&gt;</code> &#x8868;&#x793A;&#xFF09;&#x3002;&#x5B9E;&#x6570;&#x548C;&#x6574;&#x6570;&#x90FD;&#x53EA;&#x662F;&#x7528;&#x5341;&#x8FDB;&#x5236;&#x7684;&#x8868;&#x793A;&#x3002;<code>&lt;integer&gt;</code> &#x7531;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A; &quot;0&quot; &#x5230; &quot;9&quot; &#x7684;&#x6570;&#x5B57;&#x7EC4;&#x6210;&#xFF0C;<code>&lt;number&gt;</code> &#x65E2;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A; <code>&lt;integer&gt;</code>&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F; 0 &#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;&#x5C0F;&#x6570;&#x70B9;&#x548C;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6570;&#x5B57;&#x3002;&#x6574;&#x6570;&#x548C;&#x5B9E;&#x6570;&#x4E4B;&#x524D;&#x90FD;&#x53EF;&#x4EE5;&#x6709; &quot;-&quot; &#x6216;&#x8005; &quot;+&quot; &#x8868;&#x793A;&#x7B26;&#x53F7;&#x3002;-0 &#x7B49;&#x4EF7;&#x4E8E; 0&#xFF0C;&#x4E0D;&#x662F;&#x8D1F;&#x6570;&#xFF0C;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5F88;&#x591A;&#x5141;&#x8BB8;&#x6574;&#x6570;&#x6216;&#x8005;&#x5B9E;&#x6570;&#x4F5C;&#x4E3A;&#x503C;&#x7684;&#x5C5E;&#x6027;&#x5B9E;&#x9645;&#x4E0A;&#x9650;&#x5236;&#x4E86;&#x503C;&#x7684;&#x8303;&#x56F4;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x8D1F;&#x503C;</p>
+<h3 id="432-&#x957F;&#x5EA6;"><a name="432-&#x957F;&#x5EA6;" class="anchor-navigation-ex-anchor" href="#432-&#x957F;&#x5EA6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="432-&#x957F;&#x5EA6;" class="plugin-anchor" href="#432-&#x957F;&#x5EA6;"><i class="fa fa-link" aria-hidden="true"></i></a>4.3.2 &#x957F;&#x5EA6;</h3>
+<p>&#x957F;&#x5EA6;&#x662F;&#x6307;&#x8DDD;&#x79BB;&#x6D4B;&#x91CF;&#x3002;</p>
+<p>&#x957F;&#x5EA6;&#x503C;&#x7684;&#x683C;&#x5F0F;&#x662F;&#x4E00;&#x4E2A; <code>&lt;number&gt;</code> &#x540E;&#x9762;&#x7D27;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;&#x5355;&#x4F4D;&#x6807;&#x8BC6;&#x7B26;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;<code>px</code>&#xFF0C;<code>em</code>&#xFF09;&#x3002;0 &#x957F;&#x5EA6;&#x540E;&#x9762;&#x7684;&#x5355;&#x4F4D;&#x6807;&#x8BC6;&#x7B26;&#x53EF;&#x9009;&#x3002;</p>
+<p>&#x4E00;&#x4E9B;&#x5C5E;&#x6027;&#x5141;&#x8BB8;&#x8D1F;&#x957F;&#x5EA6;&#x503C;&#xFF0C;&#x4F46;&#x8FD9;&#x53EF;&#x80FD;&#x4F7F;&#x683C;&#x5F0F;&#x5316;&#x6A21;&#x578B;&#x590D;&#x6742;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;&#x5B58;&#x5728;&#x7279;&#x5B9A;&#x7684;&#x9650;&#x5236;&#x3002;&#x82E5;&#x4E0D;&#x652F;&#x6301;&#xFF0C;&#x5219;&#x4F1A;&#x8F6C;&#x6362;&#x4E3A;&#x53EF;&#x652F;&#x6301;&#x7684;&#x8FD1;&#x4F3C;&#x503C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8D1F;&#x957F;&#x5EA6;&#x503C;&#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#xFF0C;&#x5219;&#x5FFD;&#x7565;&#x8BE5;&#x58F0;&#x660E;&#x3002;
+&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x7684;&#x957F;&#x5EA6;&#x4E0D;&#x652F;&#x6301;&#xFF0C;&#x5219;&#x8BBE;&#x7F6E;&#x5176;&#x8FD1;&#x4F3C;&#x652F;&#x6301;&#x503C;&#x3002;</p>
+<p>&#x6709;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x957F;&#x5EA6;&#x5355;&#x4F4D;&#xFF1A;&#x76F8;&#x5BF9;&#x548C;&#x7EDD;&#x5BF9;&#x3002;&#x76F8;&#x5BF9;&#x957F;&#x5EA6;&#x5355;&#x4F4D;&#x6307;&#x5B9A;&#x76F8;&#x5BF9;&#x4E8E;&#x53E6;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x5C5E;&#x6027;&#x7684;&#x957F;&#x5EA6;&#x3002;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x5355;&#x4F4D;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x53EF;&#x4EE5;&#x66F4;&#x5BB9;&#x6613;&#x5730;&#x4ECE;&#x4E00;&#x4E2A;&#x8F93;&#x51FA;&#x73AF;&#x5883;&#x6269;&#x5C55;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x8F93;&#x51FA;&#x73AF;&#x5883;&#x3002;</p>
+<p>&#x76F8;&#x5BF9;&#x5355;&#x4F4D;&#x6709;&#xFF1A;</p>
+<ul>
+<li><strong>em</strong>&#xFF1A;&#x76F8;&#x5173;&#x5B57;&#x4F53;&#x7684; <code>font-size</code></li>
+<li><strong>ex</strong>&#xFF1A;&#x76F8;&#x5173;&#x5B57;&#x4F53;&#x7684; <code>x-height</code></li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">margin</span>: <span class="hljs-number">0.5em</span> }      <span class="hljs-comment">/* em */</span>
+<span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">margin</span>: <span class="hljs-number">1ex</span> }        <span class="hljs-comment">/* ex */</span>
+</code></pre>
+<p><code>em</code> &#x5355;&#x4F4D;&#x7B49;&#x4E8E; &#x4F7F;&#x7528;&#x8BE5;&#x89C4;&#x5219;&#x7684;&#x5143;&#x7D20;&#x7684; <code>font-size</code> &#x5C5E;&#x6027;&#x7684;&#x8BA1;&#x7B97;&#x503C;&#x3002;&#x6709;&#x4E00;&#x79CD;&#x4F8B;&#x5916;&#x60C5;&#x51B5;&#x662F;&#xFF0C;&#x5F53; <code>em</code> &#x7528;&#x4E8E;&#x5176;&#x5B83;&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x5B83;&#x4F7F;&#x7528;&#x7236;&#x5143;&#x7D20;&#x7684; <code>font-size</code>&#x3002;</p>
+<p><code>ex</code> &#x5355;&#x4F4D;&#x7531;&#x5143;&#x7D20;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x5B57;&#x4F53;&#x5B9A;&#x4E49;&#x3002;&#x6709;&#x4E00;&#x79CD;&#x4F8B;&#x5916;&#x60C5;&#x51B5;&#x662F;&#xFF0C;<code>ex</code> &#x7528;&#x4E8E; <code>font-size</code> &#x5C5E;&#x6027;&#x7684;&#x503C;&#x65F6;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x5B83;&#x4F7F;&#x7528;&#x7236;&#x5143;&#x7D20;&#x7684; <code>ex</code>&#x3002;</p>
+<p>&#x4E4B;&#x6240;&#x4EE5;&#x79F0;&#x4E3A; <code>x-height</code>&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x901A;&#x5E38;&#x7B49;&#x4E8E;&#x5C0F;&#x5199; &#x201C;x&#x201D; &#x7684;&#x9AD8;&#x5EA6;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5373;&#x4F7F;&#x5BF9;&#x4E8E;&#x4E0D;&#x5305;&#x542B; &#x201C;x&#x201D; &#x7684;&#x5B57;&#x4F53;&#xFF0C;&#x4E5F;&#x4F1A;&#x5B9A;&#x4E49; &#x201C;ex&#x201D;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x83B7;&#x5F97; <code>x-height</code>&#x3002;&#x6709;&#x4E9B;&#x5B57;&#x4F53;&#x4F1A;&#x5305;&#x542B; <code>x-height</code> &#x7684;&#x7CBE;&#x786E;&#x6307;&#x6807;&#x3002;&#x5982;&#x679C;&#x5B57;&#x4F53;&#x7684;&#x7CBE;&#x786E;&#x6307;&#x6807;&#x65E0;&#x6CD5;&#x83B7;&#x5F97;&#xFF0C;&#x5219; UA &#x53EF;&#x4EE5;&#x4ECE;&#x5C0F;&#x5199;&#x5B57;&#x5F62;&#x7684;&#x9AD8;&#x5EA6;&#x6765;&#x786E;&#x5B9A; <code>x-height</code>&#x3002;&#x4E00;&#x79CD;&#x53EF;&#x80FD;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x770B;&#x5C0F;&#x5199; &quot;o&quot; &#x7684;&#x5B57;&#x5F62;&#x5EF6;&#x4F38;&#x5230;&#x57FA;&#x7EBF;&#x4E0B;&#x65B9;&#x591A;&#x8FDC;&#xFF0C;&#x5E76;&#x51CF;&#x53BB;&#x5176;&#x8FB9;&#x754C;&#x7684; <code>top</code> &#x503C;&#x3002;&#x5982;&#x679C;&#x5B9E;&#x5728;&#x6CA1;&#x6CD5;&#x786E;&#x5B9A; <code>x-height</code>&#xFF0C;&#x5C31;&#x4F7F;&#x7528; <code>0.5em</code>&#x3002;</p>
+<p>&#x5982;&#x4E0B;&#x89C4;&#x5219;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.2em</span> }
+</code></pre>
+<p>&#x8868;&#x793A; h1 &#x5143;&#x7D20;&#x7684;&#x884C;&#x9AD8;&#x6BD4; h1 &#x5143;&#x7D20;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x5927; 20%&#xFF0C;&#x53E6;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</p>
+<pre><code>h1 { font-size: 1.2em }
+</code></pre><p>&#x8868;&#x793A; h1 &#x5143;&#x7D20;&#x7684;&#x884C;&#x9AD8;&#x6BD4; h1 &#x5143;&#x7D20;&#x7EE7;&#x627F;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x5927; 20%</p>
+<p>&#x5F53;<a href="https://www.w3.org/TR/CSS22/conform.html#doctree" target="_blank">&#x6587;&#x6863;&#x6811;</a>&#x7684;&#x6839;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;HTML &#x4E2D;&#x7684; &quot;HTML&quot;&#xFF09;&#x6307;&#x5B9A;&#x4E3A; &#x76F8;&#x5BF9;&#x5355;&#x4F4D;&#x65F6;&#xFF0C;<code>em</code> &#x548C; <code>ex</code> &#x76F8;&#x5BF9;&#x8BE5;&#x5C5E;&#x6027;&#x7684;&#x521D;&#x59CB;&#x503C;&#x3002;</p>
+<p>&#x5B50;&#x5143;&#x7D20;&#x4E0D;&#x7EE7;&#x627F;&#x7236;&#x5143;&#x7D20;&#x6307;&#x5B9A;&#x7684;&#x76F8;&#x5BF9;&#x503C;&#xFF0C;&#x5B83;&#x4EEC;&#x7EE7;&#x627F;&#x7684;&#x662F;&#x8BA1;&#x7B97;&#x503C;&#x3002;</p>
+<p>&#x5982;&#x4E0B;&#x89C4;&#x5219;&#xFF0C;&#x5982;&#x679C; h1 &#x662F; body &#x5143;&#x7D20;&#x7684;&#x5B50;&#x7EA7;&#xFF0C;&#x5219; h1 &#x5143;&#x7D20;&#x7684; <code>text-indent</code> &#x4E3A; 36 px&#xFF0C;&#x800C;&#x4E0D;&#x662F; 45 px&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">text-indent</span>: <span class="hljs-number">3em</span>;  <span class="hljs-comment">/* i.e., 36px */</span>
+}
+<span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span> }
+</code></pre>
+<p>&#x7EDD;&#x5BF9;&#x957F;&#x5EA6;&#x5355;&#x4F4D;&#x76F8;&#x5BF9;&#x4E8E;&#x5F7C;&#x6B64;&#x56FA;&#x5B9A;&#x3002;&#x5B83;&#x4EEC;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5728;&#x5DF2;&#x77E5;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x3002;&#x7EDD;&#x5BF9;&#x5355;&#x4F4D;&#x7531;&#x7269;&#x7406;&#x5355;&#x4F4D;&#xFF08;<code>in</code>&#xFF0C;<code>cm</code>&#xFF0C;<code>mm</code>&#xFF0C;<code>pt</code>&#xFF0C;<code>pc</code>&#xFF09;&#x548C; <code>px</code> &#x5355;&#x4F4D;&#x7EC4;&#x6210;&#xFF1A;</p>
+<ul>
+<li><strong>in</strong>&#xFF1A;&#x82F1;&#x5BF8;&#xFF0C;<code>1in === 2.54cm</code></li>
+<li><strong>cm</strong>&#xFF1A;&#x5398;&#x7C73;</li>
+<li><strong>mm</strong>&#xFF1A;&#x6BEB;&#x7C73;</li>
+<li><strong>pt</strong>&#xFF1A;&#x70B9;&#xFF08;&#x539F;&#xFF1A;points&#xFF09;&#xFF0C;<code>CSS &#x4E2D;&#x7684; 1pt === 1in &#x7684; 1/72</code></li>
+<li><strong>pc</strong>&#xFF1A;&#x6D3E;&#x5361;&#xFF08;&#x539F;&#xFF1A;picas&#xFF09;&#xFF0C;<code>1px == 12pt</code></li>
+<li><strong>px</strong>&#xFF1A;&#x50CF;&#x7D20;&#x5355;&#x4F4D;&#xFF0C;<code>1px === 0.75pt</code></li>
+</ul>
+<p>&#x5BF9;&#x4E8E; CSS &#x8BBE;&#x5907;&#xFF0C;&#x8FD9;&#x4E9B;&#x5C3A;&#x5BF8;&#x8981;&#x4E48;&#x53C2;&#x7167;&#xFF08;i&#xFF09;&#x7269;&#x7406;&#x6D4B;&#x91CF;&#x76F8;&#x5173;&#x7684;&#x7269;&#x7406;&#x5355;&#x5143;&#xFF0C;&#x8981;&#x4E48;&#x53C2;&#x7167;&#xFF08;ii&#xFF09;<em>&#x53C2;&#x8003;&#x50CF;&#x7D20;</em>&#x76F8;&#x5173;&#x7684;&#x50CF;&#x7D20;&#x5355;&#x5143;&#x3002;&#x5BF9;&#x4E8E;&#x6253;&#x5370;&#x4ECB;&#x8D28;&#x548C;&#x7C7B;&#x4F3C;&#x7684;&#x9AD8;&#x5206;&#x8FA8;&#x7387;&#x8BBE;&#x5907;&#xFF0C;&#x53C2;&#x7167;&#x5355;&#x4F4D;&#x5E94;&#x8BE5;&#x662F;&#x6807;&#x51C6;&#x7269;&#x7406;&#x5355;&#x4F4D;&#x4E4B;&#x4E00;&#xFF08;&#x82F1;&#x5BF8;&#xFF0C;&#x5398;&#x7C73;&#x7B49;&#xFF09;&#x3002;&#x5BF9;&#x4E8E;&#x4F4E;&#x5206;&#x8FA8;&#x7387;&#x8BBE;&#x5907;&#x548C;&#x5177;&#x6709;&#x7279;&#x6B8A;&#x89C2;&#x770B;&#x8DDD;&#x79BB;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x5EFA;&#x8BAE;&#x5C06;&#x53C2;&#x7167;&#x5355;&#x4F4D;&#x4F5C;&#x4E3A;&#x50CF;&#x7D20;&#x5355;&#x5143;&#x3002;&#x5BF9;&#x4E8E;&#x8FD9;&#x79CD;&#x8BBE;&#x5907;&#xFF0C;&#x5EFA;&#x8BAE;&#x50CF;&#x7D20;&#x5355;&#x5143;&#x53C2;&#x8003;&#x6700;&#x63A5;&#x8FD1;&#x53C2;&#x8003;&#x50CF;&#x7D20;&#x7684;&#x6574;&#x6570;&#x8BBE;&#x5907;&#x50CF;&#x7D20;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x53C2;&#x7167;&#x5355;&#x4F4D;&#x662F;&#x50CF;&#x7D20;&#x5355;&#x4F4D;&#xFF0C;&#x5219;&#x7269;&#x7406;&#x5355;&#x4F4D;&#x53EF;&#x80FD;&#x4E0E;&#x5176;&#x7269;&#x7406;&#x6D4B;&#x91CF;&#x503C;&#x4E0D;&#x5339;&#x914D;&#x3002;&#x6216;&#x8005;&#xFF0C;&#x5982;&#x679C;&#x53C2;&#x7167;&#x5355;&#x4F4D;&#x662F;&#x7269;&#x7406;&#x5355;&#x4F4D;&#xFF0C;&#x5219;&#x50CF;&#x7D20;&#x5355;&#x4F4D;&#x4E0D;&#x80FD;&#x6620;&#x5C04;&#x5230;&#x6574;&#x6570;&#x4E2A;&#x8BBE;&#x5907;&#x50CF;&#x7D20;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x91CC;&#x50CF;&#x7D20;&#x5355;&#x4F4D;&#x548C;&#x7269;&#x7406;&#x5355;&#x4F4D;&#x7684;&#x5B9A;&#x4E49;&#x5728; CSS &#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x5B9A;&#x4E49;&#x4E0D;&#x540C;&#x3002;&#x7279;&#x522B;&#x5730;&#xFF0C;&#x5728; CSS &#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x50CF;&#x7D20;&#x5355;&#x4F4D;&#x4E0E;&#x7269;&#x7406;&#x5355;&#x4F4D;&#x6CA1;&#x6709; &#x56FA;&#x5B9A;&#x6BD4;&#x4F8B; &#x7684;&#x5173;&#x7CFB;&#xFF1A;&#x7269;&#x7406;&#x5355;&#x4F4D;&#x603B;&#x662F;&#x4E0E;&#x7269;&#x7406;&#x6D4B;&#x91CF;&#x7684;&#x76F8;&#x5173;&#xFF0C;&#x800C;&#x50CF;&#x7D20;&#x5355;&#x4F4D;&#x4F1A;&#x53D8;&#x5F97;&#x63A5;&#x8FD1;&#x53C2;&#x8003;&#x50CF;&#x7D20;&#x3002;&#xFF08;&#x8FD9;&#x79CD;&#x53D8;&#x5316;&#x51FA;&#x73B0;&#x662F;&#x56E0;&#x4E3A;&#x592A;&#x591A;&#x73B0;&#x6709;&#x5185;&#x5BB9;&#x4F9D;&#x8D56;<code>96 dpi</code> &#x7684;&#x5047;&#x8BBE;&#xFF0C;&#x800C;&#x7834;&#x574F;&#x8FD9;&#x4E2A;&#x5047;&#x8BBE;&#x5C31;&#x4F1A;&#x7834;&#x574F;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#xFF09;&#x3002;</p>
+<p>&#x800C; <code>&#x53C2;&#x8003;&#x50CF;&#x7D20;</code> &#x662F; &#x50CF;&#x7D20;&#x5BC6;&#x5EA6;&#x4E3A; <code>96 dpi</code> &#x7684;&#x8BBE;&#x5907;&#x4E0A;<code>&#x4E00;&#x4E2A;&#x50CF;&#x7D20;</code>&#x4E0E; &#x4EBA;&#x7684;&#x81C2;&#x957F;&#x548C;&#x5C4F;&#x5E55;&#x4E4B;&#x95F4; &#x7684;&#x8DDD;&#x79BB;&#x957F;&#x5EA6; &#x7684;&#x89C6;&#x89D2;&#x3002;&#x5BF9;&#x4E8E;&#x6807;&#x51C6;&#x81C2;&#x957F;&#x4E3A; 28in &#x6765;&#x8BF4;&#xFF0C;&#x89C6;&#x89D2;&#x7EA6;&#x4E3A; 0.0213 &#x89D2;&#x5EA6;&#x3002;&#x4E3A;&#x4E86;&#x5728;&#x81C2;&#x957F;&#x4F4D;&#x7F6E;&#x4E0A;&#x9605;&#x8BFB;&#xFF0C;&#x6240;&#x4EE5; <code>1px &#x7EA6;&#x7B49;&#x4E8E; 0.26 mm&#xFF08;1/96 in&#xFF09;</code>&#x3002;</p>
+<p>&#x4E0B;&#x56FE;&#x63CF;&#x8FF0;&#x4E86;&#x89C6;&#x8DDD;&#x5BF9;&#x53C2;&#x8003;&#x50CF;&#x7D20;&#x5927;&#x5C0F;&#x7684;&#x5F71;&#x54CD;&#xFF1A;&#x5728; 71 cm&#xFF08;28 in&#xFF09;&#x7684;&#x9605;&#x8BFB;&#x8DDD;&#x79BB;&#x4E0B; &#x4E00;&#x4E2A;&#x53C2;&#x8003;&#x50CF;&#x7D20;&#x662F; 0.26 mm&#xFF0C;&#x800C;&#x5728; 3.5 m &#x7684;&#x9605;&#x8BFB;&#x8DDD;&#x79BB;&#x4E0B; &#x4E00;&#x4E2A;&#x53C2;&#x8003;&#x50CF;&#x7D20;&#x662F; 1.3 mm&#x3002;
+<img src="media/15591944916636/15658486103589.jpg" alt="">
+<a href="https://www.w3.org/TR/CSS22/images/longdesc/pixel1-desc.html" target="_blank">&#x6B64;&#x56FE;&#x957F;&#x63CF;&#x8FF0;</a></p>
+<p>&#x4E0B;&#x56FE;&#x63CF;&#x8FF0;&#x4E86;&#x8BBE;&#x5907;&#x5206;&#x8FA8;&#x7387;&#x5BF9;&#x50CF;&#x7D20;&#x5355;&#x4F4D;&#x7684;&#x5F71;&#x54CD;&#xFF1A;1px * 1px &#x7684;&#x533A;&#x57DF;&#x88AB;&#x5728;&#x4F4E;&#x5206;&#x8FA8;&#x7387;&#x8BBE;&#x5907;&#xFF08;&#x5982;&#x901A;&#x7528;&#x8BA1;&#x7B97;&#x673A;&#x5C4F;&#x5E55;&#xFF09;&#x4E0A;&#x7684; 1 &#x4E2A;&#x70B9;&#x8986;&#x76D6;&#xFF0C;&#x800C;&#x540C;&#x4E00;&#x4E2A;&#x533A;&#x57DF;&#x5728;&#x9AD8;&#x5206;&#x8FA8;&#x7387;&#x8BBE;&#x5907;&#xFF08;&#x5982;&#x6253;&#x5370;&#x673A;&#xFF09;&#x88AB; 16 &#x4E2A;&#x70B9;&#x8986;&#x76D6;&#x3002;
+<img src="media/15591944916636/15659314933684.jpg" alt="">
+<a href="https://www.w3.org/TR/CSS22/images/longdesc/pixel2-desc.html" target="_blank">&#x6B64;&#x56FE;&#x957F;&#x63CF;&#x8FF0;</a></p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">margin</span>: <span class="hljs-number">0.5in</span> }      <span class="hljs-comment">/* inches  */</span>
+<span class="hljs-selector-tag">h2</span> { <span class="hljs-attribute">line-height</span>: <span class="hljs-number">3cm</span> }   <span class="hljs-comment">/* centimeters */</span>
+<span class="hljs-selector-tag">h3</span> { <span class="hljs-attribute">word-spacing</span>: <span class="hljs-number">4mm</span> }  <span class="hljs-comment">/* millimeters */</span>
+<span class="hljs-selector-tag">h4</span> { <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12pt</span> }    <span class="hljs-comment">/* points */</span>
+<span class="hljs-selector-tag">h4</span> { <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1pc</span> }     <span class="hljs-comment">/* picas */</span>
+<span class="hljs-selector-tag">p</span>  { <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span> }    <span class="hljs-comment">/* px */</span>
+</code></pre>
+<h3 id="433-&#x767E;&#x5206;&#x6BD4;"><a name="433-&#x767E;&#x5206;&#x6BD4;" class="anchor-navigation-ex-anchor" href="#433-&#x767E;&#x5206;&#x6BD4;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="433-&#x767E;&#x5206;&#x6BD4;" class="plugin-anchor" href="#433-&#x767E;&#x5206;&#x6BD4;"><i class="fa fa-link" aria-hidden="true"></i></a>4.3.3 &#x767E;&#x5206;&#x6BD4;</h3>
+<p>&#x767E;&#x5206;&#x6BD4;&#x503C;&#x7684;&#x683C;&#x5F0F;&#xFF08;&#x672C;&#x89C4;&#x8303;&#x9002;&#x7528; <code>&lt;percentage&gt;</code> &#x8868;&#x793A;&#xFF09;&#x662F; <code>&lt;number&gt;</code> &#x540E;&#x7D27;&#x8DDF; <code>%</code>&#x3002;</p>
+<p>&#x767E;&#x5206;&#x6BD4;&#x503C;&#x59CB;&#x7EC8;&#x76F8;&#x5BF9;&#x4E8E;&#x53E6;&#x4E00;&#x4E2A;&#x503C;&#xFF0C;&#x6BD4;&#x5982; &#x957F;&#x5EA6;&#x3002;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x5982;&#x679C;&#x5141;&#x8BB8;&#x767E;&#x5206;&#x6BD4;&#x7684;&#x503C;&#x7684;&#x8BDD;&#xFF0C;&#x5B9A;&#x4E49;&#x4E5F;&#x4F1A;&#x7ED9;&#x51FA;&#x6240;&#x53C2;&#x8003;&#x7684;&#x503C;&#x3002;&#x8BE5;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x7684;&#x503C;&#xFF0C;&#x7956;&#x5148;&#x5143;&#x7D20;&#x7684;&#x5C5E;&#x6027;&#x6216;&#x683C;&#x5F0F;&#x5316;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x503C;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;&#x5305;&#x542B;&#x5757;&#x7684;&#x5BBD;&#x5EA6;&#xFF09;&#x3002;&#x5F53;&#x7ED9; &#x6839;&#x5143;&#x7D20; &#x7684;&#x5C5E;&#x6027;&#x4E0A;&#x8BBE;&#x7F6E;&#x767E;&#x5206;&#x6BD4;&#x503C;&#xFF0C;&#x5E76;&#x4E14; &#x767E;&#x5206;&#x6BD4;&#x53C2;&#x8003;&#x67D0;&#x4E9B;&#x5C5E;&#x6027;&#x7684;&#x7EE7;&#x627F;&#x503C;&#x65F6;&#xFF0C;&#x7ED3;&#x679C;&#x503C;&#x662F; &#x767E;&#x5206;&#x6BD4;&#x4E58;&#x8BE5;&#x5C5E;&#x6027;&#x7684;&#x521D;&#x59CB;&#x503C;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x5B50;&#x5143;&#x7D20;&#xFF08;&#x901A;&#x5E38;&#xFF09;&#x7EE7;&#x627F;&#x5176;&#x7236;&#x5143;&#x7D20;&#x7684;&#x8BA1;&#x7B97;&#x503C;&#xFF0C;&#x56E0;&#x6B64;&#x4E0B;&#x5217;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;P &#x5143;&#x7D20;&#x7684;&#x5B50;&#x7EA7;&#x5C06;&#x7EE7;&#x627F;&#x4E3A; <code>line-height: 12px</code> &#x7684;&#x503C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x767E;&#x5206;&#x6BD4;&#x503C;&#xFF08;<code>120%</code>&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">p</span> { <span class="hljs-attribute">font-size</span>: <span class="hljs-number">10px</span> }
+<span class="hljs-selector-tag">p</span> { <span class="hljs-attribute">line-height</span>: <span class="hljs-number">120%</span> }  <span class="hljs-comment">/* 120% of &apos;font-size&apos; */</span>
+</code></pre>
+<h3 id="434-url-&#x548C;-uri"><a name="434-url-&#x548C;-uri" class="anchor-navigation-ex-anchor" href="#434-url-&#x548C;-uri"><i class="fa fa-link" aria-hidden="true"></i></a><a name="434-url-&#x548C;-uri" class="plugin-anchor" href="#434-url-&#x548C;-uri"><i class="fa fa-link" aria-hidden="true"></i></a>4.3.4 URL &#x548C; URI</h3>
+<p>&#x672C;&#x89C4;&#x8303;&#x4E2D;&#x7684; URI &#x503C;&#xFF08;&#x7EDF;&#x4E00;&#x8D44;&#x6E90;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x89C1; <a href="https://www.w3.org/TR/CSS22/refs.html#ref-RFC3986" target="_blank">RFC3986</a>&#xFF0C;&#x5305;&#x542B; URL&#x3001;URN &#x7B49;&#x7B49;&#xFF09;&#xFF0C;&#x7528; <code>&lt;uri&gt;</code> &#x8868;&#x793A;&#x3002;&#x7528;&#x4E8E;&#x5C5E;&#x6027;&#x503C;&#x4F7F;&#x7528; URI &#x7684;&#x529F;&#x80FD;&#xFF0C;&#x7528; <code>url()</code>&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> { <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&quot;http://www.example.com/pinkish.png&quot;</span>) }
+</code></pre>
+<p>&#x4E00;&#x4E2A; URI &#x503C;&#x7684;&#x683C;&#x5F0F;&#x662F; <code>url(&#x540E;&#x8DDF;&#x53EF;&#x9009;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#xFF0C;&#x540E;&#x8DDF;&#x53EF;&#x9009;&#x7684;&#x5355;|&#x53CC;&#x5F15;&#x53F7;&#xFF0C;&#x540E;&#x8DDF; URI &#x672C;&#x8EAB;&#xFF0C;&#x540E;&#x8DDF;&#x53EF;&#x9009;&#x7684;&#x5355;|&#x53CC;&#x5F15;&#x53F7;)&#xFF0C;&#x540E;&#x8DDF;)</code>&#x3002;&#x4E24;&#x4E2A;&#x524D;&#x540E;&#x5F15;&#x53F7;&#x5B57;&#x7B26;&#x5FC5;&#x987B;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x6CA1;&#x6709;&#x5F15;&#x53F7;&#x7684;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">li</span> { <span class="hljs-attribute">list-style</span>: <span class="hljs-built_in">url</span>(http://www.example.com/redball.png) disc }
+</code></pre>
+<p>&#x51FA;&#x73B0;&#x5728;&#x4E0D;&#x5E26;&#x5F15;&#x53F7;&#x7684; URI &#x4E2D;&#x7684;&#x67D0;&#x4E9B;&#x5B57;&#x7B26;&#xFF08;&#x5982;&#x62EC;&#x53F7;&#xFF0C;&#x7A7A;&#x683C;&#x5B57;&#x7B26;&#xFF0C;&#x5355;&#x5F15;&#x53F7;&#xFF08;<code>&apos;</code>&#xFF09;&#x548C;&#x53CC;&#x5F15;&#x53F7;&#xFF08;<code>&quot;</code>&#xFF09;&#xFF09;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x53CD;&#x659C;&#x6760;&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#xFF0C;&#x4EE5;&#x4FBF;&#x751F;&#x6210;&#x7684; URI &#x503C;&#x4E3A; URI &#x6807;&#x8BB0;&#xFF1A;&apos;(&apos;&#xFF0C;&apos;)&apos;&#xFF09;&#x3002;</p>
+<p>&#x6839;&#x636E; URI &#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x5C06;&#x5C06;&#x4E0A;&#x8FF0;&#x5B57;&#x7B26;&#x5199;&#x4E3A; <code>(&quot; = %28, &quot;)``= %29</code> &#x7B49;&#x7B49;&#xFF0C;&#x5982; <a href="http://www.ayqy.net/doc/css2-1/refs.html#ref-RFC3986" target="_blank">RFC3986</a>&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x6CE8;&#x91CA;&#x7684; token &#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x5728;&#x5176;&#x5B83; token &#x4E2D;&#xFF1A;&#x56E0;&#x6B64;&#xFF0C;<code>url(/*x*/pic.png)</code> &#x8868;&#x793A;&#x4E3A; <code>/*x*/pic.png</code>&#xFF0C;&#x800C;&#x4E0D;&#x662F; <code>pic.png</code>&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x521B;&#x5EFA;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x8D44;&#x6E90;&#x7EDD;&#x5BF9;&#x4F4D;&#x7F6E;&#x7684;&#x6A21;&#x5757;&#x5316;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x4F5C;&#x8005;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x76F8;&#x5BF9; URI&#x3002;&#x76F8;&#x5BF9; URI&#xFF08;&#x5982; <a href="https://www.w3.org/TR/CSS22/refs.html#ref-RFC3986" target="_blank">RFC3986</a> &#x5B9A;&#x4E49;&#xFF09;&#x4F1A;&#x6839;&#x636E;&#x57FA;&#x7840; URI &#x89E3;&#x6790;&#x4E3A;&#x5B8C;&#x6574;&#x7684; URI&#x3002;RFC 3986 &#x7684;&#x7B2C; 5 &#x8282;&#x5B9A;&#x4E49;&#x4E86;&#x89E3;&#x6790;&#x7684;&#x7B97;&#x6CD5;&#x8FC7;&#x7A0B;&#x3002;&#x5BF9;&#x4E8E; CSS &#x6837;&#x5F0F;&#x8868;&#x800C;&#x8A00;&#xFF0C;&#x57FA;&#x7840; URI &#x662F;&#x76F8;&#x5BF9;&#x4E8E;&#x8BE5;&#x6837;&#x5F0F;&#x8868;&#xFF08;&#x6240;&#x5728;&#x7684; URL&#xFF09;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6E90;&#x6587;&#x6863;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x4EE5;&#x4E0B;&#x89C4;&#x5219;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> { <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&quot;yellow&quot;</span>) }
+</code></pre>
+<p>URI &#x7684;&#x6837;&#x5F0F;&#x8868;&#x5730;&#x5740;&#xFF1A;<code>http://www.example.org/style/basic.css</code>&#xFF0C;&#x5219;&#x6E90;&#x6587;&#x6863;&#x7684;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x7684;&#x5730;&#x5740;&#x4E3A; <code>http://www.example.org/style/yellow</code>&#x3002;</p>
+<p>&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5728;&#x5982;&#x4F55;&#x5904;&#x7406;&#x975E;&#x5408;&#x6CD5;&#x6CD5; URI &#x6216;&#x8005; URI &#x6307;&#x5411;&#x7684;&#x4E0D;&#x53EF;&#x7528;&#x6216;&#x4E0D;&#x9002;&#x7528;&#x8D44;&#x6E90;&#x4E0A;&#xFF08;&#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#xFF09;&#x53EF;&#x80FD;&#x6709;&#x5DEE;&#x5F02;&#x3002;</p>
+<h3 id="435-&#x8BA1;&#x6570;&#x5668;"><a name="435-&#x8BA1;&#x6570;&#x5668;" class="anchor-navigation-ex-anchor" href="#435-&#x8BA1;&#x6570;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="435-&#x8BA1;&#x6570;&#x5668;" class="plugin-anchor" href="#435-&#x8BA1;&#x6570;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>4.3.5 &#x8BA1;&#x6570;&#x5668;</h3>
+<p>&#x8BA1;&#x6570;&#x5668;&#x7531;&#x5927;&#x5C0F;&#x5199;&#x654F;&#x611F;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x8868;&#x793A;&#xFF08;&#x89C1; <a href="https://www.w3.org/TR/CSS22/generate.html#propdef-counter-increment" target="_blank">&#x201C;&#x8BA1;&#x6570;&#x5668;&#x589E;&#x91CF;&#x201D;&#x548C; &#x201C;&#x8BA1;&#x6570;&#x5668;&#x91CD;&#x7F6E;&#x201D;</a> &#x5C5E;&#x6027;&#xFF09;&#x3002;&#x4E3A;&#x4E86;&#x4F7F;&#x7528;&#x8BA1;&#x6570;&#x5668;&#x7684;&#x503C;&#xFF0C;&#x4F7F;&#x7528;&#x7B26;&#x53F7; <code>counter(&lt;identifier&gt;)</code> &#x6216; <code>counter(&lt;identifier&gt;&#xFF0C;&lt;&apos;list-style-type&apos;&gt;)</code>&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x53EF;&#x9009;&#x7684;&#x7A7A;&#x683C;&#x5206;&#x9694;&#x6807;&#x8BB0;&#x3002;&#x9ED8;&#x8BA4;&#x6837;&#x5F0F;&#x4E3A; &#x201C;&#x5341;&#x8FDB;&#x5236;&#x201D;&#x3002;</p>
+<p>&#x8981;&#x4F7F;&#x7528;&#x4E00;&#x7CFB;&#x5217;&#x76F8;&#x540C;&#x540D;&#x79F0;&#x7684;&#x5D4C;&#x5957;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x8868;&#x793A;&#x6CD5;&#x662F; <code>counters(&lt;identifier&gt;&#xFF0C;&lt;string&gt;)</code>&#x6216; <code>counters(&lt;identifier&gt;&#xFF0C;&lt;string&gt;&#xFF0C;&lt;&apos;list-style-type&apos;&gt;)</code> &#x53EF;&#x9009;&#x7684;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x5206;&#x9694;&#x8FD9;&#x4E9B; token&#x3002;</p>
+<p>&#x5173;&#x4E8E;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5982;&#x4F55;&#x786E;&#x8BA4;&#x8BA1;&#x6570;&#x5668;&#x503C;&#x7684;&#x7EC6;&#x8282;&#x89C1; <a href="https://www.w3.org/TR/CSS22/generate.html" target="_blank">&#x751F;&#x6210;&#x5185;&#x5BB9;</a> &#x7AE0;&#x8282;&#x3002;&#x8981;&#x60F3;&#x4E86;&#x89E3;&#x8BA1;&#x6570;&#x5668;&#x503C;&#x5982;&#x4F55;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x53C2;&#x8003; <code>content</code> &#x5C5E;&#x6027;&#x7684;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x5728; CSS 2.2 &#x4E2D;&#xFF0C;&#x53EA;&#x80FD;&#x4ECE; <code>content</code> &#x5C5E;&#x6027;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x5668;&#x7684;&#x503C;&#x3002;&#x6CE8;&#x610F;&#xFF0C;<code>none</code> &#x6709;&#x53EF;&#x80FD;&#x662F; <code>&lt;&apos;list-style-type&apos;&gt;</code>&#xFF1A;<code>counter(x, none)</code> &#x751F;&#x6210;&#x4E00;&#x4E2A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;&#x4E00;&#x4E2A;&#x6837;&#x5F0F;&#x8868;&#x76F8;&#x5BF9;&#x6BCF;&#x7AE0; h1 &#x7684; &#x6BB5;&#x843D; p &#x8FDB;&#x884C;&#x8BA1;&#x6570;&#x3002;&#x6BB5;&#x843D;&#x4F7F;&#x7528;&#x7F57;&#x9A6C;&#x6570;&#x5B57;&#x8BA1;&#x6570;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x4E00;&#x4E2A;&#x53E5;&#x53F7;&#x548C;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">p</span> {<span class="hljs-attribute">counter-increment</span>: par-num}
+<span class="hljs-selector-tag">h1</span> {<span class="hljs-attribute">counter-reset</span>: par-num}
+<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:before</span> {<span class="hljs-attribute">content</span>: <span class="hljs-built_in">counter</span>(par-num, upper-roman) <span class="hljs-string">&quot;. &quot;</span>}
+</code></pre>
+<h3 id="436-&#x989C;&#x8272;"><a name="436-&#x989C;&#x8272;" class="anchor-navigation-ex-anchor" href="#436-&#x989C;&#x8272;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="436-&#x989C;&#x8272;" class="plugin-anchor" href="#436-&#x989C;&#x8272;"><i class="fa fa-link" aria-hidden="true"></i></a>4.3.6 &#x989C;&#x8272;</h3>
+<p><code>&lt;color&gt;</code> &#x8981;&#x4E48;&#x662F;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x8981;&#x4E48;&#x5C31;&#x662F;&#x5408;&#x6CD5;&#x7684; RGB &#x6570;&#x503C;&#x3002;</p>
+<p>&#x989C;&#x8272;&#x5217;&#x8868;&#x7684;&#x5173;&#x952E;&#x5B57;&#xFF1A;aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, orange, purple, red, silver, teal, white, &#x548C; yellow&#x3002;&#x8FD9; 17 &#x79CD;&#x989C;&#x8272;&#x7684;&#x503C;&#x5982;&#x4E0B;&#xFF1A;
+<img src="media/15591944916636/15660190946977.jpg" alt="-w328"></p>
+<p>&#x9664;&#x4E86;&#x8FD9;&#x4E9B;&#x989C;&#x8272;&#x5173;&#x952E;&#x5B57;&#x4E4B;&#x5916;&#xFF0C;&#x5728;&#x7528;&#x6237;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x7528;&#x6237;&#x8FD8;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x5BF9;&#x5E94;&#x7684;&#x7528;&#x4E8E;&#x67D0;&#x4E9B;&#x5BF9;&#x8C61;&#x7684;&#x989C;&#x8272;&#x5173;&#x952E;&#x5B57;&#x3002;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x8BF7;&#x67E5;&#x770B; <a href="https://www.w3.org/TR/CSS22/ui.html#system-colors" target="_blank">&#x7CFB;&#x7EDF;&#x989C;&#x8272;</a> &#x7AE0;&#x8282;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {<span class="hljs-attribute">color</span>: black; <span class="hljs-attribute">background</span>: white }
+<span class="hljs-selector-tag">h1</span> { <span class="hljs-attribute">color</span>: maroon }
+<span class="hljs-selector-tag">h2</span> { <span class="hljs-attribute">color</span>: olive }
+</code></pre>
+<p>RGB &#x989C;&#x8272;&#x6A21;&#x578B;&#x7528;&#x4E8E;&#x6570;&#x5B57;&#x989C;&#x8272;&#x89C4;&#x8303;&#x3002;&#x8FD9;&#x4E9B;&#x793A;&#x4F8B;&#x90FD;&#x6307;&#x5B9A;&#x4E86;&#x76F8;&#x540C;&#x7684;&#x989C;&#x8272;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">em</span> { <span class="hljs-attribute">color</span>: <span class="hljs-number">#f00</span> }              <span class="hljs-comment">/* #rgb */</span>
+<span class="hljs-selector-tag">em</span> { <span class="hljs-attribute">color</span>: <span class="hljs-number">#ff0000</span> }           <span class="hljs-comment">/* #rrggbb */</span>
+<span class="hljs-selector-tag">em</span> { <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(255,0,0) }      
+<span class="hljs-selector-tag">em</span> { <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(100%, 0%, 0%) }
+</code></pre>
+<p>&#x5341;&#x516D;&#x8FDB;&#x5236;&#x8868;&#x793A;&#x6CD5;&#x7684; RGB &#x503C;&#x683C;&#x5F0F;&#x4E3A;&#xFF1A;<code>#</code> &#x540E;&#x8DDF;&#x4E09;&#x4E2A;&#x6216;&#x516D;&#x4E2A; &#x5341;&#x516D;&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x3002;&#x4E09;&#x4F4D; RGB &#x8868;&#x793A;&#x6CD5;&#xFF08;<code>#rgb</code>&#xFF09;&#x901A;&#x8FC7;&#x590D;&#x5236;&#x6570;&#x5B57;&#x800C;&#x4E0D;&#x662F;&#x901A;&#x8FC7;&#x6DFB;&#x52A0;&#x96F6;&#x6765;&#x8F6C;&#x6362;&#x4E3A;&#x516D;&#x4F4D;&#x6570;&#x5F62;&#x5F0F;&#xFF08;<code>#rrggbb</code>&#xFF09;&#x3002;&#x6BD4;&#x5982;&#xFF0C;<code>#fb0</code> &#x8F6C;&#x4E3A; <code>#ffbb00</code>&#x3002;&#x8FD9;&#x4E5F;&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x767D;&#x8272;&#x7528;&#xFF08;<code>#fff</code>&#xFF09;&#x6765;&#x6307;&#x5B9A;&#xFF08;<code>#ffffff</code>&#xFF09;&#xFF0C;&#x4E14;&#x53BB;&#x6389;&#x4E86;&#x5BF9;&#x663E;&#x793A;&#x5668;&#x989C;&#x8272;&#x6DF1;&#x5EA6;&#x7684;&#x4F9D;&#x8D56;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x8868;&#x793A;&#x6CD5;&#x7684; RGB &#x503C;&#x683C;&#x5F0F;&#x4E3A;&#xFF1A;<code>rgb(&apos;&#x540E;&#x9762;&#x7531;&#x9017;&#x53F7;&#x5206;&#x5272;&#x7684;3&#x4E2A;&#x6570;&#x503C;&#xFF0C;&#x6570;&#x503C;&#x53EF;&#x4EE5;&#x4E3A;&#x6574;&#x6570;&#x6216;&#x767E;&#x5206;&#x6BD4;&apos;)</code>&#x3002;&#x6574;&#x6570;&#x503C; 255 &#x5BF9;&#x5E94;&#x4E8E; 100%&#xFF0C;&#x5373; <code>rgb(255,255,255) = rgb(100%, 100%, 100%) = #fff</code>&#x3002;&#x6570;&#x503C;&#x5468;&#x56F4;&#x53EF;&#x4F7F;&#x7528; &#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x3002;</p>
+<p>&#x6240;&#x6709; RGB &#x989C;&#x8272;&#x90FD;&#x5728; sRGB &#x989C;&#x8272;&#x7A7A;&#x95F4;&#x4E2D;&#x6307;&#x5B9A;&#xFF08;&#x53C2;&#x89C1;<a href="https://www.w3.org/TR/CSS22/refs.html#ref-SRGB" target="_blank">[SRGB]</a>&#xFF09;&#x3002;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5728;&#x5B83;&#x4EEC;&#x8868;&#x793A;&#x8FD9;&#x4E9B;&#x989C;&#x8272;&#x7684;&#x4FDD;&#x771F;&#x5EA6;&#x65B9;&#x9762;&#x53EF;&#x80FD;&#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF0C;&#x4F46;&#x662F;&#x4F7F;&#x7528; sRGB &#x63D0;&#x4F9B;&#x7684;&#x989C;&#x8272;&#x662F;&#x660E;&#x786E;&#x53EF;&#x6D4B;&#x91CF;&#x7684;&#xFF0C;&#x8FD9;&#x4E0E;&#x56FD;&#x9645;&#x6807;&#x51C6;&#x7531;&#x5173;&#xFF08;&#x53C2;&#x89C1;<a href="https://www.w3.org/TR/CSS22/refs.html#ref-COLORIMETRY" target="_blank">[COLORIMETRY]</a>&#xFF09;&#x3002;</p>
+<p>&#xFF08;&#x4E0E;&#x672C;&#x89C4;&#x8303;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x7684;&#xFF09;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x53EF;&#x80FD;&#x4F1A;&#x8FDB;&#x884C;&#x4F3D;&#x9A6C;&#x6821;&#x6B63;&#xFF0C;&#x9650;&#x5236;&#x5176;&#x989C;&#x8272;&#x7684;&#x663E;&#x793A;&#x3002;sRGB &#x6307;&#x5B9A;&#x5728;&#x7279;&#x5B9A;&#x89C2;&#x5BDF;&#x73AF;&#x5883;&#x4E0B;&#x52A8;&#x6001;&#x7070;&#x5EA6;&#xFF08;&#x539F;&#xFF1A;display gamma&#xFF09;&#x4E3A; 2.2&#x3002;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x4F1A;&#x8C03;&#x6574; CSS &#x7ED9;&#x51FA;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x8FD9;&#x6837;&#x7ED3;&#x5408;&#x8F93;&#x51FA;&#x8BBE;&#x5907;&#x7684; &#x201C;&#x81EA;&#x7136;&#x201D; &#x52A8;&#x6001;&#x7070;&#x5EA6;&#xFF0C;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684; 2.2 &#x52A8;&#x6001;&#x7070;&#x5EA6;&#x5C31;&#x4EA7;&#x751F;&#x4E86;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x53EA;&#x6709;&#x5728; CSS &#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x989C;&#x8272;&#x624D;&#x4F1A;&#x6709;&#x5F71;&#x54CD;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x56FE;&#x7247;&#x5C31;&#x88AB;&#x8BA4;&#x4E3A;&#x643A;&#x5E26;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x989C;&#x8272;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x5728;&#x8BBE;&#x5907;&#x8272;&#x57DF;&#x4EE5;&#x5916;&#x7684;&#x503C;&#x7406;&#x5E94;&#x88AB;&#x88C1;&#x5207;&#x6216;&#x6620;&#x5C04;&#x5230;&#x5DF2;&#x77E5;&#x8272;&#x57DF;&#x4E2D;&#xFF1A;red&#x3001;green &#x548C; blue &#x5E94;&#x8BE5;&#x88AB;&#x8F6C;&#x4E3A;&#x8BBE;&#x7F6E;&#x652F;&#x6301;&#x7684;&#x8303;&#x56F4;&#x5185;&#x3002;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x53EF;&#x80FD;&#x4F1A;&#x8FDB;&#x884C; &#x4ECE;&#x4E00;&#x4E2A;&#xFF08;&#x4F4E;&#xFF09;&#x8272;&#x57DF;&#x5230;&#x9AD8;&#x8272;&#x57DF;&#x7684;&#x989C;&#x8272;&#x6620;&#x5C04;&#x3002;&#x5BF9;&#x4E8E;&#x5178;&#x578B;&#x7684; RCT &#x663E;&#x793A;&#x5668;&#xFF0C;&#x5176;&#x8272;&#x57DF;&#x503C;&#x548C; RGB &#x76F8;&#x540C;&#xFF0C;&#x5219;&#x4E0B;&#x9762;&#x56DB;&#x6761;&#x89C4;&#x5219;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">em</span> { <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(255,0,0) }       <span class="hljs-comment">/* integer range 0 - 255 */</span>
+<span class="hljs-selector-tag">em</span> { <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(300,0,0) }       <span class="hljs-comment">/* clipped to rgb(255,0,0) */</span>
+<span class="hljs-selector-tag">em</span> { <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(255,-10,0) }     <span class="hljs-comment">/* clipped to rgb(255,0,0) */</span>
+<span class="hljs-selector-tag">em</span> { <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(110%, 0%, 0%) }  <span class="hljs-comment">/* clipped to rgb(100%,0%,0%) */</span>
+</code></pre>
+<p>&#x5176;&#x5B83;&#x8BBE;&#x5907;&#xFF0C;&#x5982;&#x6253;&#x5370;&#x673A;&#xFF0C;&#x5176;&#x8272;&#x57DF;&#x4E0E; sRGB &#x4E0D;&#x540C;&#xFF0C;&#xFF08;&#x5728;&#x8BBE;&#x5907;&#x8272;&#x57DF;&#x5185;&#xFF09;&#x67D0;&#x4E9B; 0...255 sRGB &#x4E4B;&#x5916;&#x7684;&#x989C;&#x8272;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x7684;&#xFF0C;&#x800C;&#x90A3;&#x4E9B;&#x5728; 0...255 sRGB &#x4E4B;&#x5185;&#x7684;&#x989C;&#x8272;&#x53EF;&#x80FD;&#x56E0;&#x4E3A;&#x4E0D;&#x5728; &#x8BBE;&#x5907;&#x8272;&#x57DF; &#x5185;&#x800C;&#x88AB;&#x6620;&#x5C04;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8272;&#x503C;&#x7684;&#x6620;&#x5C04;&#x6216;&#x88C1;&#x5207;&#x5E94;&#x8BE5;&#x5728; &#x8BBE;&#x5907;&#x8272;&#x57DF;&#x5DF2;&#x77E5;&#xFF08;&#x53EF;&#x80FD;&#x6BD4; 0...255 &#x5927;&#x6216;&#x5C0F;&#xFF09; &#x65F6;&#x8FDB;&#x884C;&#x3002;</p>
+<h3 id="437-&#x5B57;&#x7B26;&#x4E32;"><a name="437-&#x5B57;&#x7B26;&#x4E32;" class="anchor-navigation-ex-anchor" href="#437-&#x5B57;&#x7B26;&#x4E32;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="437-&#x5B57;&#x7B26;&#x4E32;" class="plugin-anchor" href="#437-&#x5B57;&#x7B26;&#x4E32;"><i class="fa fa-link" aria-hidden="true"></i></a>4.3.7 &#x5B57;&#x7B26;&#x4E32;</h3>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x53CC;&#x5F15;&#x53F7;&#x6216;&#x5355;&#x5F15;&#x53F7;&#x7F16;&#x5199;&#x3002;&#x9664;&#x975E;&#x8F6C;&#x4E49;&#xFF0C;&#x53CC;&#x5F15;&#x53F7;&#x5185;&#x4E0D;&#x80FD;&#x51FA;&#x73B0;&#x53CC;&#x5F15;&#x53F7;&#x3002;&#x5355;&#x5F15;&#x53F7;&#x540C;&#x7406;&#x3002;</p>
+<pre><code class="lang-css">&quot;this is a &apos;string&apos;&quot;
+&quot;this is a \&quot;string\&quot;&quot;
+&apos;this is a &quot;string&quot;&apos;
+&apos;this is a \&apos;string\&apos;&apos;
+</code></pre>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x5305;&#x542B;&#x6362;&#x884C;&#x7B26;&#x3002;&#xFF08;&#x5982;&#x679C;&#xFF09;&#x8981;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x5185;&#x4F7F;&#x7528;&#x6362;&#x884C;&#x7B26;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x4F7F;&#x7528; ISO-10646 (U+000A)&#x4E2D;&#x6362;&#x884C;&#x7B26;&#x7684;&#x8F6C;&#x4E49;&#x7B26;&#xFF0C;&#x6BD4;&#x5982; <code>\A</code> &#x6216; <code>\00000a</code>&#x3002;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x5728; CSS &#x4E2D;&#x8868;&#x793A; &#x201C;&#x6362;&#x884C;&#x201D;&#x3002;&#x793A;&#x4F8B;&#x89C1; <a href="https://www.w3.org/TR/CSS22/generate.html#propdef-content" target="_blank"><code>content</code></a> &#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x51FA;&#x4E8E;&#x7F8E;&#x89C2;&#x6216;&#x5176;&#x5B83;&#x539F;&#x56E0;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x6709;&#x53EF;&#x80FD;&#x5206;&#x6210;&#x51E0;&#x884C;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6362;&#x884C;&#x7B26;&#x81EA;&#x8EAB;&#x8981;&#x4F7F;&#x7528;&#x53CD;&#x659C;&#x6760;&#xFF08;<code>\</code>&#xFF09;&#x8F6C;&#x4E49;&#x3002;&#x4E0B;&#x9762;&#x4E24;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x7B49;&#x4EF7;&#xFF1A;</p>
+<pre><code class="lang-css">a[title=&quot;a not s\
+o very long title&quot;] {/*...*/}
+a[title=&quot;a not so very long title&quot;] {/*...*/}
+</code></pre>
+<h3 id="438-&#x4E0D;&#x652F;&#x6301;&#x7684;&#x503C;"><a name="438-&#x4E0D;&#x652F;&#x6301;&#x7684;&#x503C;" class="anchor-navigation-ex-anchor" href="#438-&#x4E0D;&#x652F;&#x6301;&#x7684;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="438-&#x4E0D;&#x652F;&#x6301;&#x7684;&#x503C;" class="plugin-anchor" href="#438-&#x4E0D;&#x652F;&#x6301;&#x7684;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>4.3.8 &#x4E0D;&#x652F;&#x6301;&#x7684;&#x503C;</h3>
+<p>&#x5982;&#x679C; UA &#x4E0D;&#x652F;&#x6301;&#x67D0;&#x4E2A;&#x7279;&#x6B8A;&#x503C;&#xFF0C;&#x5219;&#x5728;&#x6837;&#x5F0F;&#x8868;&#x89E3;&#x6790;&#x7684;&#x65F6;&#x5E94;&#x5FFD;&#x7565;&#x8BE5;&#x503C;&#xFF0C;&#x597D;&#x50CF;&#x8BE5;&#x503C;&#x4E0D;&#x5408;&#x6CD5;&#x4E00;&#x6837;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h3</span> {
+    <span class="hljs-attribute">display</span>: inline;
+    <span class="hljs-attribute">display</span>: run-in;
+}
+</code></pre>
+<p>&#x652F;&#x6301; <code>display: run-in</code> &#x7684; UA &#x4F1A;&#x63A5;&#x53D7;&#x7B2C;&#x4E00;&#x4E2A; <code>display</code> &#x58F0;&#x660E;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x7B2C;&#x4E8C;&#x4E2A; <code>display</code> &#x8986;&#x76D6;&#x3002;&#x4E0D;&#x652F;&#x6301;&#x7684;&#x8BDD;&#xFF0C;&#x5C06;&#x5904;&#x7406;&#x7B2C;&#x4E00;&#x4E2A; <code>display</code> &#x58F0;&#x660E;&#x4E14;&#x5FFD;&#x7565;&#x6389;&#x7B2C;&#x4E8C;&#x4E2A;&#x58F0;&#x660E;&#x3002;</p>
+<h2 id="44-css-&#x6837;&#x5F0F;&#x8868;&#x7684;&#x5C55;&#x793A;"><a name="44-css-&#x6837;&#x5F0F;&#x8868;&#x7684;&#x5C55;&#x793A;" class="anchor-navigation-ex-anchor" href="#44-css-&#x6837;&#x5F0F;&#x8868;&#x7684;&#x5C55;&#x793A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="44-css-&#x6837;&#x5F0F;&#x8868;&#x7684;&#x5C55;&#x793A;" class="plugin-anchor" href="#44-css-&#x6837;&#x5F0F;&#x8868;&#x7684;&#x5C55;&#x793A;"><i class="fa fa-link" aria-hidden="true"></i></a>4.4 CSS &#x6837;&#x5F0F;&#x8868;&#x7684;&#x5C55;&#x793A;</h2>
+<p>CSS &#x6837;&#x5F0F;&#x8868;&#x662F;&#x901A;&#x7528;&#x5B57;&#x7B26;&#x96C6;&#x4E2D;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x5B57;&#x7B26;&#xFF08;&#x53C2;&#x89C1;<a href="https://www.w3.org/TR/CSS22/refs.html#ref-ISO10646" target="_blank">[ISO10646]</a>&#xFF09;&#x3002;&#x4E3A;&#x4E86;&#x4F20;&#x8F93;&#x548C;&#x5B58;&#x50A8;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x5FC5;&#x987B;&#x6839;&#x636E; US-ASCII &#x4E2D;&#x53EF;&#x7528;&#x5B57;&#x7B26;&#x96C6;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;UTF-8&#xFF0C;ISO 8859-x&#xFF0C;SHIFT JIS&#x7B49;&#xFF09;&#x7F16;&#x7801;&#x3002;&#x6709;&#x5173;&#x5B57;&#x7B26;&#x96C6;&#x548C;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x7684;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#xFF0C;&#x8BF7;&#x53C2;&#x9605; HTML 4 &#x89C4;&#x8303;&#xFF08;<a href="https://www.w3.org/TR/CSS22/refs.html#ref-HTML4" target="_blank">[HTML4]</a>&#xFF0C;&#x7B2C;5&#x7AE0;&#xFF09;&#x3002;&#x53E6;&#x8BF7;&#x53C2;&#x9605; XML 1.1 &#x89C4;&#x8303;&#xFF08;<a href="https://www.w3.org/TR/CSS22/refs.html#ref-XML11" target="_blank">[XML11]</a>&#xFF0C;&#x7B2C; 2.2 &#x548C; 4.3.3 &#x8282;&#x4EE5;&#x53CA;&#x9644;&#x5F55; E&#xFF09;&#x3002;</p>
+<p>&#x5F53;&#x6837;&#x5F0F;&#x8868;&#x5D4C;&#x5165;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#x4E2D;&#x65F6;&#xFF0C;&#x6BD4;&#x5982;&#x5728; HTML &#x7684; STYLE &#x5143;&#x7D20;&#x6216; &#x201C;style&#x201D; &#x5C5E;&#x6027;&#x4E2D;&#xFF0C;&#x6837;&#x5F0F;&#x8868;&#x5171;&#x4EAB;&#x6574;&#x4E2A;&#x6587;&#x6863;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x3002;</p>
+<p>&#x6837;&#x5F0F;&#x8868;&#x4F4D;&#x4E8E;&#x5355;&#x72EC;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5728;&#x786E;&#x5B9A;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x65F6;&#xFF08;&#x4ECE;&#x6700;&#x9AD8;&#x4F18;&#x5148;&#x7EA7;&#x5230;&#x6700;&#x4F4E;&#x4F18;&#x5148;&#x7EA7;&#xFF09;&#x5FC5;&#x987B;&#x9075;&#x5FAA;&#x4EE5;&#x4E0B;&#x4F18;&#x5148;&#x7EA7;&#xFF1A;</p>
+<ol>
+<li>&#x201C;Content-Type&#x201D; &#x5B57;&#x6BB5;&#x4E2D;&#x7684; HTTP &#x201C;charset&#x201D; &#x53C2;&#x6570;&#xFF08;&#x6216;&#x5176;&#x4ED6;&#x534F;&#x8BAE;&#x4E2D;&#x7684;&#x7C7B;&#x4F3C;&#x53C2;&#x6570;&#xFF09;</li>
+<li>BOM &#x548C;/&#x6216; <code>@charset</code>&#xFF08;&#x89C1;&#x4E0B;&#x65B9;&#xFF09;</li>
+<li><code>&lt;link charset=&quot;&quot;&gt;</code> &#x6216;&#x6765;&#x81EA;&#x5176;&#x5B83;&#x94FE;&#x63A5;&#x7684;&#x5143;&#x6570;&#x636E;&#xFF08;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#xFF09;</li>
+<li>&#x8981;&#x5F15;&#x5165;&#x6837;&#x5F0F;&#x8868;&#x6216;&#x6587;&#x6863;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#xFF08;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#xFF09;</li>
+<li>&#x5047;&#x8BBE;&#x4E3A; <code>UTF-8</code></li>
+</ol>
+<p><code>@charset</code> &#x89C4;&#x5219;&#x5E94;&#x8BE5;&#x653E;&#x5728;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x5F00;&#x5934;&#xFF0C;&#x9700;&#x7528;&#x5F15;&#x53F7;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF0C;&#x5FC5;&#x987B;&#x5199;&#x6210;&#x5B57;&#x9762;&#x91CF;&#x5F62;&#x5F0F;&#xFF08;&#x5373;&#xFF0C;<code>@charset</code>&#xFF08;&#x5C0F;&#x5199;&#x3001;&#x4E0D;&#x542B;&#x53CD;&#x659C;&#x6760;&#x8F6C;&#x4E49;&#xFF09;+ &#x7F16;&#x7801;&#x540D; + <code>;</code>&#xFF09;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">charset</span> <span class="hljs-string">&quot;ISO-8859-1&quot;</span>;
+</code></pre>
+<p>&#x7F16;&#x7801;&#x540D;&#x5FC5;&#x987B;&#x662F; IANA &#x6CE8;&#x518C;&#x5E93; &#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x540D;&#x3002;&#x5B8C;&#x6574;&#x5217;&#x8868;&#x89C1; <a href="https://www.w3.org/TR/CSS22/refs.html#ref-CHARSETS" target="_blank">[CHARSETS]</a>&#x3002;&#x542B;&#x6709; <code>MIME</code> &#x7684;&#x5B57;&#x7B26;&#x96C6;&#x540D;&#x5E94;&#x4F18;&#x5148;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x7528;&#x6237;&#x4EE3;&#x7406;&#x81F3;&#x5C11;&#x5FC5;&#x987B;&#x652F;&#x6301; UTF-8 &#x7F16;&#x7801;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E0A;&#x9762;&#x7684;&#x89C4;&#x5219; 1 &#xFF08;HTTP &#x201C;charset&#x201D; &#x53C2;&#x6570; &#x6216;&#x7C7B;&#x4F3C;&#x53C2;&#x6570;&#xFF09;&#x751F;&#x6210;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x4E14;&#x662F; <code>UTF-8</code>&#x3001;<code>UTF-16</code>&#x3001;<code>UTF-32</code> &#x4E09;&#x8005;&#x4E4B;&#x4E00;&#xFF0C;&#x5219;&#x6587;&#x4EF6;&#x5F00;&#x5934;&#x7684; BOM &#xFF08;&#x5982;&#x679C;&#x6709;&#xFF09;&#x4F1A;&#x8986;&#x76D6;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;
+<img src="media/15591944916636/15660236777924.jpg" alt="-w379"></p>
+<p>&#x5982;&#x679C;&#x89C4;&#x5219; 1 &#x751F;&#x6210;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x662F; <code>UTF-16BE</code>&#x3001;<code>UTF-16LE</code>&#x3001;<code>UTF-32BE</code>&#x3001;<code>UTF-32LE</code> &#x4E4B;&#x4E00;&#xFF0C;&#x5219;&#x5982;&#x4ECA;&#x4EE5; BOM &#x5F00;&#x5934;&#x4F1A;&#x62A5;&#x9519;&#x3002;CSS UA &#x5219;&#x9700;&#x8981;&#x5FFD;&#x7565;&#x6307;&#x5B9A;&#x7684;&#x7F16;&#x7801;&#x5207;&#x4F7F;&#x7528;&#x4E0A;&#x8868;&#x6765;&#x6062;&#x590D;&#x3002;</p>
+<p>&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x5FFD;&#x7565;&#x4EFB;&#x4F55;&#x4E0D;&#x5728;&#x6837;&#x5F0F;&#x8868;&#x5F00;&#x5934;&#x7684; <code>@charset</code> &#x89C4;&#x5219;&#x3002; &#x5F53;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x4F7F;&#x7528; BOM &#x548C;/&#x6216;<code>@charset</code> &#x89C4;&#x5219;&#x68C0;&#x6D4B;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x65F6;&#xFF0C;&#x5B83;&#x4EEC;&#x5E94;&#x9075;&#x5FAA;&#x4EE5;&#x4E0B;&#x89C4;&#x5219;&#xFF1A;</p>
+<ol>
+<li>&#x9664;&#x4E86;&#x8FD9;&#x91CC;&#x6307;&#x5B9A;&#x7684;&#x89C4;&#x5219;&#x5916;&#xFF0C;&#x6240;&#x6709; <code>@charset</code> &#x89C4;&#x5219;&#x90FD;&#x4F1A;&#x5FFD;&#x7565;&#x3002;</li>
+<li>&#x7F16;&#x7801;&#x901A;&#x8FC7;&#x6837;&#x5F0F;&#x8868;&#x5F00;&#x5934;&#x7684;&#x5B57;&#x8282;&#x6D41;&#x6765;&#x68C0;&#x6D4B;&#x3002;&#x4E0B;&#x8868;&#x7ED9;&#x51FA;&#x4E86;&#x521D;&#x59CB;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x7684;&#x4E00;&#x7EC4;&#x53EF;&#x80FD;&#x5199;&#x6CD5;&#xFF08;&#x4EE5;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7F16;&#x5199;&#xFF09;&#x3002;&#x4E0E;&#x6837;&#x5F0F;&#x8868;&#x5F00;&#x5934;&#x5339;&#x914D;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x6839;&#x636E; <code>BOM</code> &#x548C;/&#x6216; <code>@charset</code> &#x89C4;&#x5219;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#x68C0;&#x6D4B;&#x7ED3;&#x679C;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5339;&#x914D;&#x7684;&#x884C;&#xFF0C;&#x5219;&#x65E0;&#x6CD5;&#x6839;&#x636E; <code>BOM</code> &#x548C;/&#x6216; <code>@charset</code> &#x89C4;&#x5219;&#x68C0;&#x6D4B;&#x7F16;&#x7801;&#x3002;&#x7B26;&#x53F7;<code>(...)*</code> &#x6307;&#x7684;&#x662F;&#x5339;&#x914D;&#x90E8;&#x5206;&#x53EF;&#x80FD;&#x4F1A;&#x91CD;&#x590D;&#x5339;&#x914D;&#x51E0;&#x6B21;&#x3002;&#x6807;&#x8BB0;&#x4E3A; &#x201C;XX&#x201D; &#x7684;&#x5B57;&#x8282;&#x662F;&#x7528;&#x4E8E;&#x786E;&#x5B9A;&#x7F16;&#x7801;&#x540D;&#x79F0;&#x7684;&#xFF0C;&#x901A;&#x8FC7;&#x6309;&#x7ED9;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#x5C06;&#x5B83;&#x4EEC;&#x89C6;&#x4E3A; ASCII &#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x3002;&#x6807;&#x8BB0;&#x4E3A; &#x201C;YY&#x201D; &#x7684;&#x5B57;&#x8282;&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x9700;&#x8981;&#x6839;&#x636E;&#x63D0;&#x793A;&#x8F6C;&#x7801;&#x4E3A; ASCII&#x3002;&#x5982;&#x679C;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x4E0D;&#x652F;&#x6301;&#x4E0E;&#x6761;&#x76EE;&#x76F8;&#x5173;&#x7684;&#x4EFB;&#x4F55;&#x7F16;&#x7801;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x8868;&#x4E2D;&#x7684;&#x6761;&#x76EE;&#xFF1A;
+ <img src="media/15591944916636/15660243350581.jpg" alt="-w1010"></li>
+<li>&#x5982;&#x679C;&#x7F16;&#x7801;&#x662F;&#x6839;&#x636E;&#x4E0A;&#x9762;&#x7684;&#x88AB;&#x6807;&#x8BB0;&#x4E3A; &#x201C;&#x4E0E;&#x6307;&#x5B9A;&#x503C;&#x76F8;&#x540C;&#x201D; &#x7684;&#x67D0;&#x4E00;&#x9879;&#x68C0;&#x6D4B;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x4F46;&#x6839;&#x636E;&#x9009;&#x5B9A;&#x7684;<code>@charset</code> &#x89E3;&#x7801;&#x5B57;&#x7B26;&#x6D41;&#x5F00;&#x5934;&#x90E8;&#x5206;&#x65E0;&#x6CD5;&#x88AB;&#x89E3;&#x6790;&#x6210;&#x4E00;&#x4E2A;&#x5408;&#x9002;&#x7684;@charset&#x89C4;&#x5219;&#x7684;&#x8BDD;&#xFF0C;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5E94;&#x8BE5;&#x5FFD;&#x7565;&#x8BE5;&#x6837;&#x5F0F;&#x8868;&#x3002;<ul>
+<li><code>@charset</code> &#x89C4;&#x5219;&#x53EA;&#x5728;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x7F16;&#x7801;&#x4E2D;&#x751F;&#x6548;</li>
+<li>&#x5B57;&#x8282;&#x987A;&#x5E8F;&#x6807;&#x8BB0;&#x53EA;&#x5728;&#x652F;&#x6301;&#x5B57;&#x8282;&#x987A;&#x5E8F;&#x6807;&#x8BB0;&#x7684;&#x7F16;&#x7801;&#x4E2D;&#x88AB;&#x5FFD;&#x7565;&#xFF0C;&#x5E76;&#x4E14;</li>
+<li>&#x7F16;&#x7801;&#x540D;&#x4E0D;&#x80FD;&#x542B;&#x6709;&#x6362;&#x884C;&#x7B26;</li>
+</ul>
+</li>
+</ol>
+<p>&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x5FFD;&#x7565;&#x672A;&#x77E5;&#x7F16;&#x7801;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x3002;</p>
+<h3 id="441-&#x6D89;&#x53CA;&#x5F53;&#x524D;&#x5B57;&#x7B26;&#x96C6;&#x4E4B;&#x5916;&#x7684;&#x5B57;&#x7B26;"><a name="441-&#x6D89;&#x53CA;&#x5F53;&#x524D;&#x5B57;&#x7B26;&#x96C6;&#x4E4B;&#x5916;&#x7684;&#x5B57;&#x7B26;" class="anchor-navigation-ex-anchor" href="#441-&#x6D89;&#x53CA;&#x5F53;&#x524D;&#x5B57;&#x7B26;&#x96C6;&#x4E4B;&#x5916;&#x7684;&#x5B57;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="441-&#x6D89;&#x53CA;&#x5F53;&#x524D;&#x5B57;&#x7B26;&#x96C6;&#x4E4B;&#x5916;&#x7684;&#x5B57;&#x7B26;" class="plugin-anchor" href="#441-&#x6D89;&#x53CA;&#x5F53;&#x524D;&#x5B57;&#x7B26;&#x96C6;&#x4E4B;&#x5916;&#x7684;&#x5B57;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>4.4.1 &#x6D89;&#x53CA;&#x5F53;&#x524D;&#x5B57;&#x7B26;&#x96C6;&#x4E4B;&#x5916;&#x7684;&#x5B57;&#x7B26;</h3>
+<p>&#x6837;&#x5F0F;&#x8868;&#x53EF;&#x80FD;&#x4E0D;&#x5F97;&#x4E0D;&#x5F15;&#x5165;&#x90A3;&#x4E9B;&#x5728;&#x5F53;&#x524D;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x4E2D;&#x65E0;&#x6CD5;&#x663E;&#x793A;&#x7684;&#x5B57;&#x7B26;&#x3002;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x5FC5;&#x987B;&#x88AB;&#x5199;&#x6210;<a href="https://www.w3.org/TR/CSS22/syndata.html#escaped-characters" target="_blank">&#x8F6C;&#x4E49;</a>&#x7684; ISO 10646 &#x5B57;&#x7B26;&#x3002;&#x8FD9;&#x4E9B;&#x8F6C;&#x4E49;&#x7684;&#x76EE;&#x7684;&#x90FD;&#x662F;&#x628A;&#x6570;&#x5B57;&#x5B57;&#x7B26;&#x5F15;&#x5165; HTML &#x6216;&#x8005; XML &#x6587;&#x6863;&#x4E2D;&#xFF08;&#x53C2;&#x89C1;<a href="https://www.w3.org/TR/CSS22/refs.html#ref-HTML4" target="_blank">[HTML4]</a>&#xFF0C;&#x7B2C;5&#x7AE0;&#x548C;25&#x7AE0;&#xFF09;&#x3002;</p>
+<p>&#x5B57;&#x7B26;&#x8F6C;&#x4E49;&#x673A;&#x5236;&#x5E94;&#x8BE5;&#x53EA;&#x88AB;&#x7528;&#x5728;&#x4E00;&#x4E9B;&#x5FC5;&#x987B;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x663E;&#x793A;&#x7684;&#x5B57;&#x7B26;&#x4E0A;&#x3002;&#x5982;&#x679C;&#x6837;&#x5F0F;&#x8868;&#x4E2D;&#x7684;&#x5927;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x90FD;&#x9700;&#x8981;&#x8F6C;&#x4E49;&#xFF0C;&#x4F5C;&#x8005;&#x5E94;&#x8BE5;&#x7528;&#x4E00;&#x79CD;&#x66F4;&#x5408;&#x9002;&#x7684;&#x7F16;&#x7801;&#x6765;&#x5BF9;&#x5B83;&#x8FDB;&#x884C;&#x7F16;&#x7801;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x6837;&#x5F0F;&#x8868;&#x542B;&#x6709;&#x5927;&#x91CF;&#x7684;&#x5E0C;&#x814A;&#x6587;&#x5B57;&#xFF0C;&#x4F5C;&#x8005;&#x5E94;&#x8BE5;&#x7528; &quot;ISO-8859-7&quot; &#x6216;&#x8005; &quot;UTF-8&quot;&#xFF09;</p>
+<p>&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x7684;&#x4E2D;&#x95F4;&#x5904;&#x7406;&#x5668;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E9B;&#x8F6C;&#x4E49;&#x7684;&#x5E8F;&#x5217;&#x7FFB;&#x8BD1;&#x6210;&#x76F8;&#x5E94;&#x7F16;&#x7801;&#x7684;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x3002;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x4E2D;&#x95F4;&#x5904;&#x7406;&#x5668;&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x8F6C;&#x4E49;&#x5E8F;&#x5217;&#x53D6;&#x6D88;ASCII&#x5B57;&#x7B26;&#x7684;&#x7279;&#x6B8A;&#x542B;&#x4E49;&#x3002;</p>
+<p>&#xFF08;&#x4E0E;&#x672C;&#x89C4;&#x8303;&#xFF09;&#x4E00;&#x81F4;&#x7684;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x80FD;&#x591F;&#x6B63;&#x786E;&#x5730;&#x628A; ISO-10646 &#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x6620;&#x5C04;&#x6210;&#x5B83;&#x4EEC;&#x53EF;&#x8BC6;&#x522B;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF08;&#x6216;&#x8005;&#x5B83;&#x4EEC;&#x5FC5;&#x987B;&#x8868;&#x73B0;&#x5F97;&#x81F3;&#x5C11;&#x770B;&#x8D77;&#x6765;&#x662F;&#x6B63;&#x786E;&#x7684;&#xFF09;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x4E00;&#x4EFD;&#x4EE5; ISO-8859-1(Latin-1) &#x4F20;&#x8F93;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x5305;&#x542B;&#x5E0C;&#x814A;&#x5B57;&#x6BCD;&#xFF1A;&quot;&#x3BA;&#x3BF;&#x3C5;&#x3C1;&#x3BF;&#x3C2;&quot;&#xFF08;&#x5E0C;&#x814A;&#x8BED;&#xFF1A;&quot;kouros&quot;(&#x9752;&#x5E74;)&#xFF09;&#x5FC5;&#x987B;&#x5199;&#x4F5C; &quot;\3BA\3BF\3C5\3C1\3BF\3C2&quot;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5728; HTML 4 &#x4E2D;&#xFF0C;&#x6570;&#x5B57;&#x5B57;&#x7B26;&#x5F15;&#x7528;&#x88AB;&#x89E3;&#x91CA;&#x4E3A; &quot;style&quot; &#x5C5E;&#x6027;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x4E0D;&#x662F; STYLE &#x5143;&#x7D20;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x5EFA;&#x8BAE;&#x4F5C;&#x8005;&#x5BF9; &quot;style&quot; &#x5C5E;&#x6027;&#x548C; STYLE &#x5143;&#x7D20;&#x90FD;&#x4F7F;&#x7528; CSS &#x5B57;&#x7B26;&#x8F6C;&#x4E49;&#x673A;&#x5236;&#x800C;&#x4E0D;&#x662F;&#x6570;&#x5B57;&#x5B57;&#x7B26;&#x5F15;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#xFF1A;</p>
+<pre><code class="lang-css">&lt;SPAN style=&quot;font-family: L\FC beck&quot;&gt;...&lt;/SPAN&gt;
+</code></pre>
+<p>&#x800C;&#x4E0D;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-css">&lt;SPAN style=&quot;font-family: L&amp;#252;beck&quot;&gt;...&lt;/SPAN&gt;
+</code></pre>
+<p><footer class="page-footer"><span class="copyright">Copyright &#xA9; chouchou 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x5F53;&#x524D;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-08-30 14:03:47
+</span></footer><div id="gitalk-container" class="gitbook-plugin-mygitalk"></div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3 一致性：要求和建议.html" class="navigation navigation-prev " aria-label="Previous page: 3 一致性：要求和建议">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5 选择器.html" class="navigation navigation-next " aria-label="Next page: 5 选择器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4 语法和基本数据类型","level":"1.3.4","depth":2,"next":{"title":"5 选择器","level":"1.3.5","depth":2,"path":"docs/CSS/CSS2.2/5 选择器.md","ref":"./docs/CSS/CSS2.2/5 选择器.md","articles":[]},"previous":{"title":"3 一致性：要求和建议","level":"1.3.3","depth":2,"path":"docs/CSS/CSS2.2/3 一致性：要求和建议.md","ref":"./docs/CSS/CSS2.2/3 一致性：要求和建议.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","github","github-buttons","emphasize","code","splitter","theme-comscore","flexible-alerts","tbfed-pagefooter","pageview-count","hide-element","auto-scroll-table","anchors","chapter-fold","anchor-navigation-ex","donate","mygitalk"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy chouchou 2019","modify_label":"当前页面修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/chouchouovo"},"splitter":{},"search-pro":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/assets/alipay.png","alipayText":" ","button":"赏","title":"","wechat":"/assets/weixin.png","wechatText":" "},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"pageview-count":{},"github-buttons":{"buttons":[{"user":"chouchou","repo":"gitbook-CSS2.2","type":"star","size":"small"},{"user":"chouchou","type":"follow","width":"150","size":"small"}]},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"mygitalk":{"flipMoveOptions":{},"clientID":"ad7b595b5eddc3e352ad","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["chouchouovo"],"createIssueManually":false,"distractionFreeMode":false,"repo":"gitbook-CSS2.2","owner":"chouchouovo","enableHotKey":true,"clientSecret":"ed17ce94c2a777d4af7ef5756f80185aa8d39518","pagerDirection":"last","labels":["Gitalk"]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"chouchouovo","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CSS GitBook","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/chouchouovo"}},"gitbook":"3.2.3","description":"CSS GitBook","extension":null},"file":{"path":"docs/CSS/CSS2.2/4 语法和基本数据类型.md","mtime":"2019-08-30T06:03:47.030Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-30T10:59:26.482Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
