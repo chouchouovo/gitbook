@@ -192,9 +192,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="1 关于 CSS 2.2 规范.html">
+        <li class="chapter " data-level="1.3" data-path="./">
             
-                <a href="1 关于 CSS 2.2 规范.html">
+                <a href="./">
             
                     
                     CSS 2.2 中文版
@@ -381,301 +381,12 @@
 <h3 id="411-&#x7B26;&#x53F7;&#x5316;"><a name="411-&#x7B26;&#x53F7;&#x5316;" class="anchor-navigation-ex-anchor" href="#411-&#x7B26;&#x53F7;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="411-&#x7B26;&#x53F7;&#x5316;" class="plugin-anchor" href="#411-&#x7B26;&#x53F7;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.1 &#x7B26;&#x53F7;&#x5316;</h3>
 <p>&#x6240;&#x6709;&#x7EA7;&#x522B;&#x7684; CSS &#x2014; CSS 1&#x3001;CSS 2&#x548C;&#x5C06;&#x6765;&#x7684;&#x4EFB;&#x4F55;&#x7EA7;&#x522B; &#x2014; &#x7528;&#x7684;&#x90FD;&#x662F;&#x76F8;&#x540C;&#x7684;&#x6838;&#x5FC3;&#x8BED;&#x6CD5;&#x3002;&#x8FD9;&#x6837; UA &#x5C31;&#x53EF;&#x4EE5;&#x89E3;&#x6790;&#xFF08;&#x867D;&#x7136;&#x4E0D;&#x5B8C;&#x5168;&#x80FD;&#x7406;&#x89E3;&#xFF09;&#x4EE5; UA &#x53D1;&#x5E03;&#x65F6; &#x5C1A;&#x4E0D;&#x5B58;&#x5728;&#x7684; CSS &#x7248;&#x672C;&#x7F16;&#x5199;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x3002;&#x8BBE;&#x8BA1;&#x8005;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x8BE5;&#x7279;&#x5F81;&#x6765;&#x521B;&#x5EFA;&#x517C;&#x5BB9;&#x65E7;&#x7248;&#x672C;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x7684;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x80FD;&#x8FD0;&#x7528;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;CSS</p>
 <p>&#x5728;&#x8BCD;&#x6CD5;&#x5C42;&#x9762;&#xFF0C;CSS &#x6837;&#x5F0F;&#x8868;&#x7531;&#x4E00;&#x7CFB;&#x5217; &#x6807;&#x8BB0;&#xFF08;&#x7B26;&#x53F7;&#xFF09;&#x7EC4;&#x6210;&#x3002;CSS &#x6807;&#x8BB0;&#xFF08;&#x7B26;&#x53F7;&#xFF09;&#x5217;&#x8868;&#x5982;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B9A;&#x4E49;&#x4E86;&#x4F7F;&#x7528;&#x4E86; Lex &#x98CE;&#x683C;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x516B;&#x8FDB;&#x5236;&#x7801;&#x53C2;&#x8003;&#x4E86; ISO 10646&#xFF08;<a href="https://www.w3.org/TR/CSS22/refs.html#ref-ISO10646" target="_blank">[ISO10646]</a>&#xFF09;&#xFF0C;&#x548C;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x4E00;&#x6837;&#xFF0C;&#x5B58;&#x5728;&#x591A;&#x4E2A;&#x5339;&#x914D;&#x65F6;&#xFF0C;&#x628A;&#x6700;&#x957F;&#x7684;&#x5339;&#x914D;&#x4F5C;&#x4E3A; &#x6807;&#x8BB0;&#xFF08;&#x7B26;&#x53F7;&#xFF09;&#x3002;</p>
-<table>
-<thead>
-<tr>
-<th>Token</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>IDENT</td>
-<td><code>{ident}</code></td>
-</tr>
-<tr>
-<td>ATKEYWORD</td>
-<td><code>@{ident}</code></td>
-</tr>
-<tr>
-<td>STRING</td>
-<td><code>{string}</code></td>
-</tr>
-<tr>
-<td>BAD_STRING</td>
-<td><code>{badstring}</code></td>
-</tr>
-<tr>
-<td>BAD_URI</td>
-<td><code>{baduri}</code></td>
-</tr>
-<tr>
-<td>BAD_COMMENT</td>
-<td><code>{badcomment}</code></td>
-</tr>
-<tr>
-<td>HASH</td>
-<td><code>#{name}</code></td>
-</tr>
-<tr>
-<td>NUMBER</td>
-<td><code>{num}</code></td>
-</tr>
-<tr>
-<td>PERCENTAGE</td>
-<td><code>{num}%</code></td>
-</tr>
-<tr>
-<td>DIMENSION</td>
-<td><code>{num}{ident}</code></td>
-</tr>
-<tr>
-<td>URI</td>
-<td>`url({w}{string}{w})</td>
-<td>url({w}([!#$%&amp;*-[]-~]</td>
-<td>{nonascii}</td>
-<td>{escape})*{w})`</td>
-</tr>
-<tr>
-<td>UNICODE-RANGE</td>
-<td><code>u\+[0-9a-f?]{1,6}(-[0-9a-f]{1,6})?</code></td>
-</tr>
-<tr>
-<td>CDO</td>
-<td><code>&lt;!--</code></td>
-</tr>
-<tr>
-<td>CDC</td>
-<td><code>--&gt;</code></td>
-</tr>
-<tr>
-<td>:</td>
-<td><code>:</code></td>
-</tr>
-<tr>
-<td>;</td>
-<td><code>;</code></td>
-</tr>
-<tr>
-<td>{</td>
-<td><code>\{</code></td>
-</tr>
-<tr>
-<td>}</td>
-<td><code>\}</code></td>
-</tr>
-<tr>
-<td>(</td>
-<td><code>\(</code></td>
-</tr>
-<tr>
-<td>)</td>
-<td><code>\)</code></td>
-</tr>
-<tr>
-<td>[</td>
-<td><code>\[</code></td>
-</tr>
-<tr>
-<td>]</td>
-<td><code>\]</code></td>
-</tr>
-<tr>
-<td>S</td>
-<td><code>[ \t\r\n\f]+</code></td>
-</tr>
-<tr>
-<td>COMMENT</td>
-<td><code>\/\*[^*]*\*+([^/*][^*]*\*+)*\/</code></td>
-</tr>
-<tr>
-<td>FUNCTION</td>
-<td><code>{ident}\(</code></td>
-</tr>
-<tr>
-<td>INCLUDES</td>
-<td><code>~=</code></td>
-</tr>
-<tr>
-<td>DASHMATCH</td>
-<td><code>{ident}\(</code></td>
-</tr>
-<tr>
-<td>DELIM</td>
-<td><code>{ident}\(</code></td>
-</tr>
-</tbody>
-</table>
+<p><img src="media/15591944916636/15675722154200.jpg" alt="-w641"></p>
 <p>&#x4EE5;&#x4E0A;&#x5B9A;&#x4E49;&#x4E2D;&#x82B1;&#x62EC;&#x53F7;({})&#x4E2D;&#x7684;&#x5B8F;&#x5B9A;&#x4E49;&#xFF08;macros&#xFF09;&#x5982;&#x4E0B;&#xFF1A;</p>
-<table>
-<thead>
-<tr>
-<th>Macro</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ident</td>
-<td><code>[-]?{nmstart}{nmchar}*</code></td>
-</tr>
-<tr>
-<td>name</td>
-<td><code>{nmchar}+</code></td>
-</tr>
-<tr>
-<td>nmstart</td>
-<td>`[_a-z]</td>
-<td>{nonascii}</td>
-<td>{escape}`</td>
-</tr>
-<tr>
-<td>nonascii</td>
-<td><code>[^\0-\177]</code></td>
-</tr>
-<tr>
-<td>unicode</td>
-<td>`\[0-9a-f]{1,6}(\r\n</td>
-<td>[ \n\r\t\f])?`</td>
-</tr>
-<tr>
-<td>escape</td>
-<td>`{unicode}</td>
-<td>\<sup><a href="#fn_%5Cn%5Cr%5Cf0-9a-f" id="reffn_\n\r\f0-9a-f">\n\r\f0-9a-f</a></sup>`</td>
-</tr>
-<tr>
-<td>nmchar</td>
-<td>`[_a-z0-9-]</td>
-<td>{nonascii}</td>
-<td>{escape}`</td>
-</tr>
-<tr>
-<td>num</td>
-<td>`[+-]?([0-9]+</td>
-<td>[0-9]*.[0-9]+)(e[+-]?[0-9]+)?`</td>
-</tr>
-<tr>
-<td>string</td>
-<td>`{string1}</td>
-<td>{string2}`</td>
-</tr>
-<tr>
-<td>string1</td>
-<td>`\&quot;(<sup><a href="#fn_%5Cn%5Cr%5Cf%5C%5C" "="" id="reffn_\n\r\f\\">\n\r\f\\&quot;</a></sup></td>
-<td>\{nl}</td>
-<td>{escape})*\&quot;`</td>
-</tr>
-<tr>
-<td>string2</td>
-<td>`\&apos;(<sup><a href="#fn_%5Cn%5Cr%5Cf%5C%5C%27" id="reffn_\n\r\f\\&apos;">\n\r\f\\&apos;</a></sup></td>
-<td>\{nl}</td>
-<td>{escape})*\&apos;`</td>
-</tr>
-<tr>
-<td>badstring</td>
-<td>`{badstring1}</td>
-<td>{badstring2}`</td>
-</tr>
-<tr>
-<td>badstring1</td>
-<td>`\&quot;(<sup><a href="#fn_%5Cn%5Cr%5Cf%5C%5C" "="" id="reffn_\n\r\f\\">\n\r\f\\&quot;</a></sup></td>
-<td>\{nl}</td>
-<td>{escape})*\?`</td>
-</tr>
-<tr>
-<td>badstring2</td>
-<td>`\&apos;(<sup><a href="#fn_%5Cn%5Cr%5Cf%5C%5C%27" id="reffn_\n\r\f\\&apos;">\n\r\f\\&apos;</a></sup></td>
-<td>\{nl}</td>
-<td>{escape})*\?`</td>
-</tr>
-<tr>
-<td>badcomment</td>
-<td>`{badcomment1}</td>
-<td>{badcomment2}`</td>
-</tr>
-<tr>
-<td>badcomment1</td>
-<td><code>\/\*[^*]*\*+([^/*][^*]*\*+)*</code></td>
-</tr>
-<tr>
-<td>badcomment2</td>
-<td><code>\/\*[^*]*(\*+[^/*][^*]*)*</code></td>
-</tr>
-<tr>
-<td>baduri</td>
-<td>`{baduri1}</td>
-<td>{baduri2}</td>
-<td>{baduri3}`</td>
-</tr>
-<tr>
-<td>baduri1</td>
-<td>`{U}{R}{L}({w}([!#$%&amp;*-~]</td>
-<td>{nonascii}</td>
-<td>{escape})*{w}`</td>
-</tr>
-<tr>
-<td>baduri2</td>
-<td><code>{U}{R}{L}\({w}{string}{w}</code></td>
-</tr>
-<tr>
-<td>baduri3</td>
-<td><code>{U}{R}{L}\({w}{badstring}</code></td>
-</tr>
-<tr>
-<td>nl</td>
-<td>`\n</td>
-<td>\r\n</td>
-<td>\r</td>
-<td>\f`</td>
-</tr>
-<tr>
-<td>w</td>
-<td><code>[ \t\r\n\f]*</code></td>
-</tr>
-<tr>
-<td>L</td>
-<td>`l</td>
-<td>\0{0,4}(4c</td>
-<td>6c)(\r\n</td>
-<td>[ \t\r\n\f])?</td>
-<td>\l`</td>
-</tr>
-<tr>
-<td>R</td>
-<td>`r</td>
-<td>\0{0,4}(52</td>
-<td>72)(\r\n</td>
-<td>[ \t\r\n\f])?</td>
-<td>\r`</td>
-</tr>
-<tr>
-<td>U</td>
-<td>`u</td>
-<td>\0{0,4}(55</td>
-<td>75)(\r\n</td>
-<td>[ \t\r\n\f])?</td>
-<td>\u`</td>
-</tr>
-</tbody>
-</table>
+<p><img src="media/15591944916636/15675722361982.jpg" alt="-w465"></p>
 <p>&#x6BD4;&#x5982;&#xFF0C;&#x6700;&#x957F;&#x5339;&#x914D;&#x89C4;&#x5219;&#x610F;&#x5473;&#x7740; &#x201C;red--&gt;&#x201D; &#x4F1A;&#x88AB;&#x7B26;&#x53F7;&#x5316;&#x4E3A;&#x4E00;&#x4E2A; IDENT &#x201C;red--&#x201D; &#x540E;&#x9762;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;DELIM &#x201C;&gt;&#x201D;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A; IDENT &#x540E;&#x9762;&#x8DDF;&#x7740;&#x4E00;&#x4E2A; CDC&#x3002;</p>
 <p>&#x4E0B;&#x9762;&#x662F; CSS &#x7684;&#x6838;&#x5FC3;&#x8BED;&#x6CD5;&#xFF0C;&#x672C;&#x8282;&#x63A5;&#x7740;&#x63CF;&#x8FF0;&#x600E;&#x6837;&#x4F7F;&#x7528;&#x5B83;&#x3002;<a href="https://www.w3.org/TR/CSS22/grammar.html" target="_blank">&#x9644;&#x5F55; G</a> &#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x4E2A;&#x7EA6;&#x675F;&#x66F4;&#x591A;&#x7684;&#x66F4;&#x63A5;&#x8FD1; CSS 2 &#x7684;&#x8BED;&#x6CD5;&#x3002;&#x80FD;&#x6839;&#x636E;&#x672C;&#x8BED;&#x6CD5;&#x89E3;&#x6790;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x7528;<a href="https://www.w3.org/TR/CSS22/grammar.html" target="_blank">&#x9644;&#x5F55; G</a>&#x4E2D;&#x7684;&#x8BED;&#x6CD5;&#x89E3;&#x6790; &#x7684;&#x90E8;&#x5206;&#x6837;&#x5F0F;&#x8868;&#x90FD;&#x662F;&#x6309;&#x7167;&#x5904;&#x7406;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x7684;&#x89C4;&#x5219;&#x5E94;&#x8BE5;&#x5FFD;&#x7565;&#x7684;&#x90E8;&#x5206;</p>
-<pre><code class="lang-text">stylesheet  : [ CDO | CDC | S | statement ]*;
-statement   : ruleset | at-rule;
-at-rule     : ATKEYWORD S* any* [ block | &apos;;&apos; S* ];
-block       : &apos;{&apos; S* [ any | block | ATKEYWORD S* | &apos;;&apos; S* ]* &apos;}&apos; S*;
-ruleset     : selector? &apos;{&apos; S* declaration? [ &apos;;&apos; S* declaration? ]* &apos;}&apos; S*;
-selector    : any+;
-declaration : property S* &apos;:&apos; S* value;
-property    : IDENT;
-value       : [ any | block | ATKEYWORD S* ]+;
-any         : [ IDENT | NUMBER | PERCENTAGE | DIMENSION | STRING
-              | DELIM | URI | HASH | UNICODE-RANGE | INCLUDES
-              | DASHMATCH | &apos;:&apos; | FUNCTION S* [any|unused]* &apos;)&apos;
-              | &apos;(&apos; S* [any|unused]* &apos;)&apos; | &apos;[&apos; S* [any|unused]* &apos;]&apos;
-              ] S*;
-unused      : block | ATKEYWORD S* | &apos;;&apos; S* | CDO S* | CDC S*;
-</code></pre>
+<p><img src="media/15591944916636/15675723176212.jpg" alt="-w514"></p>
 <p>&quot;unused&quot; &#x4EA7;&#x751F;&#x5F0F;&#x4E0D;&#x7528;&#x5728; CSS &#x4E2D;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x88AB;&#x4EFB;&#x4F55;&#x5C06;&#x6765;&#x7684;&#x6269;&#x5C55;&#x4F7F;&#x7528;&#x3002;&#x8FD9;&#x91CC;&#x63D0;&#x5230;&#x5B83;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x5E2E;&#x52A9;&#x5B8C;&#x6210;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x3002;&#xFF08;&#x89C1; 4.2 &#x201C;&#x5904;&#x7406;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x7684;&#x89C4;&#x5219;&#x201D;&#xFF09;</p>
 <p>&#x6CE8;&#x610F;&#xFF1A;&#x6807;&#x8BB0;&#xFF08;&#x7B26;&#x53F7;&#xFF09;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x5728;&#x8BED;&#x6CD5;&#x4E2D;&#xFF08;&#x4E3A;&#x4E86;&#x4FDD;&#x6301;&#x5176;&#x53EF;&#x8BFB;&#x6027;&#xFF09;&#xFF0C;&#x4F46;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x6807;&#x8BB0;&#xFF08;&#x7B26;&#x53F7;&#xFF09;&#x90FD;&#x53EF;&#x4EE5;&#x51FA;&#x73B0;&#x5728;&#x5176;&#x5B83;&#x6807;&#x8BB0;&#xFF08;&#x7B26;&#x53F7;&#xFF09;&#x5916;&#x7684;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#xFF08;&#x6CE8;&#x610F;&#xFF0C;&#x7136;&#x800C;&#xFF0C;&#x51FA;&#x73B0;&#x5728; @charset &#x524D;&#x6216;&#x8005;&#x91CC;&#x9762;&#x7684;&#x6CE8;&#x91CA;&#x90FD;&#x4F1A;&#x5BFC;&#x81F4; @charset &#x65E0;&#x6548;&#xFF09;&#x3002;</p>
 <p>&#x4E0A;&#x9762;&#x8BED;&#x6CD5;&#x4E2D;&#x7684;&#x6807;&#x8BB0; S &#x4EE3;&#x8868;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#xFF0C;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x4E2D;&#x53EA;&#x80FD;&#x51FA;&#x73B0; &quot;space&quot; (U+0020)&#x3001;&quot;tab&quot; (U+0009)&#x3001;&quot;line feed&quot; (U+000A)&#x3001;&quot;carriage return&quot; (U+000D)&#x548C; &quot;form feed&quot; (U+000C)&#x3002;&#x5176;&#x5B83;&#x7684;&#x7C7B;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#xFF0C;&#x4F8B;&#x5982;&quot;em-space&quot; (U+2003)&#x548C;&quot;ideographic space&quot; (U+3000)&#x4E0D;&#x4F1A;&#x88AB;&#x5F53;&#x4F5C;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
@@ -858,10 +569,11 @@ unused      : block | ATKEYWORD S* | &apos;;&apos; S* | CDO S* | CDC S*;
 </code></pre>
 </li>
 <li><p><strong>&#x683C;&#x5F0F;&#x9519;&#x8BEF;&#x7684;&#x8BED;&#x53E5;</strong>&#xFF1A;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x5904;&#x7406;&#x89E3;&#x6790;&#x8BED;&#x53E5;&#x671F;&#x95F4;&#x9047;&#x5230;&#x7684;&#x5F02;&#x5E38; token&#xFF0C;&#x4E00;&#x76F4;&#x8BFB;&#x5230;&#x8BED;&#x53E5;&#x7ED3;&#x675F;&#xFF0C;&#x4ECE;<code>()</code>&#xFF0C;<code>[]</code>&#xFF0C;<code>{}</code>&#xFF0C;<code>&quot;&quot;</code>&#x548C;<code>&apos;&apos;</code> &#x5BF9;&#x4E2D;&#x5BFB;&#x627E;&#x5BF9;&#x5E94;&#x7684;&#x89C4;&#x5219;&#xFF0C;&#x5E76;&#x6B63;&#x786E;&#x5904;&#x7406;&#x8F6C;&#x4E49;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x683C;&#x5F0F;&#x9519;&#x8BEF;&#x7684;&#x8BED;&#x53E5;&#x53EF;&#x80FD;&#x4F1A;&#x5F02;&#x5E38;&#x7684;&#x5927;&#x62EC;&#x53F7;&#x6216; @&#x5173;&#x952E;&#x5B57;&#x3002;&#x4EE5;&#x4E0B;&#x89C4;&#x5219;&#x88AB;&#x5FFD;&#x7565;&#xFF1A;</p>
-<pre><code class="lang-css">  p @here {color: red}     /* ruleset with unexpected at-keyword &quot;@here&quot; */
-  @foo @bar;               /* at-rule with unexpected at-keyword &quot;@bar&quot; */
-  \}\} \{\{ - \}\}               /* ruleset with unexpected right brace */
-  ) ( {} ) p {color: red } /* ruleset with unexpected right parenthesis */
+<pre><code class="lang-css">  // markdown &#x9700;&#x8981;&#x53CD;&#x659C;&#x6760;&#x8F6C;&#x4E49; &#x53CC;&#x5927;&#x62EC;&#x53F7;
+  p @here {color: red}     // ruleset with unexpected at-keyword &quot;@here&quot;
+  @foo @bar;               // at-rule with unexpected at-keyword &quot;@bar&quot;
+  \}\} \{\{ - \}\}               // ruleset with unexpected right brace
+  ) ( {} ) p {color: red } // ruleset with unexpected right parenthesis
 </code></pre>
 </li>
 <li><p><strong>@&#x89C4;&#x5219;&#x6709;&#x672A;&#x77E5;&#x5173;&#x952E;&#x5B57;</strong>&#xFF1A;@&#x89C4;&#x5219;&#x6709;&#x672A;&#x77E5;&#x5173;&#x952E;&#x5B57;&#x3002;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x5FFD;&#x7565;&#x4E0D;&#x5408;&#x6CD5;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53CA;&#x5176;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x7684;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;&#xFF0C;&#x76F4;&#x5230;&#x9047;&#x5230; &#x4E0D;&#x5408;&#x6CD5;@&#x5173;&#x952E;&#x5B57;&#x7684;&#x5757;&#x7ED3;&#x675F;&#xFF0C;&#x6216;&#x5206;&#x53F7;&#xFF0C;&#x6216;&#x4E0B;&#x4E00;&#x4E2A;&#x5757;&#x3002;</p>
@@ -1093,7 +805,7 @@ a[title=&quot;a not so very long title&quot;] {/*...*/}
 <pre><code class="lang-css">&lt;SPAN style=&quot;font-family: L&amp;#252;beck&quot;&gt;...&lt;/SPAN&gt;
 </code></pre>
 <p><footer class="page-footer"><span class="copyright">Copyright &#xA9; chouchou 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x5F53;&#x524D;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-08-30 14:03:47
+2019-09-04 12:53:24
 </span></footer><div id="gitalk-container" class="gitbook-plugin-mygitalk"></div></p>
 
                                 
@@ -1138,7 +850,7 @@ a[title=&quot;a not so very long title&quot;] {/*...*/}
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4 语法和基本数据类型","level":"1.3.4","depth":2,"next":{"title":"5 选择器","level":"1.3.5","depth":2,"path":"docs/CSS/CSS2.2/5 选择器.md","ref":"./docs/CSS/CSS2.2/5 选择器.md","articles":[]},"previous":{"title":"3 一致性：要求和建议","level":"1.3.3","depth":2,"path":"docs/CSS/CSS2.2/3 一致性：要求和建议.md","ref":"./docs/CSS/CSS2.2/3 一致性：要求和建议.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","github","github-buttons","emphasize","code","splitter","theme-comscore","flexible-alerts","tbfed-pagefooter","pageview-count","hide-element","auto-scroll-table","anchors","chapter-fold","anchor-navigation-ex","donate","mygitalk"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy chouchou 2019","modify_label":"当前页面修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/chouchouovo"},"splitter":{},"search-pro":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/assets/alipay.png","alipayText":" ","button":"赏","title":"","wechat":"/assets/weixin.png","wechatText":" "},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"pageview-count":{},"github-buttons":{"buttons":[{"user":"chouchou","repo":"gitbook-CSS2.2","type":"star","size":"small"},{"user":"chouchou","type":"follow","width":"150","size":"small"}]},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"mygitalk":{"flipMoveOptions":{},"clientID":"ad7b595b5eddc3e352ad","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["chouchouovo"],"createIssueManually":false,"distractionFreeMode":false,"repo":"gitbook-CSS2.2","owner":"chouchouovo","enableHotKey":true,"clientSecret":"ed17ce94c2a777d4af7ef5756f80185aa8d39518","pagerDirection":"last","labels":["Gitalk"]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"chouchouovo","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CSS GitBook","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/chouchouovo"}},"gitbook":"3.2.3","description":"CSS GitBook","extension":null},"file":{"path":"docs/CSS/CSS2.2/4 语法和基本数据类型.md","mtime":"2019-08-30T06:03:47.030Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-30T10:59:26.482Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4 语法和基本数据类型","level":"1.3.4","depth":2,"next":{"title":"5 选择器","level":"1.3.5","depth":2,"path":"docs/CSS/CSS2.2/5 选择器.md","ref":"./docs/CSS/CSS2.2/5 选择器.md","articles":[]},"previous":{"title":"3 一致性：要求和建议","level":"1.3.3","depth":2,"path":"docs/CSS/CSS2.2/3 一致性：要求和建议.md","ref":"./docs/CSS/CSS2.2/3 一致性：要求和建议.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","github","github-buttons","emphasize","code","splitter","theme-comscore","flexible-alerts","tbfed-pagefooter","pageview-count","hide-element","auto-scroll-table","anchors","chapter-fold","anchor-navigation-ex","donate","mygitalk"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy chouchou 2019","modify_label":"当前页面修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/chouchouovo"},"splitter":{},"search-pro":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/assets/alipay.png","alipayText":" ","button":"赏","title":"","wechat":"/assets/weixin.png","wechatText":" "},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"pageview-count":{},"github-buttons":{"buttons":[{"user":"chouchou","repo":"gitbook-CSS2.2","type":"star","size":"small"},{"user":"chouchou","type":"follow","width":"150","size":"small"}]},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"mygitalk":{"flipMoveOptions":{},"clientID":"ad7b595b5eddc3e352ad","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["chouchouovo"],"createIssueManually":false,"distractionFreeMode":false,"repo":"gitbook-CSS2.2","owner":"chouchouovo","enableHotKey":true,"clientSecret":"ed17ce94c2a777d4af7ef5756f80185aa8d39518","pagerDirection":"last","labels":["Gitalk"]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"chouchouovo","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CSS GitBook","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/chouchouovo"}},"gitbook":"3.2.3","description":"CSS GitBook","extension":null},"file":{"path":"docs/CSS/CSS2.2/4 语法和基本数据类型.md","mtime":"2019-09-04T04:53:24.726Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-04T05:40:41.624Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
