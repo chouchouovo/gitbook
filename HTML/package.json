@@ -1,0 +1,46 @@
+{
+  "name": "chouchouovo.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-auto-scroll-table": "^0.0.5",
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-chapter-fold": "^0.0.4",
+    "gitbook-plugin-code": "^0.1.0",
+    "gitbook-plugin-emphasize": "^1.1.0",
+    "gitbook-plugin-donate": "^1.0.2",
+    "gitbook-plugin-flexible-alerts": "^1.0.3",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-mygitalk": "^0.2.2",
+    "gitbook-plugin-github-buttons": "^3.0.0",
+    "gitbook-plugin-hide-element": "^0.0.4",
+    "gitbook-plugin-pageview-count": "^1.0.1",
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
+    "gitbook-plugin-theme-comscore": "^0.0.3",
+    "gitbook-plugin-word-count": "^0.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gitbook serve",
+    "build": "npx gitbook build ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chouchouovo/chouchouovo.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chouchouovo/chouchouovo.github.io/issues"
+  },
+  "homepage": "https://github.com/chouchouovo/chouchouovo.github.io#readme"
+}
