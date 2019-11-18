@@ -1,0 +1,722 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>18 用户界面 · C! 前端 -- CSS 篇</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="chouchouovo">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="17 表格.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"chouchou","repo":"gitbook","type":"star","size":"small"},{"user":"chouchou","type":"follow","width":"150","size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/chouchouovo" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../COPYRIGHT.html">
+            
+                <a href="../../../COPYRIGHT.html">
+            
+                    
+                    版权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    CSS 2.2 中文版
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1 关于 CSS 2.2 规范.html">
+            
+                <a href="1 关于 CSS 2.2 规范.html">
+            
+                    
+                    1 关于 CSS 2.2 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2 CSS 2.2 简介.html">
+            
+                <a href="2 CSS 2.2 简介.html">
+            
+                    
+                    2 CSS 2.2 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3 一致性：要求和建议.html">
+            
+                <a href="3 一致性：要求和建议.html">
+            
+                    
+                    3 一致性：要求和建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="4 语法和基本数据类型.html">
+            
+                <a href="4 语法和基本数据类型.html">
+            
+                    
+                    4 语法和基本数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="5 选择器.html">
+            
+                <a href="5 选择器.html">
+            
+                    
+                    5 选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="6 分配属性值、层叠、继承.html">
+            
+                <a href="6 分配属性值、层叠、继承.html">
+            
+                    
+                    6 分配属性值、层叠、继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="7 媒体类型.html">
+            
+                <a href="7 媒体类型.html">
+            
+                    
+                    7 媒体类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="8 盒子模型.html">
+            
+                <a href="8 盒子模型.html">
+            
+                    
+                    8 盒子模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="9 视觉格式化模型.html">
+            
+                <a href="9 视觉格式化模型.html">
+            
+                    
+                    9 视觉格式化模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="10 视觉格式化模型细节.html">
+            
+                <a href="10 视觉格式化模型细节.html">
+            
+                    
+                    10 视觉格式化模型细节
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="11 视觉效果.html">
+            
+                <a href="11 视觉效果.html">
+            
+                    
+                    11 视觉效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="12 生成内容，自动编号，列表.html">
+            
+                <a href="12 生成内容，自动编号，列表.html">
+            
+                    
+                    12 生成内容，自动编号，列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="13 分页媒体.html">
+            
+                <a href="13 分页媒体.html">
+            
+                    
+                    13 分页媒体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="14 颜色和背景.html">
+            
+                <a href="14 颜色和背景.html">
+            
+                    
+                    14 颜色和背景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="15 字体.html">
+            
+                <a href="15 字体.html">
+            
+                    
+                    15 字体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="16 文本.html">
+            
+                <a href="16 文本.html">
+            
+                    
+                    16 文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="17 表格.html">
+            
+                <a href="17 表格.html">
+            
+                    
+                    17 表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.18" data-path="18 用户界面.html">
+            
+                <a href="18 用户界面.html">
+            
+                    
+                    18 用户界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >18 用户界面</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#18-&#x7528;&#x6237;&#x754C;&#x9762;"><b></b>18 &#x7528;&#x6237;&#x754C;&#x9762;</a></li><ul><li><span class="title-icon "></span><a href="#181-&#x5149;&#x6807;&#xFF1A;cursor-&#x5C5E;&#x6027;"><b></b>18.1 &#x5149;&#x6807;&#xFF1A;cursor &#x5C5E;&#x6027;</a></li><li><span class="title-icon "></span><a href="#182-&#x7CFB;&#x7EDF;&#x989C;&#x8272;&#xFF08;&#x5DF2;&#x5E9F;&#x5F03;&#xFF09;"><b></b>18.2 &#x7CFB;&#x7EDF;&#x989C;&#x8272;&#xFF08;&#x5DF2;&#x5E9F;&#x5F03;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#183-ua-&#x5B57;&#x4F53;&#x7684;&#x9996;&#x9009;&#x9879;"><b></b>18.3 UA &#x5B57;&#x4F53;&#x7684;&#x9996;&#x9009;&#x9879;</a></li><li><span class="title-icon "></span><a href="#184-&#x52A8;&#x6001;&#x8F6E;&#x5ED3;&#xFF1A;outline-&#x5C5E;&#x6027;"><b></b>18.4 &#x52A8;&#x6001;&#x8F6E;&#x5ED3;&#xFF1A;outline &#x5C5E;&#x6027;</a></li><ul><li><span class="title-icon "></span><a href="#1841-&#x8F6E;&#x5ED3;&#x4E0E;&#x7126;&#x70B9;&#xFF08;outlines-and-the-focus&#xFF09;"><b></b>18.4.1 &#x8F6E;&#x5ED3;&#x4E0E;&#x7126;&#x70B9;&#xFF08;Outlines and the focus&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#185-&#x653E;&#x5927;&#xFF08;magnification&#xFF09;"><b></b>18.5 &#x653E;&#x5927;&#xFF08;Magnification&#xFF09;</a></li></ul></ul></div><a href="#18-&#x7528;&#x6237;&#x754C;&#x9762;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="18-&#x7528;&#x6237;&#x754C;&#x9762;"><a name="18-&#x7528;&#x6237;&#x754C;&#x9762;" class="anchor-navigation-ex-anchor" href="#18-&#x7528;&#x6237;&#x754C;&#x9762;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="18-&#x7528;&#x6237;&#x754C;&#x9762;" class="plugin-anchor" href="#18-&#x7528;&#x6237;&#x754C;&#x9762;"><i class="fa fa-link" aria-hidden="true"></i></a>18 &#x7528;&#x6237;&#x754C;&#x9762;</h1>
+<h2 id="181-&#x5149;&#x6807;&#xFF1A;cursor-&#x5C5E;&#x6027;"><a name="181-&#x5149;&#x6807;&#xFF1A;cursor-&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#181-&#x5149;&#x6807;&#xFF1A;cursor-&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="181-&#x5149;&#x6807;&#xFF1A;cursor-&#x5C5E;&#x6027;" class="plugin-anchor" href="#181-&#x5149;&#x6807;&#xFF1A;cursor-&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>18.1 &#x5149;&#x6807;&#xFF1A;cursor &#x5C5E;&#x6027;</h2>
+<p>&#x5173;&#x952E;&#x4FE1;&#x606F;&#x6458;&#x8981;&#xFF1A;</p>
+<ol>
+<li>&#x5C5E;&#x6027;&#x540D;&#x79F0;&#xFF1A;cursor</li>
+<li>&#x503C;&#xFF1A;<code>[ [&lt;uri&gt; ,]* [ auto | crosshair | default | pointer | move | e-resize | ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize | w-resize | text | wait | help | progress ] ] | inherit</code></li>
+<li>&#x521D;&#x59CB;&#x503C;&#xFF1A;auto</li>
+<li>&#x9002;&#x7528;&#x5143;&#x7D20;&#xFF1A;all elements</li>
+<li>&#x7EE7;&#x627F;&#xFF1A;yes</li>
+<li>&#x767E;&#x5206;&#x6BD4;&#xFF1A;N/A</li>
+<li>&#x9002;&#x7528;&#x5A92;&#x4F53;&#xFF1A;visual, interactive</li>
+<li>&#x8BA1;&#x7B97;&#x503C;&#xFF1A;as specified, except with any relative URLs converted to absolute</li>
+</ol>
+<p>&#x6B64;&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x4E86; &#x6307;&#x9488;&#x5F0F;&#x8BBE;&#x5907; &#x663E;&#x793A;&#x7684;&#x5149;&#x6807;&#x7C7B;&#x578B;&#x3002;&#x503C;&#x6709;&#x4EE5;&#x4E0B;&#x542B;&#x4E49;&#xFF1A;</p>
+<ol>
+<li><code>auto</code>&#xFF1A;UA &#x6839;&#x636E;&#x5F53;&#x524D;&#x4E0A;&#x4E0B;&#x6587;&#x786E;&#x5B9A;&#x663E;&#x793A;&#x7684;&#x5149;&#x6807;</li>
+<li><code>crosshair</code>&#xFF1A;&#x5341;&#x5B57;&#x7EBF;&#xFF08;&#x4E0E; &quot;+&quot; &#x7C7B;&#x4F3C;&#xFF09;</li>
+<li><code>default</code>&#xFF1A;&#x53D6;&#x51B3;&#x4E8E;&#x5E73;&#x53F0;&#x7684;&#x9ED8;&#x8BA4;&#x5149;&#x6807;&#x3002;&#x4E00;&#x822C;&#x5C55;&#x73B0;&#x6210;&#x7BAD;&#x5934;</li>
+<li><code>pointer</code>&#xFF1A;&#x8BE5;&#x5149;&#x6807;&#x8868;&#x660E;&#x662F;&#x94FE;&#x63A5;&#x7684;&#x6307;&#x9488;</li>
+<li><code>move</code>&#xFF1A;&#x6697;&#x793A;&#x67D0;&#x4E9B;&#x4E1C;&#x897F;&#x53EF;&#x4EE5;&#x79FB;&#x52A8;</li>
+<li><code>e-resize, ne-resize, nw-resize, n-resize, se-resize, sw-resize, s-resize, w-resize</code>&#xFF1A;&#x6697;&#x793A;&#x67D0;&#x4E9B;&#x8FB9;&#x53EF;&#x4EE5;&#x88AB;&#x79FB;&#x52A8;&#xFF0C;<code>se-resize</code> &#x5149;&#x6807;&#x53EF;&#x4EE5;&#x4ECE;&#x76D2;&#x5B50;&#x7684;&#x4E1C;&#x5357;&#x89D2;&#x5F00;&#x59CB;&#x79FB;&#x52A8;</li>
+<li><code>text</code>&#xFF1A;&#x6697;&#x793A;&#x6587;&#x672C;&#x53EF;&#x4EE5;&#x88AB;&#x9009;&#x4E2D;&#x3002;&#x4E00;&#x822C;&#x5C55;&#x73B0;&#x6210; &quot;I&quot; &#x5F62;</li>
+<li><code>wait</code>&#xFF1A;&#x6697;&#x793A;&#x7A0B;&#x5E8F;&#x6B63;&#x5FD9;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x3002;&#x4E00;&#x822C;&#x5C55;&#x73B0;&#x6210; &#x4E00;&#x4E2A;&#x8868;&#x6216;&#x6C99;&#x6F0F;</li>
+<li><code>progress</code>&#xFF1A;&#x4E00;&#x4E2A;&#x8FDB;&#x5EA6;&#x6307;&#x793A;&#x5668;&#x3002;&#x7A0B;&#x5E8F;&#x6B63;&#x5728;&#x6267;&#x884C;&#x67D0;&#x4E9B;&#x5904;&#x7406;&#xFF0C;&#x4F46;&#x4E0E; <code>wait</code> &#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x7528;&#x6237;&#x4ECD;&#x53EF;&#x4EE5;&#x4E0E;&#x7A0B;&#x5E8F;&#x4EA4;&#x4E92;&#x3002;&#x4E00;&#x822C;&#x5C55;&#x73B0;&#x6210;&#x65CB;&#x8F6C;&#x7684;&#x6C99;&#x6EE9;&#x7403;&#xFF0C;&#x6216;&#x5E26;&#x6709;&#x8868;&#x6216;&#x6C99;&#x6F0F;&#x7684;&#x7BAD;&#x5934;</li>
+<li><code>help</code>&#xFF1A;&#x901A;&#x8FC7;&#x9F20;&#x6807;&#x4E0B;&#x65B9;&#x7684;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x5E2E;&#x52A9;&#x3002;&#x4E00;&#x822C;&#x5C55;&#x73B0;&#x6210;&#x4E00;&#x4E2A;&#x95EE;&#x53F7;&#x6216;&#x6C14;&#x7403;</li>
+<li><code>&lt;uri&gt;</code>&#xFF1A;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x4ECE; URI &#x6307;&#x5B9A;&#x7684;&#x8D44;&#x6E90;&#x4E2D;&#x83B7;&#x53D6;&#x5149;&#x6807;&#x3002;&#x5982;&#x679C;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x65E0;&#x6CD5;&#x5904;&#x7406;&#x5149;&#x6807;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5149;&#x6807;&#xFF0C;&#x5B83;&#x5E94;&#x8BE5;&#x5C1D;&#x8BD5;&#x5904;&#x7406;&#x7B2C;&#x4E8C;&#x4E2A;&#xFF0C;&#x7B49;&#x7B49;&#x3002;&#x5982;&#x679C;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x65E0;&#x6CD5;&#x5904;&#x7406;&#x6240;&#x6709;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684;&#xFF08;user-defined&#xFF09;&#x5149;&#x6807;&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5217;&#x8868;&#x672B;&#x5C3E;&#x7684;&#x901A;&#x7528;&#x5149;&#x6807;&#x3002;&#x9664;&#x4E86;&#x7528;&#x4E00;&#x4E2A;UA&#x5B9A;&#x4E49;&#x7684;&#x77E9;&#x5F62;&#x6765;&#x4EE3;&#x66FF;&#x4E3A; <code>background-image</code> &#x5C5E;&#x6027;&#x5EFA;&#x7ACB;&#x4E86;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x77E9;&#x5F62;&#x5916;&#xFF0C;&#x5149;&#x6807;&#x7684;&#x56FA;&#x6709;&#x5C3A;&#x5BF8;&#x7684;&#x8BA1;&#x7B97;&#x4E0E;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x7C7B;&#x4F3C;&#x3002;UA &#x5B9A;&#x4E49;&#x7684;&#x77E9;&#x5F62;&#x5E94;&#x8BE5;&#x6839;&#x636E; UA &#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E0A;&#x5178;&#x578B;&#x5149;&#x6807;&#x7684;&#x5C3A;&#x5BF8;&#x6765;&#x5B9A;&#x3002;&#x5982;&#x679C;&#x4EA7;&#x751F;&#x7684;&#x5149;&#x6807;&#x5C3A;&#x5BF8;&#x65E0;&#x6CD5;&#x9002;&#x5E94;&#x8BE5;&#x77E9;&#x5F62;&#xFF0C;UA &#x53EF;&#x4EE5;&#x6309;&#x6BD4;&#x4F8B;&#x7F29;&#x5C0F;&#x4EA7;&#x751F;&#x7684;&#x5149;&#x6807;&#xFF0C;&#x76F4;&#x5230;&#x5B83;&#x80FD;&#x9002;&#x5E94;&#x8BE5;&#x77E9;&#x5F62;</li>
+</ol>
+<p>&#x4E0B;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-pseudo">:link</span>,<span class="hljs-selector-pseudo">:visited</span> { <span class="hljs-attribute">cursor</span>: <span class="hljs-built_in">url</span>(example.svg#linkcursor), <span class="hljs-built_in">url</span>(hyper.cur), pointer }
+</code></pre>
+<p>&#x672C;&#x4F8B;&#x628A;&#x6240;&#x6709;&#x8D85;&#x94FE;&#x63A5;&#x4E0A;&#x7684;&#x5149;&#x6807;&#xFF08;&#x65E0;&#x8BBA;&#x8BBF;&#x95EE;&#x4E0E;&#x5426;&#xFF09;&#x90FD;&#x8BBE;&#x7F6E;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x5916;&#x90E8; SVG &#x5149;&#x6807;&#x3002;&#x4E0D;&#x652F;&#x6301; SVG &#x5149;&#x6807;&#x7684;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5C06;&#x8DF3;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x503C;&#xFF0C;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528; &quot;hyper.cur&quot; &#x5149;&#x6807;&#x3002;&#x5982;&#x679C;&#x4E5F;&#x4E0D;&#x652F;&#x6301;&#x8BE5;&#x5149;&#x6807;&#x683C;&#x5F0F;&#xFF0C;&#x5219; UA UA &#x5C06;&#x8DF3;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x503C;&#x5E76;&#x7B80;&#x5355;&#x5730;&#x6E32;&#x67D3; <code>pointer</code> &#x5149;&#x6807;&#x3002;</p>
+<h2 id="182-&#x7CFB;&#x7EDF;&#x989C;&#x8272;&#xFF08;&#x5DF2;&#x5E9F;&#x5F03;&#xFF09;"><a name="182-&#x7CFB;&#x7EDF;&#x989C;&#x8272;&#xFF08;&#x5DF2;&#x5E9F;&#x5F03;&#xFF09;" class="anchor-navigation-ex-anchor" href="#182-&#x7CFB;&#x7EDF;&#x989C;&#x8272;&#xFF08;&#x5DF2;&#x5E9F;&#x5F03;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="182-&#x7CFB;&#x7EDF;&#x989C;&#x8272;&#xFF08;&#x5DF2;&#x5E9F;&#x5F03;&#xFF09;" class="plugin-anchor" href="#182-&#x7CFB;&#x7EDF;&#x989C;&#x8272;&#xFF08;&#x5DF2;&#x5E9F;&#x5F03;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>18.2 &#x7CFB;&#x7EDF;&#x989C;&#x8272;&#xFF08;&#x5DF2;&#x5E9F;&#x5F03;&#xFF09;</h2>
+<p>&#x7CFB;&#x7EDF;&#x989C;&#x8272;&#x5728; CSS3 Color Module[CSS3COLOR] &#x5DF2;&#x88AB;&#x5E9F;&#x5F03;&#x3002;</p>
+<h2 id="183-ua-&#x5B57;&#x4F53;&#x7684;&#x9996;&#x9009;&#x9879;"><a name="183-ua-&#x5B57;&#x4F53;&#x7684;&#x9996;&#x9009;&#x9879;" class="anchor-navigation-ex-anchor" href="#183-ua-&#x5B57;&#x4F53;&#x7684;&#x9996;&#x9009;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="183-ua-&#x5B57;&#x4F53;&#x7684;&#x9996;&#x9009;&#x9879;" class="plugin-anchor" href="#183-ua-&#x5B57;&#x4F53;&#x7684;&#x9996;&#x9009;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>18.3 UA &#x5B57;&#x4F53;&#x7684;&#x9996;&#x9009;&#x9879;</h2>
+<p>&#x50CF;&#x989C;&#x8272;&#x4E00;&#x6837;&#xFF0C;&#x4F5C;&#x8005;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x79CD;&#x5229;&#x7528;&#x7528;&#x6237;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x6307;&#x5B9A;&#x5B57;&#x4F53;&#x3002;&#x8BE6;&#x60C5;&#x8BF7;&#x67E5;&#x770B; <code>font</code> &#x5C5E;&#x6027;</p>
+<h2 id="184-&#x52A8;&#x6001;&#x8F6E;&#x5ED3;&#xFF1A;outline-&#x5C5E;&#x6027;"><a name="184-&#x52A8;&#x6001;&#x8F6E;&#x5ED3;&#xFF1A;outline-&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#184-&#x52A8;&#x6001;&#x8F6E;&#x5ED3;&#xFF1A;outline-&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="184-&#x52A8;&#x6001;&#x8F6E;&#x5ED3;&#xFF1A;outline-&#x5C5E;&#x6027;" class="plugin-anchor" href="#184-&#x52A8;&#x6001;&#x8F6E;&#x5ED3;&#xFF1A;outline-&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>18.4 &#x52A8;&#x6001;&#x8F6E;&#x5ED3;&#xFF1A;outline &#x5C5E;&#x6027;</h2>
+<p>&#x6709;&#x65F6;&#xFF0C;&#x6837;&#x5F0F;&#x8868;&#x4F5C;&#x8005;&#x53EF;&#x80FD;&#x7ED9;&#x53EF;&#x89C6;&#x5BF9;&#x8C61;&#x521B;&#x5EFA;&#x8F6E;&#x5ED3;&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x4F7F;&#x5B83;&#x4EEC;&#xFF08;&#x5982; &#x6309;&#x94AE;&#x3001;&#x6D3B;&#x52A8;&#x8868;&#x5355;&#x5B57;&#x6BB5;&#x3001;&#x56FE;&#x50CF;&#x6620;&#x5C04;&#xFF09;&#x51F8;&#x663E;&#x51FA;&#x6765;&#x3002;CSS2.2 &#x4E2D; &#x8F6E;&#x5ED3; &#x548C; &#x8FB9;&#x6846; &#x4E0D;&#x540C;&#x7684;&#x533A;&#x522B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li>&#x8F6E;&#x5ED3;&#x4E0D;&#x5360;&#x7A7A;&#x95F4;</li>
+<li>&#x8F6E;&#x5ED3;&#x53EF;&#x4EE5;&#x4E0D;&#x662F;&#x77E9;&#x5F62;&#x7684;</li>
+</ol>
+<p><code>outline</code> &#x5C5E;&#x6027;&#x63A7;&#x5236;&#x8FD9;&#x4E9B;&#x52A8;&#x6001;&#x8F6E;&#x5ED3;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x5173;&#x952E;&#x4FE1;&#x606F;&#x6458;&#x8981;&#xFF1A;</p>
+<ol>
+<li>&#x5C5E;&#x6027;&#x540D;&#x79F0;&#xFF1A;outline</li>
+<li>&#x503C;&#xFF1A;<code>[ &lt;&apos;outline-color&apos;&gt; || &lt;&apos;outline-style&apos;&gt; || &lt;&apos;outline-width&apos;&gt; ] | inherit</code></li>
+<li>&#x521D;&#x59CB;&#x503C;&#xFF1A;&#x89C1;&#x5355;&#x72EC;&#x7684;&#x5404;&#x4E2A;&#x5C5E;&#x6027;</li>
+<li>&#x9002;&#x7528;&#x5143;&#x7D20;&#xFF1A;all elements</li>
+<li>&#x7EE7;&#x627F;&#xFF1A;no</li>
+<li>&#x767E;&#x5206;&#x6BD4;&#xFF1A;N/A</li>
+<li>&#x9002;&#x7528;&#x5A92;&#x4F53;&#xFF1A;visual, interactive</li>
+<li>&#x8BA1;&#x7B97;&#x503C;&#xFF1A;&#x89C1;&#x5355;&#x72EC;&#x7684;&#x5404;&#x4E2A;&#x5C5E;&#x6027;</li>
+</ol>
+<p>&#x5173;&#x952E;&#x4FE1;&#x606F;&#x6458;&#x8981;&#xFF1A;</p>
+<ol>
+<li>&#x5C5E;&#x6027;&#x540D;&#x79F0;&#xFF1A;outline-width</li>
+<li>&#x503C;&#xFF1A;<code>&lt;border-width&gt; | inherit</code></li>
+<li>&#x521D;&#x59CB;&#x503C;&#xFF1A;medium</li>
+<li>&#x9002;&#x7528;&#x5143;&#x7D20;&#xFF1A;all elements</li>
+<li>&#x7EE7;&#x627F;&#xFF1A;no</li>
+<li>&#x767E;&#x5206;&#x6BD4;&#xFF1A;N/A</li>
+<li>&#x9002;&#x7528;&#x5A92;&#x4F53;&#xFF1A;visual, interactive</li>
+<li>&#x8BA1;&#x7B97;&#x503C;&#xFF1A;absolute length; &apos;0&apos; if the outline style is &apos;none&apos;</li>
+</ol>
+<p>&#x5173;&#x952E;&#x4FE1;&#x606F;&#x6458;&#x8981;&#xFF1A;</p>
+<ol>
+<li>&#x5C5E;&#x6027;&#x540D;&#x79F0;&#xFF1A;outline-style</li>
+<li>&#x503C;&#xFF1A;<code>&lt;border-style&gt; | inherit</code></li>
+<li>&#x521D;&#x59CB;&#x503C;&#xFF1A;none</li>
+<li>&#x9002;&#x7528;&#x5143;&#x7D20;&#xFF1A;all elements</li>
+<li>&#x7EE7;&#x627F;&#xFF1A;no</li>
+<li>&#x767E;&#x5206;&#x6BD4;&#xFF1A;N/A</li>
+<li>&#x9002;&#x7528;&#x5A92;&#x4F53;&#xFF1A;visual, interactive</li>
+<li>&#x8BA1;&#x7B97;&#x503C;&#xFF1A;as specified</li>
+</ol>
+<p>&#x5173;&#x952E;&#x4FE1;&#x606F;&#x6458;&#x8981;&#xFF1A;</p>
+<ol>
+<li>&#x5C5E;&#x6027;&#x540D;&#x79F0;&#xFF1A;outline-color</li>
+<li>&#x503C;&#xFF1A;<code>&lt;color&gt; | invert | inherit</code></li>
+<li>&#x521D;&#x59CB;&#x503C;&#xFF1A;invert</li>
+<li>&#x9002;&#x7528;&#x5143;&#x7D20;&#xFF1A;all elements</li>
+<li>&#x7EE7;&#x627F;&#xFF1A;no</li>
+<li>&#x767E;&#x5206;&#x6BD4;&#xFF1A;N/A</li>
+<li>&#x9002;&#x7528;&#x5A92;&#x4F53;&#xFF1A;visual, interactive</li>
+<li>&#x8BA1;&#x7B97;&#x503C;&#xFF1A;as specified</li>
+</ol>
+<p>&#x7528; <code>outline</code> &#x5C5E;&#x6027;&#x521B;&#x5EFA;&#x7684;&#x8F6E;&#x5ED3;&#x88AB;&#x7ED8;&#x5236;&#x5728;&#x76D2;&#x5B50; <code>&#x4E0A;&#x9762;</code>&#x3002;&#x5373;&#x8F6E;&#x5ED3;&#x603B;&#x662F;&#x4F4D;&#x4E8E;&#x4E0A;&#x9762;&#xFF0C;&#x4E14;&#x4E0D;&#x5F71;&#x54CD;&#x8BE5;&#x76D2;&#x5B50;&#x6216;&#x5176;&#x5B83;&#x76D2;&#x5B50;&#x7684;&#x4F4D;&#x7F6E;&#x548C;&#x5C3A;&#x5BF8;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x663E;&#x793A;&#x6216;&#x8005;&#x6291;&#x5236;&#x8F6E;&#x5ED3;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x91CD;&#x6392;&#xFF08;reflow&#xFF09;&#x6216;&#x8005;&#x6EA2;&#x51FA;&#xFF08;overflow&#xFF09;&#x3002;</p>
+<p>&#x8F6E;&#x5ED3;&#x4F1A;&#x4ECE; &#x8FB9;&#x6846;&#x8FB9;&#x7F18; &#x5916;&#x9762;&#x5F00;&#x59CB;&#x7ED8;&#x5236;&#x3002;</p>
+<p>&#x8F6E;&#x5ED3;&#x53EF;&#x4EE5;&#x662F;&#x975E;&#x77E9;&#x5F62;&#x7684;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x5143;&#x7D20;&#x5728;&#x591A;&#x884C;&#x4E2D;&#x65AD;&#x5F00;&#xFF0C;&#x5219;&#x8F6E;&#x5ED3;&#x662F;&#x5305;&#x542B;&#x6240;&#x6709;&#x5143;&#x7D20;&#x76D2;&#x5B50;&#x7684;&#x6700;&#x5C0F;&#x8F6E;&#x5ED3;&#x3002;&#x4E0E; &#x8FB9;&#x6846; &#x76F8;&#x6BD4;&#xFF0C;&#x8F6E;&#x5ED3;&#x5728; &#x884C;&#x76D2;&#x5B50;  &#x7684;&#x5F00;&#x59CB;&#x5904;&#x6216;&#x7ED3;&#x675F;&#x5904; &#x4E0D;&#x662F;&#x65AD;&#x5F00;&#x7684;&#xFF0C;&#x800C;&#x662F;&#x603B;&#x4F1A;&#x5C3D;&#x91CF;&#x5B8C;&#x5168;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#x3002;</p>
+<p><code>outline-width</code> &#x5C5E;&#x6027;&#x4E0E; <code>border-width</code> &#x63A5;&#x53D7;&#x76F8;&#x540C;&#x7684;&#x503C;&#x3002;
+<code>outline-style</code> &#x5C5E;&#x6027;&#x4E0E; <code>border-style</code> &#x63A5;&#x53D7;&#x76F8;&#x540C;&#x7684;&#x503C;&#xFF0C;&#x9664;&#x4E86; <code>hidden</code> &#x503C;&#x3002;
+<code>outline-color</code> &#x63A5;&#x53D7;&#x6240;&#x6709;&#x7684;&#x989C;&#x8272;&#x548C;&#x5173;&#x952E;&#x5B57; <code>invert</code>&#x3002;<code>invert</code> &#x7528;&#x6765;&#x5BF9;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;&#x50CF;&#x7D20;&#x8FDB;&#x884C;&#x53CD;&#x8272;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x7528;&#x6765;&#x786E;&#x4FDD;&#x7126;&#x70B9;&#x8FB9;&#x6846;&#x53EF;&#x89C1;&#x7684;&#x5E38;&#x89C1;&#x6280;&#x5DE7;&#xFF0C;&#x65E0;&#x8BBA;&#x80CC;&#x666F;&#x8272;&#x662F;&#x4EC0;&#x4E48;&#x3002;</p>
+<p>&#x4E0D;&#x652F;&#x6301;&#x5C4F;&#x5E55;&#x50CF;&#x7D20;&#x53CD;&#x8272;&#x7684;&#x5E73;&#x53F0;&#x4E0A;&#x7684;&#xFF08;&#x4E0E; CSS&#x89C4;&#x8303;&#xFF09;&#x4E00;&#x81F4;&#x7684; UA &#x53EF;&#x4EE5;&#x5FFD;&#x7565; <code>invert</code> &#x503C;&#x3002;&#x5982;&#x679C; UA &#x4E0D;&#x652F;&#x6301; <code>invert</code> &#x503C;&#xFF0C;&#x90A3;&#x4E48; <code>outline-color</code> &#x5C5E;&#x6027;&#x7684;&#x521D;&#x59CB;&#x503C;&#x4E3A; <code>color</code> &#x5C5E;&#x6027;&#x7684;&#x503C;&#xFF0C;&#x4E0E; <code>border-top-color</code> &#x5C5E;&#x6027;&#x7684;&#x521D;&#x59CB;&#x503C;&#x7C7B;&#x4F3C;&#x3002;</p>
+<p><code>outline</code> &#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5199;&#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x6027;&#x8BBE;&#x7F6E; <code>outline-style</code>&#x3001;<code>outline-width</code> &#x548C; <code>outline-color</code>&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8F6E;&#x5ED3;&#x7684;&#x6240;&#x6709;&#x65B9;&#x5411;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;&#x4E0E; &#x8FB9;&#x6846; &#x76F8;&#x6BD4;&#xFF0C;&#x4E0D;&#x5B58;&#x5728; <code>outline-top</code> &#x6216;&#x8005; <code>outline-left</code> &#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x672C;&#x89C4;&#x8303;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#x5982;&#x4F55;&#x7ED8;&#x5236;&#x591A;&#x4E2A;&#x91CD;&#x53E0;&#x7684;&#x8F6E;&#x5ED3;&#xFF0C;&#x6216;&#x8005;&#x5982;&#x4F55;&#x4E3A;&#x88AB;&#x906E;&#x6321;&#x5728;&#x5176;&#x5B83;&#x5143;&#x7D20;&#x540E;&#x9762;&#x7684;&#x90E8;&#x5206;&#x76D2;&#x5B50;&#x7ED8;&#x5236;&#x8F6E;&#x5ED3;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x56E0;&#x4E3A;&#x8F6E;&#x5ED3;&#x4E0D;&#x5F71;&#x54CD;&#x683C;&#x5F0F;&#x5316;&#xFF08;&#x5373;&#x76D2;&#x6A21;&#x578B;&#x4E2D;&#x6CA1;&#x7ED9;&#x5B83;&#x7559;&#x4EFB;&#x4F55;&#x7A7A;&#x95F4;&#xFF09;&#xFF0C;&#x5B83;&#x53EF;&#x80FD;&#x4F1A;&#x4E0E;&#x9875;&#x9762;&#x4E0A;&#x7684;&#x5176;&#x5B83;&#x5143;&#x7D20;&#x91CD;&#x53E0;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x5728; <code>&lt;button&gt;</code> &#x5143;&#x7D20;&#x5468;&#x56F4;&#x7ED8;&#x5236;&#x7684;&#x7C97;&#x8F6E;&#x5ED3;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">button</span> { <span class="hljs-attribute">outline </span>: thick solid}
+</code></pre>
+<p>&#x53EF;&#x901A;&#x8FC7;&#x811A;&#x672C;&#x52A8;&#x6001;&#x6539;&#x53D8;&#x8F6E;&#x5ED3;&#x7684;&#x5BBD;&#x5EA6;&#x800C;&#x4E0D;&#x4F1A;&#x5F15;&#x8D77; &#x91CD;&#x6392;&#xFF08;reflow&#xFF09;&#x3002;</p>
+<h3 id="1841-&#x8F6E;&#x5ED3;&#x4E0E;&#x7126;&#x70B9;&#xFF08;outlines-and-the-focus&#xFF09;"><a name="1841-&#x8F6E;&#x5ED3;&#x4E0E;&#x7126;&#x70B9;&#xFF08;outlines-and-the-focus&#xFF09;" class="anchor-navigation-ex-anchor" href="#1841-&#x8F6E;&#x5ED3;&#x4E0E;&#x7126;&#x70B9;&#xFF08;outlines-and-the-focus&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1841-&#x8F6E;&#x5ED3;&#x4E0E;&#x7126;&#x70B9;&#xFF08;outlines-and-the-focus&#xFF09;" class="plugin-anchor" href="#1841-&#x8F6E;&#x5ED3;&#x4E0E;&#x7126;&#x70B9;&#xFF08;outlines-and-the-focus&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>18.4.1 &#x8F6E;&#x5ED3;&#x4E0E;&#x7126;&#x70B9;&#xFF08;Outlines and the focus&#xFF09;</h3>
+<p>&#x56FE;&#x5F62;&#x7528;&#x6237;&#x754C;&#x9762;&#x53EF;&#x80FD;&#x4F1A;&#x7528;&#x56F4;&#x7ED5;&#x7740;&#x5143;&#x7D20;&#x7684;&#x8F6E;&#x5ED3;&#x6765;&#x544A;&#x8BC9;&#x7528;&#x6237;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x54EA;&#x4E9B;&#x5143;&#x7D20;&#x5177;&#x6709;&#x7126;&#x70B9;&#x3002;&#x8FD9;&#x4E9B;&#x8F6E;&#x5ED3;&#x4E0D;&#x662F;&#x4EFB;&#x4F55;&#x8FB9;&#x6846;&#xFF0C;&#x5E76;&#x4E14;&#x5F00;&#x542F;&#x8F6E;&#x5ED3;&#x548C;&#x53D6;&#x6D88;&#x8F6E;&#x5ED3;&#x4E0D;&#x5E94;&#x8BE5;&#x5BFC;&#x81F4;&#x6587;&#x6863;&#x91CD;&#x6392;&#xFF08;reflow&#xFF09;&#x3002;&#x7126;&#x70B9;&#x662F;&#x4E00;&#x4EFD;&#x6587;&#x6863;&#x4E2D;&#x7528;&#x6237;&#x4EA4;&#x4E92;&#x7684;&#x5BF9;&#x8C61;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;&#x5BF9;&#x4E8E;&#x8F93;&#x5165;&#x6587;&#x672C;&#xFF0C;&#x9009;&#x4E2D;&#x6309;&#x94AE;&#x7B49;&#x7B49;&#xFF09;&#x3002;&#x652F;&#x6301;&#x7684;&#x4E92;&#x52A8;&#x5A92;&#x4F53;&#x7EC4;&#x7684;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5FC5;&#x987B;&#x8DDF;&#x8E2A;&#x7126;&#x70B9;&#x4F4D;&#x7F6E;&#xFF0C;&#x5E76;&#x4E14;&#x8FD8;&#x5FC5;&#x987B;&#x8868;&#x73B0;&#x51FA;&#x7126;&#x70B9;&#x3002;&#x8FD9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; &#x52A8;&#x6001;&#x8F6E;&#x5ED3; &#x7ED3;&#x5408; <code>:focus</code> &#x4F2A;&#x7C7B;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x4E3A;&#x4E86;&#x5728;&#x5143;&#x7D20;&#x5177;&#x6709;&#x7126;&#x70B9;&#x65F6;&#xFF0C;&#x5728;&#x5B83;&#x5468;&#x56F4;&#x7ED8;&#x5236;&#x4E00;&#x6761;&#x7C97;&#x9ED1;&#x7EBF;&#xFF0C;&#x5728;&#x5B83;&#x5904;&#x4E8E;&#x6FC0;&#x6D3B;&#x72B6;&#x6001;&#x65F6;&#x7ED8;&#x5236;&#x4E00;&#x6761;&#x7C97;&#x7EA2;&#x7EBF;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x5217;&#x89C4;&#x5219;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-pseudo">:focus</span>  { <span class="hljs-attribute">outline</span>: thick solid black }
+<span class="hljs-selector-pseudo">:active</span> { <span class="hljs-attribute">outline</span>: thick solid red }
+</code></pre>
+<h2 id="185-&#x653E;&#x5927;&#xFF08;magnification&#xFF09;"><a name="185-&#x653E;&#x5927;&#xFF08;magnification&#xFF09;" class="anchor-navigation-ex-anchor" href="#185-&#x653E;&#x5927;&#xFF08;magnification&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="185-&#x653E;&#x5927;&#xFF08;magnification&#xFF09;" class="plugin-anchor" href="#185-&#x653E;&#x5927;&#xFF08;magnification&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>18.5 &#x653E;&#x5927;&#xFF08;Magnification&#xFF09;</h2>
+<p>CSS&#x5DE5;&#x4F5C;&#x7EC4;&#x8BA4;&#x4E3A;&#x5BF9;&#x6587;&#x6863;&#x7684;&#x653E;&#x5927;&#x6216;&#x8005;&#x90E8;&#x5206;&#x653E;&#x5927;&#x4E0D;&#x5E94;&#x8BE5;&#x901A;&#x8FC7;&#x6837;&#x5F0F;&#x8868;&#x6765;&#x6307;&#x5B9A;&#x3002;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x53EF;&#x4EE5;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x652F;&#x6301;&#x8FD9;&#x79CD;&#x653E;&#x5927;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;&#x66F4;&#x5927;&#x7684;&#x56FE;&#x7247;&#xFF0C;&#x66F4;&#x5927;&#x7684;&#x58F0;&#x97F3;&#xFF0C;&#x7B49;&#x7B49;&#xFF09;&#x3002;</p>
+<p>&#x5728;&#x653E;&#x5927;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x65F6;&#xFF0C;UA &#x5E94;&#x8BE5;&#x4FDD;&#x7559;&#x5B9A;&#x4F4D;&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;&#x6F2B;&#x753B;&#x53EF;&#x80FD;&#x7531;&#x56FE;&#x7247;&#x548C;&#x8986;&#x76D6;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x6587;&#x672C;&#x5143;&#x7D20;&#x7EC4;&#x6210;&#x3002;&#x5728;&#x653E;&#x5927;&#x8BE5;&#x9875;&#x9762;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5E94;&#x8BE5;&#x4FDD;&#x6301;&#x6587;&#x672C;&#x4F4D;&#x4E8E;&#x6F2B;&#x753B;&#x5BF9;&#x8BDD;&#x6846;&#xFF08;balloon&#xFF09;&#x4E2D;&#x3002;</p>
+<p><footer class="page-footer"><span class="copyright">Copyright &#xA9; chouchou 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x5F53;&#x524D;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-05-27 17:41:59
+</span></footer></p>
+<div id="gitalk-container"></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="17 表格.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 17 表格">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"18 用户界面","level":"1.3.18","depth":2,"previous":{"title":"17 表格","level":"1.3.17","depth":2,"path":"docs/CSS/CSS2.2/17 表格.md","ref":"./docs/CSS/CSS2.2/17 表格.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","github","github-buttons","emphasize","code","splitter","theme-comscore","flexible-alerts","tbfed-pagefooter","pageview-count","hide-element","auto-scroll-table","anchors","chapter-fold","anchor-navigation-ex","donate","mygitalk"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy chouchou 2019","modify_label":"当前页面修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/chouchouovo"},"splitter":{},"search-pro":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/assets/alipay.png","alipayText":" ","button":"赏","title":"","wechat":"/assets/weixin.png","wechatText":" "},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"pageview-count":{},"github-buttons":{"buttons":[{"user":"chouchou","repo":"gitbook","type":"star","size":"small"},{"user":"chouchou","type":"follow","width":"150","size":"small"}]},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"mygitalk":{"flipMoveOptions":{},"clientID":"ad7b595b5eddc3e352ad","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["chouchouovo"],"createIssueManually":false,"distractionFreeMode":false,"repo":"gitbook","owner":"chouchouovo","enableHotKey":true,"clientSecret":"ed17ce94c2a777d4af7ef5756f80185aa8d39518","pagerDirection":"last","labels":["Gitalk"]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"chouchouovo","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"C! 前端 -- CSS 篇","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/chouchouovo"}},"gitbook":"3.2.3","description":"C! 前端 -- CSS 篇","extension":null},"file":{"path":"docs/CSS/CSS2.2/18 用户界面.md","mtime":"2019-05-27T09:41:59.945Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-18T09:15:06.902Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
